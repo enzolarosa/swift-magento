@@ -8,6 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		24E499C222EC32B6004A33DD /* MagentoSDK.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499C122EC32B6004A33DD /* MagentoSDK.swift */; };
+		24E499CA22EC333E004A33DD /* Connection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499C922EC333E004A33DD /* Connection.swift */; };
+		24E499CD22EC42A6004A33DD /* GuestEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499CC22EC42A6004A33DD /* GuestEndpoint.swift */; };
+		24E499CF22EC4307004A33DD /* UserEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499CE22EC4307004A33DD /* UserEndpoint.swift */; };
+		24E499D122EC4313004A33DD /* AdminEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499D022EC4313004A33DD /* AdminEndpoint.swift */; };
+		24E499D422EC43CA004A33DD /* Customers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499D322EC43CA004A33DD /* Customers.swift */; };
+		24E499D722EC44B3004A33DD /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499D622EC44B3004A33DD /* Customer.swift */; };
+		24E499D922EC4563004A33DD /* Addresses.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499D822EC4563004A33DD /* Addresses.swift */; };
+		24E499DB22EC463E004A33DD /* Region.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499DA22EC463E004A33DD /* Region.swift */; };
+		24E499DD22EC46FE004A33DD /* CustomAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499DC22EC46FE004A33DD /* CustomAttribute.swift */; };
+		24E499DF22EC482F004A33DD /* ExtensionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499DE22EC482F004A33DD /* ExtensionAttribute.swift */; };
+		24E499E122EC4877004A33DD /* CompanyAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499E022EC4877004A33DD /* CompanyAttribute.swift */; };
+		24E499E522EC4939004A33DD /* CreateCustomers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499E422EC4939004A33DD /* CreateCustomers.swift */; };
+		5CC93D1A262F4AC957148BFA /* Pods_MagentoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B33B6AC6DE6F8A48CA5792D /* Pods_MagentoSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +36,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		00BECA62C12FC7C862C01DC2 /* Pods-MagentoSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagentoSDK.debug.xcconfig"; path = "Target Support Files/Pods-MagentoSDK/Pods-MagentoSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		0B33B6AC6DE6F8A48CA5792D /* Pods_MagentoSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MagentoSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E499BE22EC32B6004A33DD /* libMagentoSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMagentoSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		24E499C122EC32B6004A33DD /* MagentoSDK.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagentoSDK.swift; sourceTree = "<group>"; };
+		24E499C922EC333E004A33DD /* Connection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connection.swift; sourceTree = "<group>"; };
+		24E499CC22EC42A6004A33DD /* GuestEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestEndpoint.swift; sourceTree = "<group>"; };
+		24E499CE22EC4307004A33DD /* UserEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserEndpoint.swift; sourceTree = "<group>"; };
+		24E499D022EC4313004A33DD /* AdminEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminEndpoint.swift; sourceTree = "<group>"; };
+		24E499D322EC43CA004A33DD /* Customers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customers.swift; sourceTree = "<group>"; };
+		24E499D622EC44B3004A33DD /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		24E499D822EC4563004A33DD /* Addresses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Addresses.swift; sourceTree = "<group>"; };
+		24E499DA22EC463E004A33DD /* Region.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Region.swift; sourceTree = "<group>"; };
+		24E499DC22EC46FE004A33DD /* CustomAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAttribute.swift; sourceTree = "<group>"; };
+		24E499DE22EC482F004A33DD /* ExtensionAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionAttribute.swift; sourceTree = "<group>"; };
+		24E499E022EC4877004A33DD /* CompanyAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyAttribute.swift; sourceTree = "<group>"; };
+		24E499E422EC4939004A33DD /* CreateCustomers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCustomers.swift; sourceTree = "<group>"; };
+		88273FD37B217F7949C82697 /* Pods-MagentoSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagentoSDK.release.xcconfig"; path = "Target Support Files/Pods-MagentoSDK/Pods-MagentoSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC93D1A262F4AC957148BFA /* Pods_MagentoSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -43,6 +72,8 @@
 			children = (
 				24E499C022EC32B6004A33DD /* MagentoSDK */,
 				24E499BF22EC32B6004A33DD /* Products */,
+				2EBD2FADAB0C994B535AC75D /* Pods */,
+				C66E3299C7F47DDC7B92BE0C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,9 +88,78 @@
 		24E499C022EC32B6004A33DD /* MagentoSDK */ = {
 			isa = PBXGroup;
 			children = (
+				24E499CB22EC4288004A33DD /* v2 */,
 				24E499C122EC32B6004A33DD /* MagentoSDK.swift */,
+				24E499C922EC333E004A33DD /* Connection.swift */,
 			);
 			path = MagentoSDK;
+			sourceTree = "<group>";
+		};
+		24E499CB22EC4288004A33DD /* v2 */ = {
+			isa = PBXGroup;
+			children = (
+				24E499D522EC449D004A33DD /* Model */,
+				24E499D222EC43BA004A33DD /* Guest */,
+				24E499CC22EC42A6004A33DD /* GuestEndpoint.swift */,
+				24E499CE22EC4307004A33DD /* UserEndpoint.swift */,
+				24E499D022EC4313004A33DD /* AdminEndpoint.swift */,
+			);
+			path = v2;
+			sourceTree = "<group>";
+		};
+		24E499D222EC43BA004A33DD /* Guest */ = {
+			isa = PBXGroup;
+			children = (
+				24E499E322EC4927004A33DD /* Request */,
+				24E499E222EC4920004A33DD /* Response */,
+				24E499D322EC43CA004A33DD /* Customers.swift */,
+			);
+			path = Guest;
+			sourceTree = "<group>";
+		};
+		24E499D522EC449D004A33DD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				24E499D622EC44B3004A33DD /* Customer.swift */,
+				24E499D822EC4563004A33DD /* Addresses.swift */,
+				24E499DA22EC463E004A33DD /* Region.swift */,
+				24E499DC22EC46FE004A33DD /* CustomAttribute.swift */,
+				24E499DE22EC482F004A33DD /* ExtensionAttribute.swift */,
+				24E499E022EC4877004A33DD /* CompanyAttribute.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		24E499E222EC4920004A33DD /* Response */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		24E499E322EC4927004A33DD /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				24E499E422EC4939004A33DD /* CreateCustomers.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		2EBD2FADAB0C994B535AC75D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				00BECA62C12FC7C862C01DC2 /* Pods-MagentoSDK.debug.xcconfig */,
+				88273FD37B217F7949C82697 /* Pods-MagentoSDK.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C66E3299C7F47DDC7B92BE0C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B33B6AC6DE6F8A48CA5792D /* Pods_MagentoSDK.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -69,6 +169,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 24E499C522EC32B6004A33DD /* Build configuration list for PBXNativeTarget "MagentoSDK" */;
 			buildPhases = (
+				6ADC102F37CFB5F862DA8107 /* [CP] Check Pods Manifest.lock */,
 				24E499BA22EC32B6004A33DD /* Sources */,
 				24E499BB22EC32B6004A33DD /* Frameworks */,
 				24E499BC22EC32B6004A33DD /* CopyFiles */,
@@ -114,12 +215,49 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		6ADC102F37CFB5F862DA8107 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MagentoSDK-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		24E499BA22EC32B6004A33DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E499DB22EC463E004A33DD /* Region.swift in Sources */,
+				24E499D922EC4563004A33DD /* Addresses.swift in Sources */,
+				24E499DF22EC482F004A33DD /* ExtensionAttribute.swift in Sources */,
 				24E499C222EC32B6004A33DD /* MagentoSDK.swift in Sources */,
+				24E499DD22EC46FE004A33DD /* CustomAttribute.swift in Sources */,
+				24E499D722EC44B3004A33DD /* Customer.swift in Sources */,
+				24E499D422EC43CA004A33DD /* Customers.swift in Sources */,
+				24E499CF22EC4307004A33DD /* UserEndpoint.swift in Sources */,
+				24E499E122EC4877004A33DD /* CompanyAttribute.swift in Sources */,
+				24E499CA22EC333E004A33DD /* Connection.swift in Sources */,
+				24E499CD22EC42A6004A33DD /* GuestEndpoint.swift in Sources */,
+				24E499D122EC4313004A33DD /* AdminEndpoint.swift in Sources */,
+				24E499E522EC4939004A33DD /* CreateCustomers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,6 +382,7 @@
 		};
 		24E499C622EC32B6004A33DD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 00BECA62C12FC7C862C01DC2 /* Pods-MagentoSDK.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q3BW5SH34B;
@@ -257,6 +396,7 @@
 		};
 		24E499C722EC32B6004A33DD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88273FD37B217F7949C82697 /* Pods-MagentoSDK.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Q3BW5SH34B;
@@ -278,7 +418,7 @@
 				24E499C422EC32B6004A33DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		24E499C522EC32B6004A33DD /* Build configuration list for PBXNativeTarget "MagentoSDK" */ = {
 			isa = XCConfigurationList;
@@ -287,7 +427,7 @@
 				24E499C722EC32B6004A33DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};
