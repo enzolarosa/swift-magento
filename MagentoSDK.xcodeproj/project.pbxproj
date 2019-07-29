@@ -20,6 +20,9 @@
 		24E499DF22EC482F004A33DD /* ExtensionAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499DE22EC482F004A33DD /* ExtensionAttribute.swift */; };
 		24E499E122EC4877004A33DD /* CompanyAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499E022EC4877004A33DD /* CompanyAttribute.swift */; };
 		24E499E522EC4939004A33DD /* CreateCustomers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499E422EC4939004A33DD /* CreateCustomers.swift */; };
+		24E499E722EF550A004A33DD /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499E622EF550A004A33DD /* Endpoint.swift */; };
+		24E499E922EF5514004A33DD /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499E822EF5514004A33DD /* Request.swift */; };
+		24E499EB22EF551C004A33DD /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499EA22EF551C004A33DD /* Response.swift */; };
 		5CC93D1A262F4AC957148BFA /* Pods_MagentoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B33B6AC6DE6F8A48CA5792D /* Pods_MagentoSDK.framework */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +55,10 @@
 		24E499DE22EC482F004A33DD /* ExtensionAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionAttribute.swift; sourceTree = "<group>"; };
 		24E499E022EC4877004A33DD /* CompanyAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyAttribute.swift; sourceTree = "<group>"; };
 		24E499E422EC4939004A33DD /* CreateCustomers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateCustomers.swift; sourceTree = "<group>"; };
+		24E499E622EF550A004A33DD /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		24E499E822EF5514004A33DD /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		24E499EA22EF551C004A33DD /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		24E499EC22EF562C004A33DD /* endpoint.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = endpoint.plist; sourceTree = "<group>"; };
 		88273FD37B217F7949C82697 /* Pods-MagentoSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagentoSDK.release.xcconfig"; path = "Target Support Files/Pods-MagentoSDK/Pods-MagentoSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,9 +95,13 @@
 		24E499C022EC32B6004A33DD /* MagentoSDK */ = {
 			isa = PBXGroup;
 			children = (
+				24E499EC22EF562C004A33DD /* endpoint.plist */,
 				24E499CB22EC4288004A33DD /* v2 */,
 				24E499C122EC32B6004A33DD /* MagentoSDK.swift */,
 				24E499C922EC333E004A33DD /* Connection.swift */,
+				24E499E622EF550A004A33DD /* Endpoint.swift */,
+				24E499E822EF5514004A33DD /* Request.swift */,
+				24E499EA22EF551C004A33DD /* Response.swift */,
 			);
 			path = MagentoSDK;
 			sourceTree = "<group>";
@@ -245,12 +256,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E499E722EF550A004A33DD /* Endpoint.swift in Sources */,
 				24E499DB22EC463E004A33DD /* Region.swift in Sources */,
 				24E499D922EC4563004A33DD /* Addresses.swift in Sources */,
 				24E499DF22EC482F004A33DD /* ExtensionAttribute.swift in Sources */,
 				24E499C222EC32B6004A33DD /* MagentoSDK.swift in Sources */,
 				24E499DD22EC46FE004A33DD /* CustomAttribute.swift in Sources */,
 				24E499D722EC44B3004A33DD /* Customer.swift in Sources */,
+				24E499E922EF5514004A33DD /* Request.swift in Sources */,
+				24E499EB22EF551C004A33DD /* Response.swift in Sources */,
 				24E499D422EC43CA004A33DD /* Customers.swift in Sources */,
 				24E499CF22EC4307004A33DD /* UserEndpoint.swift in Sources */,
 				24E499E122EC4877004A33DD /* CompanyAttribute.swift in Sources */,
