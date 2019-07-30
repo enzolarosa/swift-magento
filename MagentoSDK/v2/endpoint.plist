@@ -4,6 +4,8 @@
 <dict>
 	<key>host</key>
 	<string>https://mag.enzolarosa.dev/index.php/rest</string>
+	<key>tokenFormat</key>
+	<string>Bearer {token}</string>
 	<key>v2</key>
 	<dict>
 		<key>GuestEndpoint</key>
@@ -21,7 +23,7 @@
 			</dict>
 			<key>Integration</key>
 			<dict>
-				<key>Customer Token</key>
+				<key>CustomerToken</key>
 				<dict>
 					<key>desc</key>
 					<string>Create access token for admin given the customer credentials.</string>
@@ -30,7 +32,7 @@
 					<key>method</key>
 					<string>post</string>
 				</dict>
-				<key>Admin Token</key>
+				<key>AdminToken</key>
 				<dict>
 					<key>desc</key>
 					<string>Create access token for admin given the admin credentials.</string>
@@ -69,49 +71,49 @@
 			</dict>
 			<key>GuestCarts</key>
 			<dict>
-				<key>Get Cart Total with Shipping</key>
+				<key>GetCartTotalWithShipping</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/totals-information</string>
 					<key>method</key>
 					<string>post</string>
 				</dict>
-				<key>Get Cart Total</key>
+				<key>GetCartTotal</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/totals</string>
 					<key>method</key>
 					<string>get</string>
 				</dict>
-				<key>Get Shipping Methods</key>
+				<key>GetShippingMethods</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/shipping-methods</string>
 					<key>method</key>
 					<string>get</string>
 				</dict>
-				<key>Shipping Information</key>
+				<key>ShippingInformation</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/shipping-information</string>
 					<key>method</key>
 					<string>post</string>
 				</dict>
-				<key>Set Payment Information</key>
+				<key>SetPaymentInformation</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/set-payment-information</string>
 					<key>method</key>
 					<string>post</string>
 				</dict>
-				<key>Set Payment Cart</key>
+				<key>SetPaymentCart</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/selected-payment-method</string>
 					<key>method</key>
 					<string>put</string>
 				</dict>
-				<key>Get Payment Cart</key>
+				<key>GetPaymentCart</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/selected-payment-method</string>
@@ -125,21 +127,21 @@
 					<key>method</key>
 					<string>post</string>
 				</dict>
-				<key>Get Available Payment</key>
+				<key>GetAvailablePayment</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/payment-methods</string>
 					<key>method</key>
 					<string>get</string>
 				</dict>
-				<key>Get Payment</key>
+				<key>GetPayment</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/payment-information</string>
 					<key>method</key>
 					<string>get</string>
 				</dict>
-				<key>Set Payment</key>
+				<key>SetPayment</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/payment-information</string>
@@ -153,14 +155,14 @@
 					<key>method</key>
 					<string>put</string>
 				</dict>
-				<key>Add Update Item</key>
+				<key>AddUpdateItem</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/items/{itemId}</string>
 					<key>method</key>
 					<string>put</string>
 				</dict>
-				<key>Add Update Items</key>
+				<key>AddUpdateItems</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/items</string>
@@ -174,49 +176,49 @@
 					<key>method</key>
 					<string>get</string>
 				</dict>
-				<key>Set Gift Message</key>
+				<key>SetGiftMessage</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/gift-message/{itemId}</string>
 					<key>method</key>
 					<string>post</string>
 				</dict>
-				<key>Get Gift Message</key>
+				<key>GetGiftMessage</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/gift-message/{itemId}</string>
 					<key>method</key>
 					<string>get</string>
 				</dict>
-				<key>Add Gift Message</key>
+				<key>AddGiftMessage</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/gift-message</string>
 					<key>method</key>
 					<string>post</string>
 				</dict>
-				<key>Gift Message</key>
+				<key>GiftMessage</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/gift-message</string>
 					<key>method</key>
 					<string>get</string>
 				</dict>
-				<key>Estimate Shipping</key>
+				<key>EstimateShipping</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/estimate-shipping-methods</string>
 					<key>method</key>
 					<string>post</string>
 				</dict>
-				<key>Delivery Option</key>
+				<key>DeliveryOption</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/delivery-option</string>
 					<key>method</key>
 					<string>post</string>
 				</dict>
-				<key>Add Coupons</key>
+				<key>AddCoupons</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/coupons/{couponCode}</string>
@@ -230,78 +232,78 @@
 					<key>method</key>
 					<string>get</string>
 				</dict>
-				<key>Delete Coupons</key>
+				<key>DeleteCoupons</key>
 				<dict>
 					<key>method</key>
 					<string>delete</string>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/coupons</string>
 				</dict>
-				<key>Collection Point Select</key>
+				<key>CollectionPointSelect</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/collection-point/select</string>
 					<key>method</key>
 					<string>post</string>
 				</dict>
-				<key>Collection Point Result</key>
+				<key>CollectionPointResult</key>
 				<dict>
 					<key>method</key>
 					<string>get</string>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/collection-point/search-result</string>
 				</dict>
-				<key>Delete Collection Point Search</key>
+				<key>DeleteCollectionPointSearch</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/collection-point/search-request</string>
 					<key>method</key>
 					<string>delete</string>
 				</dict>
-				<key>Collection Point Search</key>
+				<key>CollectionPointSearch</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/collection-point/search-request</string>
 					<key>method</key>
 					<string>put</string>
 				</dict>
-				<key>Collect Total</key>
+				<key>CollectTotal</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/collect-totals</string>
 					<key>method</key>
 					<string>put</string>
 				</dict>
-				<key>Checkout Pickup Location</key>
+				<key>CheckoutPickupLocation</key>
 				<dict>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/checkout-pickup-location/select</string>
 					<key>method</key>
 					<string>post</string>
 				</dict>
-				<key>Checkout Fields</key>
+				<key>CheckoutFields</key>
 				<dict>
 					<key>method</key>
 					<string>post</string>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/checkout-fields</string>
 				</dict>
-				<key>Checkout Collection Point</key>
-				<dict>
+				<key>CheckoutCollectionPoint</key>
+				<dict><key>desc</key><string>Select a given collection point for checkout.</string>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/checkout-collection-point/select</string>
 					<key>method</key>
 					<string>post</string>
 				</dict>
-				<key>Billing Address</key>
-				<dict>
+				<key>BillingAddress</key>
+				<dict><key>desc</key><string>Assign a specified billing address to a specified cart.</string>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/billing-address</string>
 					<key>method</key>
 					<string>post</string>
 				</dict>
-				<key>Get Billing Address</key>
-				<dict>
+				<key>GetBillingAddress</key>
+				<dict><key>desc</key><string>Return the billing address for a specified quote.</string>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}/billing-address</string>
 					<key>method</key>
@@ -309,15 +311,18 @@
 				</dict>
 				<key>GuestCart</key>
 				<dict>
+					<key>desc</key><string>Enable a guest user to return information for a specified cart.</string>
 					<key>link</key>
 					<string>/V1/guest-carts/{cartId}</string>
 					<key>method</key>
 					<string>get</string>
 				</dict>
+				<key>GuestCarts</key>
+				<dict><key>desc</key><string>Enable an customer or guest user to create an empty cart and quote for an anonymous customer.</string>
 				<key>link</key>
 				<string>/V1/guest-carts</string>
 				<key>method</key>
-				<string>post</string>
+				<string>post</string></dict>
 			</dict>
 			<key>Directory</key>
 			<dict>
@@ -345,7 +350,7 @@
 			</dict>
 			<key>Customers</key>
 			<dict>
-				<key>Reset Link Token</key>
+				<key>ResetLinkToken</key>
 				<dict>
 					<key>desc</key>
 					<string>Check if password reset token is valid.</string>
@@ -354,7 +359,7 @@
 					<key>method</key>
 					<string>get</string>
 				</dict>
-				<key>Reset Password</key>
+				<key>ResetPassword</key>
 				<dict>
 					<key>desc</key>
 					<string>Reset customer password.</string>
@@ -381,7 +386,7 @@
 					<key>method</key>
 					<string>post</string>
 				</dict>
-				<key>Create Customer</key>
+				<key>CreateCustomer</key>
 				<dict>
 					<key>desc</key>
 					<string>Create customer account. Perform necessary business operations like sending email.</string>
@@ -457,7 +462,7 @@
 			<string>GuestEndpoint</string>
 			<key>Carts</key>
 			<dict>
-				<key>Set Mine</key>
+				<key>SetMine</key>
 				<dict>
 					<key>desc</key>
 					<string>Save quote</string>
@@ -466,7 +471,7 @@
 					<key>link</key>
 					<string>/V1/carts/mine</string>
 				</dict>
-				<key>Get Mine</key>
+				<key>GetMine</key>
 				<dict>
 					<key>desc</key>
 					<string>Returns information for the cart for a specified customer.</string>
@@ -475,7 +480,7 @@
 					<key>link</key>
 					<string>/V1/carts/mine</string>
 				</dict>
-				<key>Set Mine Balance</key>
+				<key>SetMineBalance</key>
 				<dict>
 					<key>desc</key>
 					<string>Apply store credit</string>
@@ -484,7 +489,7 @@
 					<key>link</key>
 					<string>/V1/carts/mine/balance/apply</string>
 				</dict>
-				<key>Mine check Gift Card</key>
+				<key>MineCheckGiftCard</key>
 				<dict>
 					<key>desc</key>
 					<string>Check gift card balance if applied to given cart.</string>
@@ -493,7 +498,7 @@
 					<key>link</key>
 					<string>/V1/carts/mine/checkGiftCard/{giftCardCode}</string>
 				</dict>
-				<key>Mine checkout collection point select</key>
+				<key>MineCheckoutCollectionPointSelect</key>
 				<dict>
 					<key>desc</key>
 					<string>Select a given collection point for checkout.</string>
@@ -502,14 +507,14 @@
 					<key>link</key>
 					<string>/V1/carts/mine/checkout-collection-point/select</string>
 				</dict>
-				<key>Mine checkout fields</key>
+				<key>MineCheckoutFields</key>
 				<dict>
 					<key>method</key>
 					<string>post</string>
 					<key>link</key>
 					<string>/V1/carts/mine/checkout-fields</string>
 				</dict>
-				<key>Mine checkout pickup location select</key>
+				<key>MineCheckoutPickupLocationSelect</key>
 				<dict>
 					<key>desc</key>
 					<string>Select a given pickup location for checkout.</string>
@@ -518,7 +523,7 @@
 					<key>link</key>
 					<string>/V1/carts/mine/checkout-pickup-location/select</string>
 				</dict>
-				<key>Mine Collect Total</key>
+				<key>MineCollectTotal</key>
 				<dict>
 					<key>desc</key>
 					<string>Set shipping/billing methods and additional data for cart and collect totals.</string>
@@ -527,7 +532,7 @@
 					<key>link</key>
 					<string>/V1/carts/mine/collect-totals</string>
 				</dict>
-				<key>Mine Collect Point Search Request</key>
+				<key>MineCollectPointSearchRequest</key>
 				<dict>
 					<key>desc</key>
 					<string>Save a customer&apos;s search for collection points.</string>
@@ -536,7 +541,7 @@
 					<key>link</key>
 					<string>/V1/carts/mine/collection-point/search-request</string>
 				</dict>
-				<key>Delete Mine Collect Point Search Request</key>
+				<key>DeleteMineCollectPointSearchRequest</key>
 				<dict>
 					<key>desc</key>
 					<string>Delete a customer&apos;s search for collection points.</string>
@@ -545,7 +550,7 @@
 					<key>link</key>
 					<string>/V1/carts/mine/collection-point/search-request</string>
 				</dict>
-				<key>Mine Collect Point Search Result</key>
+				<key>MineCollectPointSearchResult</key>
 				<dict>
 					<key>desc</key>
 					<string>Retrieve collection points matching the customer&apos;s search parameters.</string>
@@ -554,14 +559,14 @@
 					<key>link</key>
 					<string>/V1/carts/mine/collection-point/search-result</string>
 				</dict>
-				<key>Mine Collect Point Select</key>
+				<key>MineCollectPointSelect</key>
 				<dict>
 					<key>method</key>
 					<string>post</string>
 					<key>link</key>
 					<string>/V1/carts/mine/collection-point/select</string>
 				</dict>
-				<key>Mine Delivery Option</key>
+				<key>MineDeliveryOption</key>
 				<dict>
 					<key>desc</key>
 					<string>Handle selected delivery option.</string>
@@ -570,7 +575,7 @@
 					<key>link</key>
 					<string>/V1/carts/mine/delivery-option</string>
 				</dict>
-				<key>Set Mine Payment Information</key>
+				<key>SetMinePaymentInformation</key>
 				<dict>
 					<key>desc</key>
 					<string>Set payment information and place order for a specified cart.</string>
@@ -579,7 +584,7 @@
 					<key>link</key>
 					<string>/V1/carts/mine/payment-information</string>
 				</dict>
-				<key>Get Mine Payment Information</key>
+				<key>GetMinePaymentInformation</key>
 				<dict>
 					<key>desc</key>
 					<string>Get payment information</string>
@@ -588,14 +593,14 @@
 					<key>link</key>
 					<string>/V1/carts/mine/payment-information</string>
 				</dict>
-				<key>Mine Pickup Location Select</key>
+				<key>MinePickupLocationSelect</key>
 				<dict>
 					<key>method</key>
 					<string>post</string>
 					<key>link</key>
 					<string>/V1/carts/mine/pickup-location/select</string>
 				</dict>
-				<key>Mine Set Payment Information</key>
+				<key>MineSetPaymentInformation</key>
 				<dict>
 					<key>desc</key>
 					<string>Set payment information for a specified cart.</string>
@@ -625,7 +630,7 @@
 					<key>link</key>
 					<string>/V1/customers/me</string>
 				</dict>
-				<key>Change Password</key>
+				<key>ChangePassword</key>
 				<dict>
 					<key>desc</key>
 					<string>Change customer password.</string>
@@ -635,9 +640,9 @@
 					<string>/V1/customers/me/password</string>
 				</dict>
 			</dict>
-			<key>Negotiable Carts</key>
+			<key>NegotiableCarts</key>
 			<dict>
-				<key>Get Negotiable Cart Billing Address</key>
+				<key>GetNegotiableCartBillingAddress</key>
 				<dict>
 					<key>desc</key>
 					<string>Returns the billing address for a specified quote.</string>
@@ -646,7 +651,7 @@
 					<key>link</key>
 					<string>/V1/negotiable-carts/{cartId}/billing-address</string>
 				</dict>
-				<key>Set Negotiable Cart Billing Address</key>
+				<key>SetNegotiableCartBillingAddress</key>
 				<dict>
 					<key>desc</key>
 					<string>Assigns a specified billing address to a specified cart.</string>
@@ -655,7 +660,7 @@
 					<key>link</key>
 					<string>/V1/negotiable-carts/{cartId}/billing-address</string>
 				</dict>
-				<key>Delete Negotiable Cart Coupons</key>
+				<key>DeleteNegotiableCartCoupons</key>
 				<dict>
 					<key>desc</key>
 					<string>Deletes a coupon from a specified cart.</string>
@@ -664,7 +669,7 @@
 					<key>link</key>
 					<string>/V1/negotiable-carts/{cartId}/coupons</string>
 				</dict>
-				<key>Negotiable Cart Add Coupons</key>
+				<key>NegotiableCartAddCoupons</key>
 				<dict>
 					<key>desc</key>
 					<string>Adds a coupon by code to a specified cart.</string>
@@ -673,7 +678,7 @@
 					<key>link</key>
 					<string>/V1/negotiable-carts/{cartId}/coupons/{couponCode}</string>
 				</dict>
-				<key>Negotiable Cart Estimate Shipping</key>
+				<key>NegotiableCartEstimateShipping</key>
 				<dict>
 					<key>desc</key>
 					<string>Estimate shipping by address and return list of available shipping methods</string>
@@ -682,7 +687,7 @@
 					<key>link</key>
 					<string>/V1/negotiable-carts/{cartId}/estimate-shipping-methods</string>
 				</dict>
-				<key>Negotiable Cart Estimate Shipping by Address Id</key>
+				<key>NegotiableCartEstimateShippingByAddressId</key>
 				<dict>
 					<key>desc</key>
 					<string>Estimate shipping</string>
@@ -691,14 +696,14 @@
 					<key>link</key>
 					<string>/V1/negotiable-carts/{cartId}/estimate-shipping-methods-by-address-id</string>
 				</dict>
-				<key>Negotiable Cart Gift Card</key>
+				<key>NegotiableCartGiftCard</key>
 				<dict>
 					<key>method</key>
 					<string>post</string>
 					<key>link</key>
 					<string>/V1/negotiable-carts/{cartId}/giftCards</string>
 				</dict>
-				<key>Negotiable Cart Delete Gift Card</key>
+				<key>NegotiableCartDeleteGiftCard</key>
 				<dict>
 					<key>desc</key>
 					<string>Remove GiftCard Account entity</string>
@@ -707,7 +712,7 @@
 					<key>link</key>
 					<string>/V1/negotiable-carts/{cartId}/giftCards/{giftCardCode}</string>
 				</dict>
-				<key>Negotiable Cart Set Payment Information</key>
+				<key>NegotiableCartSetPaymentInformation</key>
 				<dict>
 					<key>desc</key>
 					<string>Set payment information and place order for a specified cart.</string>
@@ -716,7 +721,7 @@
 					<key>link</key>
 					<string>/V1/negotiable-carts/{cartId}/payment-information</string>
 				</dict>
-				<key>Negotiable Cart Get Payment Information</key>
+				<key>NegotiableCartGetPaymentInformation</key>
 				<dict>
 					<key>desc</key>
 					<string>Get payment information.</string>
@@ -725,7 +730,7 @@
 					<key>link</key>
 					<string>/V1/negotiable-carts/{cartId}/payment-information</string>
 				</dict>
-				<key>Negotiable Cart Set Payment Information for Cart</key>
+				<key>NegotiableCartSetPaymentInformationforCart</key>
 				<dict>
 					<key>desc</key>
 					<string>Set payment information for a specified cart.</string>
@@ -734,14 +739,14 @@
 					<key>link</key>
 					<string>/V1/negotiable-carts/{cartId}/set-payment-information</string>
 				</dict>
-				<key>Negotiable Cart Set Shipping Information</key>
+				<key>NegotiableCartSetShippingInformation</key>
 				<dict>
 					<key>method</key>
 					<string>post</string>
 					<key>link</key>
 					<string>/V1/negotiable-carts/{cartId}/shipping-information</string>
 				</dict>
-				<key>Negotiable Cart Totals</key>
+				<key>NegotiableCartTotals</key>
 				<dict>
 					<key>desc</key>
 					<string>Returns quote totals data for a specified cart.</string>
@@ -751,9 +756,9 @@
 					<string>/V1/negotiable-carts/{cartId}/totals</string>
 				</dict>
 			</dict>
-			<key>Requisition Lists</key>
+			<key>RequisitionLists</key>
 			<dict>
-				<key>Set Requisition Lists</key>
+				<key>SetRequisitionLists</key>
 				<dict>
 					<key>desc</key>
 					<string>Save Requisition List</string>
@@ -765,7 +770,7 @@
 			</dict>
 			<key>Reward</key>
 			<dict>
-				<key>Use Reward</key>
+				<key>UseReward</key>
 				<dict>
 					<key>desc</key>
 					<string>Set reward points to quote</string>
@@ -780,25 +785,6 @@
 		<dict>
 			<key>rif</key>
 			<string>https://devdocs.magento.com/redoc/2.3/admin-rest-api.html</string>
-		</dict>
-		<key>Authentication </key>
-		<dict>
-			<key>Token Format</key>
-			<string>Bearer {token}</string>
-			<key>Get Admin Token</key>
-			<dict>
-				<key>link</key>
-				<string>/V1/integration/admin/token</string>
-				<key>method</key>
-				<string>post</string>
-			</dict>
-			<key>Get Customer Token</key>
-			<dict>
-				<key>link</key>
-				<string>/V1/integration/customer/token</string>
-				<key>method</key>
-				<string>post</string>
-			</dict>
 		</dict>
 	</dict>
 </dict>
