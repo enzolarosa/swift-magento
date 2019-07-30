@@ -27,13 +27,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		24E499BC22EC32B6004A33DD /* CopyFiles */ = {
+		24E499BC22EC32B6004A33DD /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -95,13 +96,9 @@
 		24E499C022EC32B6004A33DD /* MagentoSDK */ = {
 			isa = PBXGroup;
 			children = (
-				24E499EC22EF562C004A33DD /* endpoint.plist */,
+				24E499ED22F04621004A33DD /* Base */,
 				24E499CB22EC4288004A33DD /* v2 */,
 				24E499C122EC32B6004A33DD /* MagentoSDK.swift */,
-				24E499C922EC333E004A33DD /* Connection.swift */,
-				24E499E622EF550A004A33DD /* Endpoint.swift */,
-				24E499E822EF5514004A33DD /* Request.swift */,
-				24E499EA22EF551C004A33DD /* Response.swift */,
 			);
 			path = MagentoSDK;
 			sourceTree = "<group>";
@@ -109,6 +106,7 @@
 		24E499CB22EC4288004A33DD /* v2 */ = {
 			isa = PBXGroup;
 			children = (
+				24E499EC22EF562C004A33DD /* endpoint.plist */,
 				24E499D522EC449D004A33DD /* Model */,
 				24E499D222EC43BA004A33DD /* Guest */,
 				24E499CC22EC42A6004A33DD /* GuestEndpoint.swift */,
@@ -156,6 +154,17 @@
 			path = Request;
 			sourceTree = "<group>";
 		};
+		24E499ED22F04621004A33DD /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				24E499EA22EF551C004A33DD /* Response.swift */,
+				24E499E822EF5514004A33DD /* Request.swift */,
+				24E499E622EF550A004A33DD /* Endpoint.swift */,
+				24E499C922EC333E004A33DD /* Connection.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		2EBD2FADAB0C994B535AC75D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -183,7 +192,7 @@
 				6ADC102F37CFB5F862DA8107 /* [CP] Check Pods Manifest.lock */,
 				24E499BA22EC32B6004A33DD /* Sources */,
 				24E499BB22EC32B6004A33DD /* Frameworks */,
-				24E499BC22EC32B6004A33DD /* CopyFiles */,
+				24E499BC22EC32B6004A33DD /* Copy Files */,
 			);
 			buildRules = (
 			);

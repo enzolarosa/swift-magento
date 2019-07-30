@@ -9,14 +9,63 @@
 import Foundation
 
 class CompanyAttribute{
+    
+    var companyId:Int{
+        set {
+            
+        }
+        get {
+            return 0;
+        }
+    };
+    var customerId:Int{
+        set {
+            
+        }
+        get {
+            return 0;
+        }
+    };
+    var extension_attributes:Any{
+        set {
+            
+        }
+        get {
+            return "";
+        }
+    };
+    var jobTitle:String{
+        set {
+            
+        }
+        get {
+            return "";
+        }
+    };
+    var status:Int{
+        set {
+            
+        }
+        get {
+            return 0;
+        }
+    };
+    var telephone:String{
+        set {
+            
+        }
+        get {
+            return "";
+        }
+    };
+    
     init(){
-        
+        self.companyId=0;
+        self.customerId=0;
+        self.extension_attributes="";
+        self.jobTitle="";
+        self.status=0;
+        self.telephone="";
     }
-    var companyId:Int;
-    var customerId:Int;
-    var extension_attributes:Any;
-    var jobTitle:String;
-    var status:Int;
-    var telephone:String;
     
 }

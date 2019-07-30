@@ -11,18 +11,17 @@ import Alamofire
 
 class Connection{
     
-    var base:String;
+    var base:String    {
+        set {
+            
+        }
+        get {
+            return "";
+        }
+    };
     
     init(base:String) {
        self.base=base
-    }
-    
-    public func setBase(url:String){
-        self.base=url
-    }
-    
-    public func getBase()->String{
-        return self.base
     }
     
     private func execute(endpoint: String) -> Array<Any> {

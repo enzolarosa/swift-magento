@@ -10,12 +10,44 @@ import Foundation
 
 class Region{
     
-    var extensionAttributes:Any;
-    var region:String;
-    var regionCode:String;
-    var regionId:Int;
+    var extensionAttributes:Any    {
+        set {
+            
+        }
+        get {
+            return "";
+        }
+    };
+    var region:String    {
+        set {
+            
+        }
+        get {
+            return "";
+        }
+    };
+    var regionCode:String    {
+        set {
+            
+        }
+        get {
+            return "";
+        }
+    };
+    var regionId:Int    {
+        set {
+            
+        }
+        get {
+            return 0;
+        }
+    };
+    
     init(){
-        
+        self.extensionAttributes="";
+        self.region="";
+        self.regionId=0;
+        self.regionCode="";
     }
 }
 

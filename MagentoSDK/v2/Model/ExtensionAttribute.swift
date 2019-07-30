@@ -9,13 +9,46 @@
 import Foundation
 
 class ExtensionAttribute{
-    init(){
-        
-    }
     
-    var amazonId:String;
-    var isSubscribed:Bool;
-    var vertexCustomerCode:String;
-    var companyAttributes:CompanyAttribute;
+    
+    var amazonId:String  {
+        set {
+            
+        }
+        get {
+            return "";
+        }
+    };
+    var isSubscribed:Bool  {
+        set {
+            
+        }
+        get {
+            return true;
+        }
+    };
+    var vertexCustomerCode:String  {
+        set {
+            
+        }
+        get {
+            return "";
+        }
+    };
+    var companyAttributes:CompanyAttribute  {
+        set {
+            
+        }
+        get {
+            return CompanyAttribute();
+        }
+    };
+    
+    init(){
+        self.amazonId="";
+        self.isSubscribed=true;
+        self.vertexCustomerCode="";
+        self.companyAttributes=CompanyAttribute();
+    }
     
 }

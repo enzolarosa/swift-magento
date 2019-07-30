@@ -9,9 +9,24 @@
 import Foundation
 
 class CustomAttribute{
+    var attributeCode:String    {
+        set {
+            
+        }
+        get {
+            return "";
+        }
+    };
+    var value:String    {
+        set {
+            
+        }
+        get {
+            return "";
+        }
+    };
     init(){
-        
+        self.attributeCode="";
+        self.value="";
     }
-    var attributeCode:String;
-    var value:String;
 }
