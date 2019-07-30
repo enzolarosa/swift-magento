@@ -18,5 +18,13 @@ class Token: Response {
             return token;
         }
     }
+    var message:String{
+        set{
+            message = newValue
+        }
+        get{
+            return message
+        }
+    }
     
 }
