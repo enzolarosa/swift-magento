@@ -1,0 +1,9 @@
+
+/* Class = "UIButton"; normalTitle = "Login"; ObjectID = "00N-Ue-QMm"; */
+"00N-Ue-QMm.normalTitle" = "Login";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "GXQ-RP-Zaf"; */
+"GXQ-RP-Zaf.text" = "Password";
+
+/* Class = "UILabel"; text = "Username"; ObjectID = "beS-nb-EKY"; */
+"beS-nb-EKY.text" = "Username";
