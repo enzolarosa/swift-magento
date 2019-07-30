@@ -8,7 +8,8 @@
 
 import Foundation
 
-class CreateCustomers{
+class CreateCustomers: Request{
+    
     var customer:Customer;
     var password:String;
     var redirectUrl:String;

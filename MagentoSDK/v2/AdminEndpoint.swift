@@ -8,10 +8,6 @@
 
 import Foundation
 
-class AdminEndpoint{
+class AdminEndpoint:Endpoint{
     
-    init() {
-        
-    }
-
 }

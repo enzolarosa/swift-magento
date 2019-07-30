@@ -8,11 +8,6 @@
 
 import Foundation
 
-class GuestEndpoint{
-    
-    
-    init(){
-        
-    }
+class GuestEndpoint:Endpoint{
     
 }

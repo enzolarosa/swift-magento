@@ -1,13 +1,13 @@
 //
-//  UserEndpoint.swift
+//  Amazon.swift
 //  MagentoSDK
 //
-//  Created by Vincenzo La Rosa on 27/07/2019.
+//  Created by Vincenzo La Rosa on 30/07/2019.
 //  Copyright © 2019 Vincenzo La Rosa. All rights reserved.
 //
 
 import Foundation
 
-class UserEndpoint:Endpoint{
+class Amazon:GuestEndpoint{
     
 }

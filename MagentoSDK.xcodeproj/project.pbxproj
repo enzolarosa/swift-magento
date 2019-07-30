@@ -23,6 +23,17 @@
 		24E499E722EF550A004A33DD /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499E622EF550A004A33DD /* Endpoint.swift */; };
 		24E499E922EF5514004A33DD /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499E822EF5514004A33DD /* Request.swift */; };
 		24E499EB22EF551C004A33DD /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E499EA22EF551C004A33DD /* Response.swift */; };
+		24E49A2E22F0CDC3004A33DD /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E49A2D22F0CDC3004A33DD /* Token.swift */; };
+		24E49A3022F0CDF1004A33DD /* CustomerLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E49A2F22F0CDF1004A33DD /* CustomerLogin.swift */; };
+		24E49A3222F0CE75004A33DD /* AdminLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E49A3122F0CE75004A33DD /* AdminLogin.swift */; };
+		24E49A3422F0CF24004A33DD /* GiftRegistry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E49A3322F0CF24004A33DD /* GiftRegistry.swift */; };
+		24E49A3622F0CF49004A33DD /* ProductRenderInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E49A3522F0CF49004A33DD /* ProductRenderInfo.swift */; };
+		24E49A3822F0CF61004A33DD /* WorldpayGuestCarts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E49A3722F0CF61004A33DD /* WorldpayGuestCarts.swift */; };
+		24E49A3A22F0CF75004A33DD /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E49A3922F0CF75004A33DD /* Search.swift */; };
+		24E49A3C22F0CF8D004A33DD /* GuestCarts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E49A3B22F0CF8D004A33DD /* GuestCarts.swift */; };
+		24E49A3E22F0CFA6004A33DD /* Directory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E49A3D22F0CFA6004A33DD /* Directory.swift */; };
+		24E49A4022F0CFCA004A33DD /* Carts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E49A3F22F0CFCA004A33DD /* Carts.swift */; };
+		24E49A4222F0CFE3004A33DD /* Amazon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24E49A4122F0CFE3004A33DD /* Amazon.swift */; };
 		5CC93D1A262F4AC957148BFA /* Pods_MagentoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B33B6AC6DE6F8A48CA5792D /* Pods_MagentoSDK.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,6 +71,17 @@
 		24E499E822EF5514004A33DD /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		24E499EA22EF551C004A33DD /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		24E499EC22EF562C004A33DD /* endpoint.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = endpoint.plist; sourceTree = "<group>"; };
+		24E49A2D22F0CDC3004A33DD /* Token.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		24E49A2F22F0CDF1004A33DD /* CustomerLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerLogin.swift; sourceTree = "<group>"; };
+		24E49A3122F0CE75004A33DD /* AdminLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdminLogin.swift; sourceTree = "<group>"; };
+		24E49A3322F0CF24004A33DD /* GiftRegistry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiftRegistry.swift; sourceTree = "<group>"; };
+		24E49A3522F0CF49004A33DD /* ProductRenderInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRenderInfo.swift; sourceTree = "<group>"; };
+		24E49A3722F0CF61004A33DD /* WorldpayGuestCarts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldpayGuestCarts.swift; sourceTree = "<group>"; };
+		24E49A3922F0CF75004A33DD /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		24E49A3B22F0CF8D004A33DD /* GuestCarts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuestCarts.swift; sourceTree = "<group>"; };
+		24E49A3D22F0CFA6004A33DD /* Directory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Directory.swift; sourceTree = "<group>"; };
+		24E49A3F22F0CFCA004A33DD /* Carts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carts.swift; sourceTree = "<group>"; };
+		24E49A4122F0CFE3004A33DD /* Amazon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amazon.swift; sourceTree = "<group>"; };
 		88273FD37B217F7949C82697 /* Pods-MagentoSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MagentoSDK.release.xcconfig"; path = "Target Support Files/Pods-MagentoSDK/Pods-MagentoSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -106,12 +128,15 @@
 		24E499CB22EC4288004A33DD /* v2 */ = {
 			isa = PBXGroup;
 			children = (
-				24E499EC22EF562C004A33DD /* endpoint.plist */,
+				24E49A4422F0D000004A33DD /* Admin */,
+				24E49A4322F0CFF6004A33DD /* Customer */,
+				24E49A2A22F0CD35004A33DD /* Authentication */,
 				24E499D522EC449D004A33DD /* Model */,
 				24E499D222EC43BA004A33DD /* Guest */,
 				24E499CC22EC42A6004A33DD /* GuestEndpoint.swift */,
 				24E499CE22EC4307004A33DD /* UserEndpoint.swift */,
 				24E499D022EC4313004A33DD /* AdminEndpoint.swift */,
+				24E499EC22EF562C004A33DD /* endpoint.plist */,
 			);
 			path = v2;
 			sourceTree = "<group>";
@@ -122,6 +147,14 @@
 				24E499E322EC4927004A33DD /* Request */,
 				24E499E222EC4920004A33DD /* Response */,
 				24E499D322EC43CA004A33DD /* Customers.swift */,
+				24E49A3322F0CF24004A33DD /* GiftRegistry.swift */,
+				24E49A3522F0CF49004A33DD /* ProductRenderInfo.swift */,
+				24E49A3722F0CF61004A33DD /* WorldpayGuestCarts.swift */,
+				24E49A3922F0CF75004A33DD /* Search.swift */,
+				24E49A3B22F0CF8D004A33DD /* GuestCarts.swift */,
+				24E49A3D22F0CFA6004A33DD /* Directory.swift */,
+				24E49A3F22F0CFCA004A33DD /* Carts.swift */,
+				24E49A4122F0CFE3004A33DD /* Amazon.swift */,
 			);
 			path = Guest;
 			sourceTree = "<group>";
@@ -163,6 +196,46 @@
 				24E499C922EC333E004A33DD /* Connection.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		24E49A2A22F0CD35004A33DD /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				24E49A2C22F0CDA7004A33DD /* Response */,
+				24E49A2B22F0CDA1004A33DD /* Request */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		24E49A2B22F0CDA1004A33DD /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				24E49A2F22F0CDF1004A33DD /* CustomerLogin.swift */,
+				24E49A3122F0CE75004A33DD /* AdminLogin.swift */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		24E49A2C22F0CDA7004A33DD /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				24E49A2D22F0CDC3004A33DD /* Token.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		24E49A4322F0CFF6004A33DD /* Customer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Customer;
+			sourceTree = "<group>";
+		};
+		24E49A4422F0D000004A33DD /* Admin */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Admin;
 			sourceTree = "<group>";
 		};
 		2EBD2FADAB0C994B535AC75D /* Pods */ = {
@@ -265,6 +338,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24E49A3C22F0CF8D004A33DD /* GuestCarts.swift in Sources */,
 				24E499E722EF550A004A33DD /* Endpoint.swift in Sources */,
 				24E499DB22EC463E004A33DD /* Region.swift in Sources */,
 				24E499D922EC4563004A33DD /* Addresses.swift in Sources */,
@@ -273,13 +347,23 @@
 				24E499DD22EC46FE004A33DD /* CustomAttribute.swift in Sources */,
 				24E499D722EC44B3004A33DD /* Customer.swift in Sources */,
 				24E499E922EF5514004A33DD /* Request.swift in Sources */,
+				24E49A4022F0CFCA004A33DD /* Carts.swift in Sources */,
+				24E49A3822F0CF61004A33DD /* WorldpayGuestCarts.swift in Sources */,
+				24E49A4222F0CFE3004A33DD /* Amazon.swift in Sources */,
 				24E499EB22EF551C004A33DD /* Response.swift in Sources */,
 				24E499D422EC43CA004A33DD /* Customers.swift in Sources */,
 				24E499CF22EC4307004A33DD /* UserEndpoint.swift in Sources */,
+				24E49A3222F0CE75004A33DD /* AdminLogin.swift in Sources */,
+				24E49A3E22F0CFA6004A33DD /* Directory.swift in Sources */,
+				24E49A3622F0CF49004A33DD /* ProductRenderInfo.swift in Sources */,
 				24E499E122EC4877004A33DD /* CompanyAttribute.swift in Sources */,
+				24E49A3A22F0CF75004A33DD /* Search.swift in Sources */,
 				24E499CA22EC333E004A33DD /* Connection.swift in Sources */,
 				24E499CD22EC42A6004A33DD /* GuestEndpoint.swift in Sources */,
 				24E499D122EC4313004A33DD /* AdminEndpoint.swift in Sources */,
+				24E49A3422F0CF24004A33DD /* GiftRegistry.swift in Sources */,
+				24E49A3022F0CDF1004A33DD /* CustomerLogin.swift in Sources */,
+				24E49A2E22F0CDC3004A33DD /* Token.swift in Sources */,
 				24E499E522EC4939004A33DD /* CreateCustomers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,11 +8,7 @@
 
 import Foundation
 
-class Customers{
-    
-    init(){
-        
-    }
+class Customers: GuestEndpoint{
     
     /**
      * Create customer account.
