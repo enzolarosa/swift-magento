@@ -14,7 +14,8 @@ class Customers: GuestEndpoint{
      * Create customer account.
      * Perform necessary business operations like sending email.
      */
-    public func createCustomers(){
+    public func createCustomers(request: CreateCustomer)->CreateCustomer {
         
     }
+    
 }
