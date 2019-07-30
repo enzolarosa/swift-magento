@@ -10,12 +10,9 @@ import Foundation
 
 class GuestEndpoint{
     
+    
     init(){
         
     }
-    
-    
-    
-    
     
 }

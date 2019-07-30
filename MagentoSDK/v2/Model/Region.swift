@@ -12,42 +12,42 @@ class Region{
     
     var extensionAttributes:Any    {
         set {
-            
+            extensionAttributes = newValue;
         }
         get {
-            return "";
+            return extensionAttributes;
         }
     };
     var region:String    {
         set {
-            
+            region = newValue;
         }
         get {
-            return "";
+            return region;
         }
     };
     var regionCode:String    {
         set {
-            
+            regionCode = newValue;
         }
         get {
-            return "";
+            return regionCode;
         }
     };
     var regionId:Int    {
         set {
-            
+            regionId = newValue;
         }
         get {
-            return 0;
+            return regionId;
         }
     };
     
     init(){
-        self.extensionAttributes="";
-        self.region="";
-        self.regionId=0;
-        self.regionCode="";
+        self.extensionAttributes = "";
+        self.region = "";
+        self.regionId = 0;
+        self.regionCode = "";
     }
 }
 

@@ -12,50 +12,50 @@ class CompanyAttribute{
     
     var companyId:Int{
         set {
-            
+           companyId = newValue;
         }
         get {
-            return 0;
+            return companyId;
         }
     };
     var customerId:Int{
         set {
-            
+            customerId = newValue;
         }
         get {
-            return 0;
+            return customerId;
         }
     };
     var extension_attributes:Any{
         set {
-            
+           extension_attributes = newValue;
         }
         get {
-            return "";
+            return extension_attributes;
         }
     };
     var jobTitle:String{
         set {
-            
+            jobTitle = newValue;
         }
         get {
-            return "";
+            return jobTitle;
         }
     };
     var status:Int{
         set {
-            
+            status = newValue;
         }
         get {
-            return 0;
+            return status;
         }
     };
     var telephone:String{
         set {
-            
+            telephone = newValue;
         }
         get {
-            return "";
+            return telephone;
         }
     };
     

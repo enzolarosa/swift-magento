@@ -11,18 +11,18 @@ import Foundation
 class CustomAttribute{
     var attributeCode:String    {
         set {
-            
+            attributeCode = newValue;
         }
         get {
-            return "";
+            return attributeCode;
         }
     };
     var value:String    {
         set {
-            
+            value = newValue;
         }
         get {
-            return "";
+            return value;
         }
     };
     init(){

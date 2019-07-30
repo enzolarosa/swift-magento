@@ -13,34 +13,34 @@ class ExtensionAttribute{
     
     var amazonId:String  {
         set {
-            
+           amazonId = newValue;
         }
         get {
-            return "";
+            return amazonId;
         }
     };
     var isSubscribed:Bool  {
         set {
-            
+            isSubscribed = newValue;
         }
         get {
-            return true;
+            return isSubscribed;
         }
     };
     var vertexCustomerCode:String  {
         set {
-            
+           vertexCustomerCode = newValue;
         }
         get {
-            return "";
+            return vertexCustomerCode;
         }
     };
     var companyAttributes:CompanyAttribute  {
         set {
-            
+            companyAttributes = newValue;
         }
         get {
-            return CompanyAttribute();
+            return companyAttributes;
         }
     };
     

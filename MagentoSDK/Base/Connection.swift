@@ -13,23 +13,22 @@ class Connection{
     
     var base:String    {
         set {
-            
+            base = newValue
         }
         get {
-            return "";
+            return base;
         }
     };
     
     init(base:String) {
-       self.base=base
+       self.base = base
     }
     
     private func execute(endpoint: String) -> Array<Any> {
-        print(self.getBase()+endpoint)
-        return [];
+       let response = Response()
+        
+        return response;
     }
     
-    public func call(endpoint:String){
-        _ = self.execute(endpoint: endpoint)
-    }
+    
 }

@@ -9,7 +9,9 @@
 import Foundation
 
 class AdminEndpoint{
+    
     init() {
+        
     }
 
 }
