@@ -12,27 +12,32 @@ class MagentoSDK {
     let userEndpoint:UserEndpoint;
     let adminEndpoint:AdminEndpoint;
     
-    var host:String;
+    var version:String   {
+        set {
+            version = newValue
+        }
+        get {
+            return version;
+        }
+    };
     
-    public func setHost(url:String){
-        self.host=url
-    }
+    var host:String   {
+        set {
+            host = newValue
+        }
+        get {
+            return host;
+        }
+    };
     
-    public func getHost()->String{
-        return self.host
-    }
-    
-    init(host:String){
+    init(host:String, version:String = "v2"){
         self.connection=Connection(base: host)
         self.guestEndpoint=GuestEndpoint()
         self.userEndpoint=UserEndpoint()
         self.adminEndpoint=AdminEndpoint()
 
         self.host = host
-    }
-    
-    public func testing (){
-        self.connection.call(endpoint: "user/login")
+        self.version = version
     }
 
 }

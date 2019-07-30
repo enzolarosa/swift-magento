@@ -10,7 +10,6 @@ import Foundation
 import Alamofire
 
 class Connection{
-    
     var base:String    {
         set {
             base = newValue
