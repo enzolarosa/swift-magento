@@ -939,6 +939,87 @@
 						<string>get</string>
 					</dict>
 				</dict>
+				<key>Transactions</key>
+				<dict>
+					<key>Transactions</key>
+					<dict>
+						<key>desc</key>
+						<string>Lists transactions that match specified search criteria. This call returns an array of objects, but detailed information about each object’s attributes might not be included. See https://devdocs.magento.com/codelinks/attributes.html#TransactionRepositoryInterface to determine which call to use to get detailed information about all attributes for an object.</string>
+						<key>link</key>
+						<string>/V1/transactions</string>
+						<key>method</key>
+						<string>get</string>
+					</dict>
+					<key>Transaction</key>
+					<dict>
+						<key>desc</key>
+						<string>Loads a specified transaction.</string>
+						<key>link</key>
+						<string>/V1/transactions/{id}</string>
+						<key>method</key>
+						<string>get</string>
+					</dict>
+				</dict>
+				<key>Temando</key>
+				<dict>
+					<key>RMAShipping</key>
+					<dict>
+						<key>desc</key>
+						<string>Assign platform shipment IDs to a core RMA entity.</string>
+						<key>link</key>
+						<string>/V1/temando/rma/{rmaId}/shipments</string>
+						<key>method</key>
+						<string>put</string>
+					</dict>
+				</dict>
+				<key>Team</key>
+				<dict>
+					<key>Teams</key>
+					<dict>
+						<key>desc</key>
+						<string>Returns the list of teams for the specified search criteria (team name or description).</string>
+						<key>link</key>
+						<string>/V1/team/</string>
+						<key>method</key>
+						<string>get</string>
+					</dict>
+					<key>TeamCompany</key>
+					<dict>
+						<key>desc</key>
+						<string>Create a team in the company structure.</string>
+						<key>link</key>
+						<string>/V1/team/{companyId}</string>
+						<key>method</key>
+						<string>post</string>
+					</dict>
+					<key>Team</key>
+					<dict>
+						<key>desc</key>
+						<string>Returns data for a team in the company, by entity id.</string>
+						<key>link</key>
+						<string>/V1/team/{teamId}</string>
+						<key>method</key>
+						<string>get</string>
+					</dict>
+					<key>DeleteTeam</key>
+					<dict>
+						<key>desc</key>
+						<string>Delete a team from the company structure.</string>
+						<key>link</key>
+						<string>/V1/team/{teamId}</string>
+						<key>method</key>
+						<string>delete</string>
+					</dict>
+					<key>UpdateTeam</key>
+					<dict>
+						<key>desc</key>
+						<string>Update a team in the company structure.</string>
+						<key>link</key>
+						<string>/V1/team/{teamId}</string>
+						<key>method</key>
+						<string>put</string>
+					</dict>
+				</dict>
 			</dict>
 		</dict>
 	</dict>
