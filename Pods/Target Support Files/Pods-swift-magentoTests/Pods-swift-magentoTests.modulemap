@@ -1,0 +1,6 @@
+framework module Pods_swift_magentoTests {
+  umbrella header "Pods-swift-magentoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
