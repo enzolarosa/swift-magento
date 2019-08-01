@@ -7,11 +7,17 @@
 //
 
 import Foundation
+import Bugsnag
 
-class MagentoSDK{
+class SwiftMagento{
     
     init(){
-        
+        Bugsnag.start(withApiKey: "ec01d209ce17b781d72634b35a2c58ff")
+
+    }
+    
+    private func report(exception:NSException){
+        Bugsnag.notify(exception)
     }
     
 }
