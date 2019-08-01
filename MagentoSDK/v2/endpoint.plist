@@ -1020,6 +1020,158 @@
 						<string>put</string>
 					</dict>
 				</dict>
+				<key>BundleProducts</key>
+				<dict>
+					<key>AddOption</key>
+					<dict>
+						<key>desc</key><string>Add new option for bundle product</string>
+						<key>link</key><string>/V1/bundle-products/options/add</string>
+						<key>method</key><string>post</string>
+					</dict>
+					<key>Types</key>
+					<dict>
+						<key>desc</key><string>Get all types for options for bundle products</string>
+						<key>link</key><string>/V1/bundle-products/options/types</string>
+						<key>method</key><string>get</string>
+					</dict>
+					<key>Option</key>
+					<dict>
+						<key>desc</key><string>Add new option for bundle product</string>
+						<key>link</key><string>/V1/bundle-products/options/{optionId}</string>
+						<key>method</key><string>put</string>
+					</dict>
+					<key>Children</key>
+					<dict>
+						<key>desc</key><string>Get all children for Bundle product</string>
+						<key>link</key><string>/V1/bundle-products/{productSku}/children</string>
+						<key>method</key><string>get</string>
+					</dict>
+					<key>Links</key>
+					<dict>
+						<key>link</key><string>/V1/bundle-products/{sku}/links/{id}</string>
+						<key>method</key><string>put</string>
+					</dict>
+					<key>LinkOption</key>
+					<dict>
+						<key>desc</key><string>Add child product to specified Bundle option by product sku</string>
+						<key>link</key><string>/V1/bundle-products/{sku}/links/{optionId}</string>
+						<key>method</key><string>post</string>
+					</dict>
+					<key>AllOption</key>
+					<dict>
+						<key>desc</key><string>Get all options for bundle product</string>
+						<key>link</key><string>/V1/bundle-products/{sku}/options/all</string>
+						<key>method</key><string>get</string>
+					</dict>
+					<key>ProductOption</key>
+					<dict>
+						<key>desc</key><string>Get option for bundle product</string>
+						<key>link</key><string>/V1/bundle-products/{sku}/options/{optionId}</string>
+						<key>method</key><string>get</string>
+					</dict>
+					<key>DeleteProductOption</key>
+					<dict>
+						<key>desc</key><string>Remove bundle option</string>
+						<key>link</key><string>/V1/bundle-products/{sku}/options/{optionId}</string>
+						<key>method</key><string>delete</string>
+					</dict>
+					<key>DeleteProductChildrenOption</key>
+					<dict>
+						<key>desc</key><string>Remove product from Bundle product option</string>
+						<key>link</key><string>/V1/bundle-products/{sku}/options/{optionId}/children/{childSku}</string>
+						<key>method</key><string>delete</string>
+					</dict>
+				</dict>
+				<key>Categories</key>
+				<dict>
+					<key>Categories</key>
+					<dict>
+						<key>desc</key><string>Create category service</string>
+						<key>link</key><string>/V1/categories</string>
+						<key>method</key><string>post</string>
+					</dict>
+					<key>GetCategories</key>
+					<dict>
+						<key>desc</key><string>Retrieve list of categories</string>
+						<key>link</key><string>/V1/categories</string>
+						<key>method</key><string>get</string>
+					</dict>
+					<key>CategoriesAttribute</key>
+					<dict>
+						<key>desc</key><string>Retrieve all attributes for entity type</string>
+						<key>link</key><string>/V1/categories/attributes</string>
+						<key>method</key><string>get</string>
+					</dict>
+					<key>CategoriesAttributeCode</key>
+					<dict>
+						<key>desc</key><string>Retrieve specific attribute</string>
+						<key>link</key><string>/V1/categories/attributes/{attributeCode}</string>
+						<key>method</key><string>get</string>
+					</dict>
+					<key>CategoriesAttributeCodeOption</key>
+					<dict>
+						<key>desc</key><string>Retrieve list of attribute options</string>
+						<key>link</key><string>/V1/categories/attributes/{attributeCode}/options</string>
+						<key>method</key><string>get</string>
+					</dict>
+					<key>CategoriesList</key>
+					<dict>
+						<key>desc</key><string>Get category list</string>
+						<key>link</key><string>/V1/categories/list</string>
+						<key>method</key><string>get</string>
+					</dict>
+					<key>DeleteCategory</key>
+					<dict>
+						<key>desc</key><string>Delete category by identifier</string>
+						<key>link</key><string>/V1/categories/{categoryId}</string>
+						<key>method</key><string>delete</string>
+					</dict>
+					<key>Category</key>
+					<dict>
+						<key>desc</key><string>Get info about category by category id</string>
+						<key>link</key><string>/V1/categories/{categoryId}</string>
+						<key>method</key><string>get</string>
+					</dict>
+					<key>MoveCategory</key>
+					<dict>
+						<key>desc</key><string>Move category</string>
+						<key>link</key><string>/V1/categories/{categoryId}/move</string>
+						<key>method</key><string>put</string>
+					</dict>
+					<key>CategoryProducts</key>
+					<dict>
+						<key>desc</key><string>Get products assigned to category</string>
+						<key>link</key><string>/V1/categories/{categoryId}/products</string>
+						<key>method</key><string>get</string>
+					</dict>
+					<key>CategoryAssignProducts</key>
+					<dict>
+						<key>desc</key><string>Assign a product to the required category</string>
+						<key>link</key><string>/V1/categories/{categoryId}/products</string>
+						<key>method</key><string>post</string>
+					</dict>
+					<key>CategoryUpdateAssignProducts</key>
+					<dict>
+						<key>desc</key><string>Assign a product to the required category</string>
+						<key>link</key><string>/V1/categories/{categoryId}/products</string>
+						<key>method</key><string>put</string>
+					</dict>
+					<key>CategoryRemoveProduct</key>
+					<dict>
+						<key>desc</key><string>Remove the product assignment from the category by category id and sku</string>
+						<key>link</key><string>/V1/categories/{categoryId}/products/{sku}</string>
+						<key>method</key><string>delete</string>
+					</dict>
+					<key>UpdateCategory</key>
+					<dict>
+						<key>desc</key><string>Create category service</string>
+						<key>link</key><string>/V1/categories/{id}</string>
+						<key>method</key><string>put</string>
+					</dict>
+
+
+				</dict>
+
 			</dict>
 		</dict>
 	</dict>
