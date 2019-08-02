@@ -1,4 +1,4 @@
-# SwiftMangeto
+# SwiftMagento
 
 **TODO:** Complete the readme
 
