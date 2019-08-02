@@ -1,0 +1,1464 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0194514898CC802FDF7E4B466D0AC8DB /* BSG_KSCrashReport.c in Sources */ = {isa = PBXBuildFile; fileRef = 0E05EDB54599BF53D5C8FE3F427385B6 /* BSG_KSCrashReport.c */; };
+		0992A129DE8A66F388D6933DA042488A /* BugsnagCrashSentry.m in Sources */ = {isa = PBXBuildFile; fileRef = FA7B5F5A9AAB009BF7A009EE0A2796F0 /* BugsnagCrashSentry.m */; };
+		0B84AE03B5BE1168DA2BF2B73846E5E5 /* BSG_KSString.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BB1185BDF63E9E4E8245CE4FE0DFDF5 /* BSG_KSString.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		0E6F16666BE9CA5AC639619900E82821 /* BSG_KSCrashContext.h in Headers */ = {isa = PBXBuildFile; fileRef = B5B1855796B40CF74488DF3816E18A53 /* BSG_KSCrashContext.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		10501E9E973D49778E1C12A55F11E7CE /* BugsnagCollections.h in Headers */ = {isa = PBXBuildFile; fileRef = 12D47572E06A258F4F5226E79C8E9ACC /* BugsnagCollections.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		1177F577D82A81AC6A8F2D4049779E4F /* BSG_KSCrashCallCompletion.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C095F41BF5C2F553FB622110F11843 /* BSG_KSCrashCallCompletion.m */; };
+		14E29990FB735987B74105697C9F96AF /* BugsnagSessionTrackingPayload.h in Headers */ = {isa = PBXBuildFile; fileRef = C361108615D54ABCC2324BF5A1F4A6B7 /* BugsnagSessionTrackingPayload.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		152569CDB0B15F00A847C554B6A2147A /* BSG_KSMach.c in Sources */ = {isa = PBXBuildFile; fileRef = 9D09ABC7F47D5520506E8E6BAE68FE0C /* BSG_KSMach.c */; };
+		16A910789E6EEBC8E1806BFCC1688F5B /* BSG_KSSignalInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = F29B295DCCC3C4EBC26B6D191AEC312A /* BSG_KSSignalInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		176D68C346C89E40EA4E1A8AD7793A98 /* Bugsnag-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6A02ED9DA2EE76F6A735323B0FCD392A /* Bugsnag-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1942F7D3B7722A5637C3FC0BE44B1E6C /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 767233EF1DCA48E1A96ADD0812B530C5 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C1131FFA3E58E104F0B7419779D12C2 /* Pods-swift-magentoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B6F98EC84EBDC31439D35F1B005D4ED /* Pods-swift-magentoTests-dummy.m */; };
+		1C3808176EB2A5D5C5E43102B9C1AC38 /* BSG_KSSystemInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F8BE8145CBA9CBA12CD91B6C6A8A2FCD /* BSG_KSSystemInfo.m */; };
+		1C9222159CCC3690A724B94A59624530 /* BugsnagErrorReportApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E3E637D918A2CC408B815C0F444A72B1 /* BugsnagErrorReportApiClient.m */; };
+		211766B0D6B918C5EA13661F457A5D36 /* Bugsnag.m in Sources */ = {isa = PBXBuildFile; fileRef = BD6C8646C204290739CEC9DBF581C88E /* Bugsnag.m */; };
+		21BD57C3D389BBC1A3A38211D46530E4 /* BSG_KSBacktrace.c in Sources */ = {isa = PBXBuildFile; fileRef = CB179E258477C0C8B3EF109D08623808 /* BSG_KSBacktrace.c */; };
+		2450379DBF509A7E625C03CDEC951F61 /* BSG_KSSystemInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FCFDBDADBC5D460E1BF68764BFEA5E5 /* BSG_KSSystemInfo.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		258873B16680C4DE2180E964A86D99BB /* BSGOutOfMemoryWatchdog.h in Headers */ = {isa = PBXBuildFile; fileRef = A3E191A39B0A630AF864BB507E1AE758 /* BSGOutOfMemoryWatchdog.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		29A99E185D30D5BD99E892A753F6C77C /* BSG_KSCrashReportWriter.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8E8F7BC03B4DAB951DCDF0BAC35ED5 /* BSG_KSCrashReportWriter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29F367C35229C7B0E447594F85F23633 /* BugsnagSink.m in Sources */ = {isa = PBXBuildFile; fileRef = EE16FE64D35DC9181AFE19BAF2A9A5D9 /* BugsnagSink.m */; };
+		2BF6FBC0A64BF107C5D64C61F1397770 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 99B3BAE15E83684F9DDF245DCC2BA4DD /* SwiftyJSON-dummy.m */; };
+		2E4062DA46D1927CC74A91A1CDB90A5A /* BSG_KSObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 0287373D648F104F93ED1F9CBD551021 /* BSG_KSObjC.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2F35C6655B869C995B731E76B56A2902 /* BSG_KSCrashReportFilterCompletion.h in Headers */ = {isa = PBXBuildFile; fileRef = EF080120CAE0F22B051D050607B807C4 /* BSG_KSCrashReportFilterCompletion.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		2F5A31104A893F067F5097E56EDFC9A5 /* Pods-swift-magento-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C3EB74E6D782D037C3FA49ED73730149 /* Pods-swift-magento-dummy.m */; };
+		2F7AEF531AE095154CDEAC9368A7BF75 /* BugsnagHandledState.h in Headers */ = {isa = PBXBuildFile; fileRef = 142B0D2DDE82C2C857E275F90CE2ADD9 /* BugsnagHandledState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		33070AC237E17345D08C5FD78B235DD9 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE4F7799189C352E1D9346617C1FCFED /* SystemConfiguration.framework */; };
+		360AF4F5FC7C01281A3D781FB9782FE3 /* BSG_KSCrashSentry_User.h in Headers */ = {isa = PBXBuildFile; fileRef = 25F2866A1B806FCC2307D1E2960955C5 /* BSG_KSCrashSentry_User.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		39C5E61F496D7CDE0DDECF5320DA5E45 /* BSG_KSMachApple.h in Headers */ = {isa = PBXBuildFile; fileRef = 2C472A2C35D56DF22BF7C0CAA1C6F434 /* BSG_KSMachApple.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		3FD29C03335711880B2E95AD176DA86D /* BSG_KSJSONCodecObjC.h in Headers */ = {isa = PBXBuildFile; fileRef = 406B7586CE0E3316D088F7DE300C8F61 /* BSG_KSJSONCodecObjC.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4449A3EF586709D1E27AD866F144140C /* BSG_KSCrashReportFilter.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F21BA459463E6449ADB809008A31763 /* BSG_KSCrashReportFilter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		457E853EB00BA6FE12084427C4CA6EF2 /* BSG_KSMach.h in Headers */ = {isa = PBXBuildFile; fileRef = 85F378F3D3BF30EE7A8F91A8D3EEBE0F /* BSG_KSMach.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		464450D037D17ED5EE2322E180A6A9F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE354DA182454A49972F1EA0BAB0B3E /* Foundation.framework */; };
+		493917598C37344F6E16BDB6C88B126E /* BSG_KSCrashType.h in Headers */ = {isa = PBXBuildFile; fileRef = 310B38F368186B80629817529A070AB6 /* BSG_KSCrashType.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4A75A81351F8827DC1D0F039D2C9A022 /* BSG_KSCrashReportFields.h in Headers */ = {isa = PBXBuildFile; fileRef = 10CA7F135C7569601AB2F1EC545267A3 /* BSG_KSCrashReportFields.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4B2243D5B93F4CD8DC41E0BCA0FCC117 /* BSG_KSCrashSentry_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 2302B68869066FE01112FEF6ACB9C3AA /* BSG_KSCrashSentry_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4B6A5E0DAA6D142FB43491BE9E4B889D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE354DA182454A49972F1EA0BAB0B3E /* Foundation.framework */; };
+		507C76E07DADEEA06FF7E2AECE2540CB /* BugsnagBreadcrumb.m in Sources */ = {isa = PBXBuildFile; fileRef = 201919C60D996D113B8952AB12CE54BB /* BugsnagBreadcrumb.m */; };
+		5255B9985EAEDB502039BFDB1089F40A /* BSG_KSSingleton.h in Headers */ = {isa = PBXBuildFile; fileRef = 86087F9F5B4FA4F24348F40929C1FBF3 /* BSG_KSSingleton.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		530AB4D8843C0197D83F280174E15E76 /* BSG_KSCrashReportVersion.h in Headers */ = {isa = PBXBuildFile; fileRef = 8C35811118DF9E88B46A006942DE10A7 /* BSG_KSCrashReportVersion.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		548AEFFE978B9CCB0C06871E73873A1E /* BugsnagSession.h in Headers */ = {isa = PBXBuildFile; fileRef = ED98EA701E6F7E27BD7408CCF2FE761A /* BugsnagSession.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		54EB7CA446239C6327C2D521B829FB60 /* BugsnagApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = B96645AF847E75EC3FA0C14976474604 /* BugsnagApiClient.m */; };
+		566928A2E09646A834D9BDD30C3C9490 /* BSG_KSCrashSentry_CPPException.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E3B5CE8E2AE4945A18F6957EB49CF7E /* BSG_KSCrashSentry_CPPException.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		56B11ECB2095505F4D3905C12DAE1DFF /* BugsnagFileStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 3586787FE2E17F74AC5D8AED5B12EC4A /* BugsnagFileStore.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		572B2222F4B94186DB91DDDF13ED069B /* BSG_KSString.c in Sources */ = {isa = PBXBuildFile; fileRef = BD3D54CCEDD2D424DD7D42A8772472F3 /* BSG_KSString.c */; };
+		587FDCB8A05F2F0EB077A9785639CEE1 /* Bugsnag-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C8177A23E16DEDFC6ECB8FAC666D5D6F /* Bugsnag-dummy.m */; };
+		59BCC74B2CDAFA038455FA92D45C14DD /* BSG_KSDynamicLinker.c in Sources */ = {isa = PBXBuildFile; fileRef = 8DA7E7C02E2576E6E69FD65AE5CA5C56 /* BSG_KSDynamicLinker.c */; };
+		5A44BCEBD6739B0C57990198903CEE68 /* BSG_KSCrash.m in Sources */ = {isa = PBXBuildFile; fileRef = 796BB30A3FB859EE482D5E288973FFBA /* BSG_KSCrash.m */; };
+		5A625A49472C9EF514E03E10E86CCD99 /* BugsnagConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A095A21849349F73BB412BF64C16EA3 /* BugsnagConfiguration.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5B46D1DBCC24A77E1D62E6C5E531C09A /* BugsnagErrorReportApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = A9A1F4237CF7BECB0236273B7CF08D09 /* BugsnagErrorReportApiClient.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5CD1A3BD83786229B729D41B9CE13151 /* BSG_KSCrashC.h in Headers */ = {isa = PBXBuildFile; fileRef = D74047FFB7A768977DB231F0AE1F7B36 /* BSG_KSCrashC.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		5DB72D6FB5CE2E90254A83FF320CACE1 /* BugsnagSession.m in Sources */ = {isa = PBXBuildFile; fileRef = F17435979B15BCD6F70CEC176A95FFE4 /* BugsnagSession.m */; };
+		5EDF478A234AE5537FD2FBA52345C31C /* BugsnagNotifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 6E92159AD572F99266A819C4F4629180 /* BugsnagNotifier.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		609AF4F8F715238623959E3D43551F64 /* BSG_KSCrashState.h in Headers */ = {isa = PBXBuildFile; fileRef = 249FB0C22F478F3A348EC80AFB6D0E3A /* BSG_KSCrashState.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		61AD6F81051C343197A037CFAD7E26E9 /* BSG_KSCrashSentry_Deadlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F9B50EE808645E84F1FDFD18B583D3 /* BSG_KSCrashSentry_Deadlock.m */; };
+		64DCB8E76485B34BDE354F1873ABB82B /* BSG_KSObjCApple.h in Headers */ = {isa = PBXBuildFile; fileRef = 8FAAAD48F4140F12B750C45217E152C6 /* BSG_KSObjCApple.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6A9B8606FC74F9405B8DA96B54BD9034 /* BugsnagHandledState.m in Sources */ = {isa = PBXBuildFile; fileRef = EBD220ADC2050704F71AA8685D6A05AD /* BugsnagHandledState.m */; };
+		6B8C5B37861A7BB36D0DE3DDC46CCFD0 /* BSG_RFC3339DateTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C09E4DCE229B8C71296584D65979F67 /* BSG_RFC3339DateTool.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		6C5781F12A2FB8E7E5604E57917124CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE354DA182454A49972F1EA0BAB0B3E /* Foundation.framework */; };
+		6D70F8F1141B4CC48ED390FB589339EA /* BSGSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BC81E9BF635E5AD0C98626CEAD36952 /* BSGSerialization.m */; };
+		6E98D477877790903174D302F233FADC /* NSError+BSG_SimpleConstructor.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C3622945074AE189781B4E7318DBA1D /* NSError+BSG_SimpleConstructor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		71159D1BA06E609F021399FC899BB9DA /* BSG_KSMach_x86_64.c in Sources */ = {isa = PBXBuildFile; fileRef = 932428977B586CDA26A6930B27A3E8CC /* BSG_KSMach_x86_64.c */; };
+		7182AE3BDC4F69D09630C3ECDF2ED876 /* BugsnagSessionTrackingApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FFD15E3191B8B692BB5D468B38711D6 /* BugsnagSessionTrackingApiClient.m */; };
+		73357BBFDD57EF5B5AD3547037FA9A58 /* BSG_KSLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 5DB85DA716CA9380D61856D3981F0461 /* BSG_KSLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		747F11409A5D18C7A44BAB9C26496940 /* BugsnagLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 0888A46B95F13C7140CE5E25A2A3FFEC /* BugsnagLogger.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7528CE9F4F9D5A2A233ABFC725FA3876 /* BugsnagSessionTracker.h in Headers */ = {isa = PBXBuildFile; fileRef = E9B7021EBC16FF3EBA9573C2FD21B62A /* BugsnagSessionTracker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		75830E311678078C758ECB462012B1D7 /* BSG_KSCrashState.m in Sources */ = {isa = PBXBuildFile; fileRef = 1776F1F8EBE6C27F9B8CF688893E004F /* BSG_KSCrashState.m */; };
+		7611730CFEE38AC39CBDB6F7BF3B676F /* BSG_KSJSONCodecObjC.m in Sources */ = {isa = PBXBuildFile; fileRef = 958A1EBB8B219B9D69A0502083473A6E /* BSG_KSJSONCodecObjC.m */; };
+		78F0505349717C7BB9D36FC23A842D4A /* BugsnagSessionFileStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 86BBE0A1D9B215C93A65A9EF74CA8123 /* BugsnagSessionFileStore.m */; };
+		7B4CE5C84161E2BFE477F42DFD634382 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354C8D7979D6E378493FCE3C989839DD /* SwiftyJSON.swift */; };
+		7D2B6887513B6642BF7E1AE3B3AB2A8A /* BugsnagUser.h in Headers */ = {isa = PBXBuildFile; fileRef = D333819344F0E3CF433C1E51A0404B34 /* BugsnagUser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		814C3D0834951C5CABF4DEE9C8053610 /* BugsnagFileStore.m in Sources */ = {isa = PBXBuildFile; fileRef = 25CD2AC7906BB7742125330D9CAB03D2 /* BugsnagFileStore.m */; };
+		86CF9410B8BBC43648EA2CFC6258E6C2 /* BSG_KSCrashSentry_NSException.m in Sources */ = {isa = PBXBuildFile; fileRef = 0EFCB984B974A64456482E59141EEC73 /* BSG_KSCrashSentry_NSException.m */; };
+		8897A7389C7A8CFBEC77E32A5CC8FC82 /* BugsnagKSCrashSysInfoParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 894AF9DD5CFB6FF652B7EF8C907C6E5C /* BugsnagKSCrashSysInfoParser.m */; };
+		8B9F4D87176D2C725FE0E9765F5D7182 /* NSError+BSG_SimpleConstructor.m in Sources */ = {isa = PBXBuildFile; fileRef = 469C1042AC10F0564DA9961C4FC8D06E /* NSError+BSG_SimpleConstructor.m */; };
+		8CB605AD89E8F404A2581B04B76F7BCF /* BSG_KSBacktrace_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 916AA7BFC034B99D6DD452DBA44C6751 /* BSG_KSBacktrace_Private.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8FE512C3A9B3F9EDF4D11AA7219D36FB /* BugsnagCrashSentry.h in Headers */ = {isa = PBXBuildFile; fileRef = CA371738DC2CA50B275BE2E28DF301B9 /* BugsnagCrashSentry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		90F179E708633BDE52447C3B9E87123C /* BSG_KSFileUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 424FC5185B3CC52A3BC170E53CDC1E28 /* BSG_KSFileUtils.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		90FD87A0716C399212D8329E18C52DDF /* BSG_KSArchSpecific.h in Headers */ = {isa = PBXBuildFile; fileRef = 375954588310A1FC32DBFB5F77F9CCE6 /* BSG_KSArchSpecific.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		93EA5AE8BDA02E634F47D5FA973CC60F /* BSGConnectivity.m in Sources */ = {isa = PBXBuildFile; fileRef = D63D53DE7A9CA55BCB53DB8D8F5D904D /* BSGConnectivity.m */; };
+		96C0D4756FC0A0BA12F2149DC952B6BC /* BSG_KSCrashSentry.h in Headers */ = {isa = PBXBuildFile; fileRef = 92EEFBEAB865C147975A072E2EB7554B /* BSG_KSCrashSentry.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		980D8C09901429557F8E0AD09A85DBE9 /* BSG_KSCrashSentry_MachException.h in Headers */ = {isa = PBXBuildFile; fileRef = 77E817402CA85DB387ADBF5DBEA37DEB /* BSG_KSCrashSentry_MachException.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		99D9BBC017C4F39BC2A4192C169D0F9C /* BugsnagMetaData.h in Headers */ = {isa = PBXBuildFile; fileRef = 40BE2E572BF18983A3166095F456FE0D /* BugsnagMetaData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A0F8A39036FE45BD755E9555422F0A7 /* BSGSerialization.h in Headers */ = {isa = PBXBuildFile; fileRef = B46C80428CDB1264827AD4CF50DA8B0A /* BSGSerialization.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9BB240331A7B5F8A0B85B01174B6638D /* BSG_KSSysCtl.h in Headers */ = {isa = PBXBuildFile; fileRef = 6FCA503DCFE4DAB3F6FE4CE978500F66 /* BSG_KSSysCtl.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		9D395F9F776389148B9471036BF4358E /* BugsnagCrashReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 27A7B764C7FA79F8FB2CA53013E57598 /* BugsnagCrashReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A03EBBCA822BD538937000A1BB2F3F32 /* BSG_KSSysCtl.c in Sources */ = {isa = PBXBuildFile; fileRef = AF89C625420A3A6D8E33184DDE1B079B /* BSG_KSSysCtl.c */; };
+		A3751FEC3D4EEA33DCC762C6ECE6ED28 /* BugsnagSink.h in Headers */ = {isa = PBXBuildFile; fileRef = 837F602FC37C90BD580176780A1FCDAD /* BugsnagSink.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		A3A490538D012BEE3CF055DDBE8D36AA /* BSG_KSMach_Arm64.c in Sources */ = {isa = PBXBuildFile; fileRef = B49CDD4094EABB875E05A760817077B4 /* BSG_KSMach_Arm64.c */; };
+		A64C56E7FF870953D945F0271B8B1B7F /* BSG_KSCrashSentry_Signal.c in Sources */ = {isa = PBXBuildFile; fileRef = 9B84FE218023B3FF821B4363D88B187A /* BSG_KSCrashSentry_Signal.c */; };
+		ABC4EDF87BC441FA20A80F9F04CD402A /* BugsnagSessionTrackingPayload.m in Sources */ = {isa = PBXBuildFile; fileRef = BF5CD92FE53CBCF297FDBECC043AECED /* BugsnagSessionTrackingPayload.m */; };
+		ACAACC1AAB8F01DFF421278CDF4643D2 /* BSG_KSMach_x86_32.c in Sources */ = {isa = PBXBuildFile; fileRef = 69A805C41EC6F98405FCB40AF80867DC /* BSG_KSMach_x86_32.c */; };
+		AD49DE999B714E3BEFBCD54B54875CB7 /* BugsnagBreadcrumb.h in Headers */ = {isa = PBXBuildFile; fileRef = 06E6F7E2AF9871D95DBFA8A7DA2BCBB5 /* BugsnagBreadcrumb.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ADCC14F9D9372E1741C3C3778559FAA1 /* BSG_KSCrashSentry_NSException.h in Headers */ = {isa = PBXBuildFile; fileRef = E51F0905428792E17F7563B50C6FCBE6 /* BSG_KSCrashSentry_NSException.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B0CDEB44FEF57B8245F98B370AD0E1DE /* BSG_KSCrash.h in Headers */ = {isa = PBXBuildFile; fileRef = 59C0600DDB1F0627B87F7EEAD55E3E40 /* BSG_KSCrash.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B30209F4C3836AF39974DCD197CC660E /* Pods-swift-magento-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1464DBB109C077B0C85114C29F7C5B39 /* Pods-swift-magento-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B48678060EC856452AA2A5833B57765E /* BugsnagCollections.m in Sources */ = {isa = PBXBuildFile; fileRef = C19F578A3E1C7F4D9609AE8C22D63916 /* BugsnagCollections.m */; };
+		B6BE9FFD81D243CC7F7EAADC3D82553F /* BSGConnectivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 1358FB928322FDA2EDFD5178CE668E1E /* BSGConnectivity.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		BABF1ADC2A3D3D3C86DB33AE2FDFE0C4 /* BSG_KSCrashAdvanced.h in Headers */ = {isa = PBXBuildFile; fileRef = C6F06F3D01D6ECB06718428B67BEC342 /* BSG_KSCrashAdvanced.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C2C1117A4EB9C41B1125A98E36A85E30 /* BSG_KSJSONCodec.c in Sources */ = {isa = PBXBuildFile; fileRef = F685B14F326C63181BC5240373EB2907 /* BSG_KSJSONCodec.c */; };
+		C3179F438F31858074DD0B6E5535E369 /* BSG_KSCrashDoctor.m in Sources */ = {isa = PBXBuildFile; fileRef = 93CDC8E8971232899F08D9506ED98B6A /* BSG_KSCrashDoctor.m */; };
+		C3182BC54981D6165EB4F05D5B0C7677 /* BSG_KSCrashReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 53DBA4B36D906BD11689A85CB5125AFC /* BSG_KSCrashReport.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C402D63B484EA09691C8D38192DE0EE0 /* BugsnagApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 16E2A81E324383CFAECC5A1EA3C9157A /* BugsnagApiClient.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		C4801DA7FE4598D117335A8253B7A40C /* BSG_KSMach_Arm.c in Sources */ = {isa = PBXBuildFile; fileRef = 6AB9ADDA7EF9FF624E8F7F3191ECCCA1 /* BSG_KSMach_Arm.c */; };
+		C5454489DBE06F0887DB65842754F667 /* BSG_KSSignalInfo.c in Sources */ = {isa = PBXBuildFile; fileRef = B45BE69398C0840508ED4792538806B0 /* BSG_KSSignalInfo.c */; };
+		C79BA08A18FD97D0DE468778F43CD036 /* BSG_KSSystemCapabilities.h in Headers */ = {isa = PBXBuildFile; fileRef = DCC06FAD95F3FDDA564A73F74BEA4E35 /* BSG_KSSystemCapabilities.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		CA76C49CE26E55BBE810C89A97E5CE30 /* BugsnagSessionTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = A1865DBE26E004871C9D5902EF53EF8B /* BugsnagSessionTracker.m */; };
+		CD0FD3490226AAB51AE11B817CBD9330 /* BSG_KSLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 9931254A78B8F91DC71D86BD3815CC6F /* BSG_KSLogger.m */; };
+		CD38CC5C50868CFBCE8BC6276E11713C /* BugsnagMetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = F94FD8A5A04CE90BE9109E4D0E8A3B80 /* BugsnagMetaData.m */; };
+		CE04C875E75D745973CCB88DE374719C /* BSG_KSCrashSentry_CPPException.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8DD1BA28931EC7C2F26A8BEF8F76416A /* BSG_KSCrashSentry_CPPException.mm */; };
+		CE07B6AEF1BC1F982D24879876292208 /* Bugsnag.h in Headers */ = {isa = PBXBuildFile; fileRef = EC353F37C52C6E5E1990136129F9E52E /* Bugsnag.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D191526F46026FD20AD5907E6D8962E1 /* BSG_KSFileUtils.c in Sources */ = {isa = PBXBuildFile; fileRef = F20ABA0DEC25427E0D907C80E223C6A4 /* BSG_KSFileUtils.c */; };
+		D59278EC4E2E58D346A46E0078611F59 /* BSG_KSCrashCallCompletion.h in Headers */ = {isa = PBXBuildFile; fileRef = 90423A8CB2411D709EA3447B4ECEF3F7 /* BSG_KSCrashCallCompletion.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D633B77DC2D77C73FAAABDA401B87BAE /* BSG_KSDynamicLinker.h in Headers */ = {isa = PBXBuildFile; fileRef = 8605497BA4E1AA5A1D45E8ECEA0C3602 /* BSG_KSDynamicLinker.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D657D38854C39A88A9A723CC6F47F3A7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DE354DA182454A49972F1EA0BAB0B3E /* Foundation.framework */; };
+		D693CF8FCE3E7BAD795F61B905C2F1D4 /* BugsnagKeys.h in Headers */ = {isa = PBXBuildFile; fileRef = CAEE17A5434605155F20B0A641FF5F10 /* BugsnagKeys.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D87AC3C6C16E64CE148B05AF5A067666 /* BSG_KSSystemInfoC.h in Headers */ = {isa = PBXBuildFile; fileRef = EE02FA53009C185FB6C1D5F0082DCB8B /* BSG_KSSystemInfoC.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		D8D84A7BFC5206FBE776F30E94E1A92E /* BSG_KSCrashSentry.c in Sources */ = {isa = PBXBuildFile; fileRef = 3990F8C343FCC4E361BA50A8117A4839 /* BSG_KSCrashSentry.c */; };
+		D9925588B3EE5B1CE1B073CD8A621633 /* BugsnagUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 6446C3C0362623875223A22BEA706CEC /* BugsnagUser.m */; };
+		DA1C8EA123EB340473F885F966ACB822 /* BSG_KSJSONCodec.h in Headers */ = {isa = PBXBuildFile; fileRef = 8836F548CEB7B791C82021CEE6B127D2 /* BSG_KSJSONCodec.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		DB41D2162DAD942C8870A6583B4CB737 /* BSG_KSCrashC.c in Sources */ = {isa = PBXBuildFile; fileRef = CA4610232E4ED63748DD96C3EFB92811 /* BSG_KSCrashC.c */; };
+		E01FBAD98B60BF8F776DB81F9561E22E /* BugsnagNotifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 07536F34345F4F3EFEEE2DACF7CDF912 /* BugsnagNotifier.m */; };
+		E1A285DD627F210C70B91E24F0FE64BA /* BSG_KSCrashSentry_Deadlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FFABB832CE5BDC2D5CA8DC070D879F6 /* BSG_KSCrashSentry_Deadlock.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		E1A421BE5BCBEC6A32608CD43A180190 /* BSG_RFC3339DateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = AA1AA7C23945AF77DA83630065928B93 /* BSG_RFC3339DateTool.m */; };
+		E68F549005BA1C4E79A3A561BC5A9DB3 /* BSG_KSObjC.c in Sources */ = {isa = PBXBuildFile; fileRef = 79703605FC23694E2547077C2AB689EA /* BSG_KSObjC.c */; };
+		E7DF0AD0771BC68DF86B456B5AC442CB /* BSG_KSCrashReportStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 7A1F438278132E1A96B767012EA296FE /* BSG_KSCrashReportStore.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EA3A045A5F477E8ACFDEFF73036ED49A /* BSG_KSCrashSentry_MachException.c in Sources */ = {isa = PBXBuildFile; fileRef = 4D1D42DCEB35B72D6EE04F035CB6AC5B /* BSG_KSCrashSentry_MachException.c */; };
+		EAB3BB4A04E2705A1FDE56D2C8A4E68A /* BugsnagCrashReport.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC4C31CCA193E5FA7CB7218571E63BD /* BugsnagCrashReport.m */; };
+		EBDCC222668190F8BBFD6C5FC7BDBF61 /* BugsnagConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = E2DF8B0E03E71B66688CD736F14C8B10 /* BugsnagConfiguration.m */; };
+		ED264C2251437CBD4DABF42C988964F5 /* BugsnagKSCrashSysInfoParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 813751126C317CFCD0424C0208653FBA /* BugsnagKSCrashSysInfoParser.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EDF303E85CBBBD9037F868757BD07974 /* BSG_KSCrashReportStore.m in Sources */ = {isa = PBXBuildFile; fileRef = F0EF63E0619E98A1EF16DE8451D1B7D4 /* BSG_KSCrashReportStore.m */; };
+		EF166684FFFB8912CD6818C4285975A3 /* BSG_KSCrashDoctor.h in Headers */ = {isa = PBXBuildFile; fileRef = A90BEF83B89FDA9EC2B994FEBF8FF68B /* BSG_KSCrashDoctor.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		EFC1F20F98CD91D2664AFBDAA9FF9284 /* BugsnagSessionFileStore.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B230E53168074740E4F7FB97E0AF534 /* BugsnagSessionFileStore.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F34620B70A630DEC2E2F84B8BB116B79 /* BugsnagSessionTrackingApiClient.h in Headers */ = {isa = PBXBuildFile; fileRef = 402EF404DE6DAB16C6C5183D4D47B0E9 /* BugsnagSessionTrackingApiClient.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F42A58D68292E7EC672B8169DE6F15B5 /* BSG_KSCrashSentry_User.c in Sources */ = {isa = PBXBuildFile; fileRef = 16806E86FEE3FB11F9BDEDFBE4F52B7B /* BSG_KSCrashSentry_User.c */; };
+		F7D8B6A028BF40DB2927126B827CD08A /* BSG_KSCrashSentry_Signal.h in Headers */ = {isa = PBXBuildFile; fileRef = CACD29125A01F1083F52E7C0D114C68F /* BSG_KSCrashSentry_Signal.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		F91EFB92309BA84520DDDB0309F650CD /* Pods-swift-magentoTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 58CC3B98D1B76AEE02BCB8B6C174D6CA /* Pods-swift-magentoTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F932A9AD313DA712F69BC21DBF668ECB /* BSG_KSCrashType.c in Sources */ = {isa = PBXBuildFile; fileRef = A4497284EDDC8285909671DB2C524AC8 /* BSG_KSCrashType.c */; };
+		F9AB583D13ECF3D50636ABD5AE5A4F38 /* BSG_KSBacktrace.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C19F5C1C2F83346484EBDEE08C185B3 /* BSG_KSBacktrace.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		FA72566CD2443BD40DFAA7BCAD7E54F7 /* BSGOutOfMemoryWatchdog.m in Sources */ = {isa = PBXBuildFile; fileRef = DA3A6132B77B9277044505028790F26B /* BSGOutOfMemoryWatchdog.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		07269B394B6E439F7C8AB95DAF2B21A8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D118A6A04828FD3CDA8640CD2B6796D2;
+			remoteInfo = SwiftyJSON;
+		};
+		D7279D1A52D3AB73F8F27D7D73BF1CB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 763C00A5A6DE50294E8438AD6F919AB1;
+			remoteInfo = "Pods-swift-magento";
+		};
+		DDD2CE043374EAC320422F5A94F42118 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDC8B0769B39E03BE257939D6FD4D966;
+			remoteInfo = Bugsnag;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0287373D648F104F93ED1F9CBD551021 /* BSG_KSObjC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSObjC.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSObjC.h; sourceTree = "<group>"; };
+		03CE0D2FD1B3E6F7BE6DBCBF89FC13C2 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		06E6F7E2AF9871D95DBFA8A7DA2BCBB5 /* BugsnagBreadcrumb.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagBreadcrumb.h; path = Source/BugsnagBreadcrumb.h; sourceTree = "<group>"; };
+		07536F34345F4F3EFEEE2DACF7CDF912 /* BugsnagNotifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagNotifier.m; path = Source/BugsnagNotifier.m; sourceTree = "<group>"; };
+		07710FD82473DAFA686AC3FF10033A16 /* Bugsnag.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bugsnag.xcconfig; sourceTree = "<group>"; };
+		0888A46B95F13C7140CE5E25A2A3FFEC /* BugsnagLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagLogger.h; path = Source/BugsnagLogger.h; sourceTree = "<group>"; };
+		0C09E4DCE229B8C71296584D65979F67 /* BSG_RFC3339DateTool.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_RFC3339DateTool.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_RFC3339DateTool.h; sourceTree = "<group>"; };
+		0E05EDB54599BF53D5C8FE3F427385B6 /* BSG_KSCrashReport.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSCrashReport.c; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSCrashReport.c; sourceTree = "<group>"; };
+		0EFCB984B974A64456482E59141EEC73 /* BSG_KSCrashSentry_NSException.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSG_KSCrashSentry_NSException.m; path = Source/KSCrash/Source/KSCrash/Recording/Sentry/BSG_KSCrashSentry_NSException.m; sourceTree = "<group>"; };
+		10CA7F135C7569601AB2F1EC545267A3 /* BSG_KSCrashReportFields.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashReportFields.h; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSCrashReportFields.h; sourceTree = "<group>"; };
+		11ECC494B9453E3ED6EFBE64E3586F08 /* SwiftyJSON-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftyJSON-Info.plist"; sourceTree = "<group>"; };
+		12D47572E06A258F4F5226E79C8E9ACC /* BugsnagCollections.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagCollections.h; path = Source/BugsnagCollections.h; sourceTree = "<group>"; };
+		1358FB928322FDA2EDFD5178CE668E1E /* BSGConnectivity.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSGConnectivity.h; path = Source/BSGConnectivity.h; sourceTree = "<group>"; };
+		142B0D2DDE82C2C857E275F90CE2ADD9 /* BugsnagHandledState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagHandledState.h; path = Source/BugsnagHandledState.h; sourceTree = "<group>"; };
+		1464DBB109C077B0C85114C29F7C5B39 /* Pods-swift-magento-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-swift-magento-umbrella.h"; sourceTree = "<group>"; };
+		16806E86FEE3FB11F9BDEDFBE4F52B7B /* BSG_KSCrashSentry_User.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSCrashSentry_User.c; path = Source/KSCrash/Source/KSCrash/Recording/Sentry/BSG_KSCrashSentry_User.c; sourceTree = "<group>"; };
+		16E2A81E324383CFAECC5A1EA3C9157A /* BugsnagApiClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagApiClient.h; path = Source/BugsnagApiClient.h; sourceTree = "<group>"; };
+		1776F1F8EBE6C27F9B8CF688893E004F /* BSG_KSCrashState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSG_KSCrashState.m; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSCrashState.m; sourceTree = "<group>"; };
+		1B3C0A09961F8A503FC81606A0D0A201 /* Pods-swift-magento.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swift-magento.release.xcconfig"; sourceTree = "<group>"; };
+		1BB1185BDF63E9E4E8245CE4FE0DFDF5 /* BSG_KSString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSString.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSString.h; sourceTree = "<group>"; };
+		1BBB783B7981D4C97EF9F8D3E9E487D5 /* Pods-swift-magentoTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-swift-magentoTests.modulemap"; sourceTree = "<group>"; };
+		1DE354DA182454A49972F1EA0BAB0B3E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		1FFABB832CE5BDC2D5CA8DC070D879F6 /* BSG_KSCrashSentry_Deadlock.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashSentry_Deadlock.h; path = Source/KSCrash/Source/KSCrash/Recording/Sentry/BSG_KSCrashSentry_Deadlock.h; sourceTree = "<group>"; };
+		201919C60D996D113B8952AB12CE54BB /* BugsnagBreadcrumb.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagBreadcrumb.m; path = Source/BugsnagBreadcrumb.m; sourceTree = "<group>"; };
+		2115405BB4F144312A61CAF6F1742C58 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		2302B68869066FE01112FEF6ACB9C3AA /* BSG_KSCrashSentry_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashSentry_Private.h; path = Source/KSCrash/Source/KSCrash/Recording/Sentry/BSG_KSCrashSentry_Private.h; sourceTree = "<group>"; };
+		249FB0C22F478F3A348EC80AFB6D0E3A /* BSG_KSCrashState.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashState.h; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSCrashState.h; sourceTree = "<group>"; };
+		25CD2AC7906BB7742125330D9CAB03D2 /* BugsnagFileStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagFileStore.m; path = Source/BugsnagFileStore.m; sourceTree = "<group>"; };
+		25F2866A1B806FCC2307D1E2960955C5 /* BSG_KSCrashSentry_User.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashSentry_User.h; path = Source/KSCrash/Source/KSCrash/Recording/Sentry/BSG_KSCrashSentry_User.h; sourceTree = "<group>"; };
+		27A7B764C7FA79F8FB2CA53013E57598 /* BugsnagCrashReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagCrashReport.h; path = Source/BugsnagCrashReport.h; sourceTree = "<group>"; };
+		2B6F98EC84EBDC31439D35F1B005D4ED /* Pods-swift-magentoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-swift-magentoTests-dummy.m"; sourceTree = "<group>"; };
+		2C472A2C35D56DF22BF7C0CAA1C6F434 /* BSG_KSMachApple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSMachApple.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSMachApple.h; sourceTree = "<group>"; };
+		2DD7E5855BEC04FC57CA06813F1668A2 /* Pods-swift-magento-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swift-magento-Info.plist"; sourceTree = "<group>"; };
+		2E3ABBB5C1187A9B5B308B629F0BD808 /* Pods-swift-magento-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swift-magento-acknowledgements.plist"; sourceTree = "<group>"; };
+		2F4C39E9B59F329F4D3B9E104E6FDD46 /* Pods-swift-magentoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swift-magentoTests.release.xcconfig"; sourceTree = "<group>"; };
+		310B38F368186B80629817529A070AB6 /* BSG_KSCrashType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashType.h; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSCrashType.h; sourceTree = "<group>"; };
+		354C8D7979D6E378493FCE3C989839DD /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON/SwiftyJSON.swift; sourceTree = "<group>"; };
+		3586787FE2E17F74AC5D8AED5B12EC4A /* BugsnagFileStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagFileStore.h; path = Source/BugsnagFileStore.h; sourceTree = "<group>"; };
+		35C095F41BF5C2F553FB622110F11843 /* BSG_KSCrashCallCompletion.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSG_KSCrashCallCompletion.m; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSCrashCallCompletion.m; sourceTree = "<group>"; };
+		375954588310A1FC32DBFB5F77F9CCE6 /* BSG_KSArchSpecific.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSArchSpecific.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSArchSpecific.h; sourceTree = "<group>"; };
+		3990F8C343FCC4E361BA50A8117A4839 /* BSG_KSCrashSentry.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSCrashSentry.c; path = Source/KSCrash/Source/KSCrash/Recording/Sentry/BSG_KSCrashSentry.c; sourceTree = "<group>"; };
+		3C19F5C1C2F83346484EBDEE08C185B3 /* BSG_KSBacktrace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSBacktrace.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSBacktrace.h; sourceTree = "<group>"; };
+		402EF404DE6DAB16C6C5183D4D47B0E9 /* BugsnagSessionTrackingApiClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagSessionTrackingApiClient.h; path = Source/BugsnagSessionTrackingApiClient.h; sourceTree = "<group>"; };
+		406B7586CE0E3316D088F7DE300C8F61 /* BSG_KSJSONCodecObjC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSJSONCodecObjC.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSJSONCodecObjC.h; sourceTree = "<group>"; };
+		40BE2E572BF18983A3166095F456FE0D /* BugsnagMetaData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagMetaData.h; path = Source/BugsnagMetaData.h; sourceTree = "<group>"; };
+		424FC5185B3CC52A3BC170E53CDC1E28 /* BSG_KSFileUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSFileUtils.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSFileUtils.h; sourceTree = "<group>"; };
+		469C1042AC10F0564DA9961C4FC8D06E /* NSError+BSG_SimpleConstructor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSError+BSG_SimpleConstructor.m"; path = "Source/KSCrash/Source/KSCrash/Recording/Tools/NSError+BSG_SimpleConstructor.m"; sourceTree = "<group>"; };
+		4800A30361EABD5EFB64185FBB5F080B /* Bugsnag-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bugsnag-prefix.pch"; sourceTree = "<group>"; };
+		49152DBCA2D157B77C51825BE20DB4E6 /* Pods-swift-magentoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swift-magentoTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		4D1D42DCEB35B72D6EE04F035CB6AC5B /* BSG_KSCrashSentry_MachException.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSCrashSentry_MachException.c; path = Source/KSCrash/Source/KSCrash/Recording/Sentry/BSG_KSCrashSentry_MachException.c; sourceTree = "<group>"; };
+		53DBA4B36D906BD11689A85CB5125AFC /* BSG_KSCrashReport.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashReport.h; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSCrashReport.h; sourceTree = "<group>"; };
+		54F9B50EE808645E84F1FDFD18B583D3 /* BSG_KSCrashSentry_Deadlock.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSG_KSCrashSentry_Deadlock.m; path = Source/KSCrash/Source/KSCrash/Recording/Sentry/BSG_KSCrashSentry_Deadlock.m; sourceTree = "<group>"; };
+		58CC3B98D1B76AEE02BCB8B6C174D6CA /* Pods-swift-magentoTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-swift-magentoTests-umbrella.h"; sourceTree = "<group>"; };
+		59C0600DDB1F0627B87F7EEAD55E3E40 /* BSG_KSCrash.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrash.h; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSCrash.h; sourceTree = "<group>"; };
+		5B4320781DD6474DD46D0D771FA572DC /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		5DB85DA716CA9380D61856D3981F0461 /* BSG_KSLogger.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSLogger.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSLogger.h; sourceTree = "<group>"; };
+		5E3B5CE8E2AE4945A18F6957EB49CF7E /* BSG_KSCrashSentry_CPPException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashSentry_CPPException.h; path = Source/KSCrash/Source/KSCrash/Recording/Sentry/BSG_KSCrashSentry_CPPException.h; sourceTree = "<group>"; };
+		6446C3C0362623875223A22BEA706CEC /* BugsnagUser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagUser.m; path = Source/BugsnagUser.m; sourceTree = "<group>"; };
+		69A805C41EC6F98405FCB40AF80867DC /* BSG_KSMach_x86_32.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSMach_x86_32.c; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSMach_x86_32.c; sourceTree = "<group>"; };
+		6A02ED9DA2EE76F6A735323B0FCD392A /* Bugsnag-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bugsnag-umbrella.h"; sourceTree = "<group>"; };
+		6AB9ADDA7EF9FF624E8F7F3191ECCCA1 /* BSG_KSMach_Arm.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSMach_Arm.c; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSMach_Arm.c; sourceTree = "<group>"; };
+		6E92159AD572F99266A819C4F4629180 /* BugsnagNotifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagNotifier.h; path = Source/BugsnagNotifier.h; sourceTree = "<group>"; };
+		6FCA503DCFE4DAB3F6FE4CE978500F66 /* BSG_KSSysCtl.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSSysCtl.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSSysCtl.h; sourceTree = "<group>"; };
+		6FFD15E3191B8B692BB5D468B38711D6 /* BugsnagSessionTrackingApiClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagSessionTrackingApiClient.m; path = Source/BugsnagSessionTrackingApiClient.m; sourceTree = "<group>"; };
+		71975954BD8997F157F2F6681B6C6895 /* Pods-swift-magento-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-swift-magento-acknowledgements.markdown"; sourceTree = "<group>"; };
+		765E0187BCB56BD1F184E061534AC459 /* Pods-swift-magentoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swift-magentoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		767233EF1DCA48E1A96ADD0812B530C5 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		77E817402CA85DB387ADBF5DBEA37DEB /* BSG_KSCrashSentry_MachException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashSentry_MachException.h; path = Source/KSCrash/Source/KSCrash/Recording/Sentry/BSG_KSCrashSentry_MachException.h; sourceTree = "<group>"; };
+		796BB30A3FB859EE482D5E288973FFBA /* BSG_KSCrash.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSG_KSCrash.m; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSCrash.m; sourceTree = "<group>"; };
+		79703605FC23694E2547077C2AB689EA /* BSG_KSObjC.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSObjC.c; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSObjC.c; sourceTree = "<group>"; };
+		7A1F438278132E1A96B767012EA296FE /* BSG_KSCrashReportStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashReportStore.h; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSCrashReportStore.h; sourceTree = "<group>"; };
+		7B230E53168074740E4F7FB97E0AF534 /* BugsnagSessionFileStore.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagSessionFileStore.h; path = Source/BugsnagSessionFileStore.h; sourceTree = "<group>"; };
+		7BC81E9BF635E5AD0C98626CEAD36952 /* BSGSerialization.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSGSerialization.m; path = Source/BSGSerialization.m; sourceTree = "<group>"; };
+		7C3622945074AE189781B4E7318DBA1D /* NSError+BSG_SimpleConstructor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSError+BSG_SimpleConstructor.h"; path = "Source/KSCrash/Source/KSCrash/Recording/Tools/NSError+BSG_SimpleConstructor.h"; sourceTree = "<group>"; };
+		7F21BA459463E6449ADB809008A31763 /* BSG_KSCrashReportFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashReportFilter.h; path = Source/KSCrash/Source/KSCrash/Reporting/Filters/BSG_KSCrashReportFilter.h; sourceTree = "<group>"; };
+		813751126C317CFCD0424C0208653FBA /* BugsnagKSCrashSysInfoParser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagKSCrashSysInfoParser.h; path = Source/BugsnagKSCrashSysInfoParser.h; sourceTree = "<group>"; };
+		837F602FC37C90BD580176780A1FCDAD /* BugsnagSink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagSink.h; path = Source/BugsnagSink.h; sourceTree = "<group>"; };
+		85F378F3D3BF30EE7A8F91A8D3EEBE0F /* BSG_KSMach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSMach.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSMach.h; sourceTree = "<group>"; };
+		8605497BA4E1AA5A1D45E8ECEA0C3602 /* BSG_KSDynamicLinker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSDynamicLinker.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSDynamicLinker.h; sourceTree = "<group>"; };
+		86087F9F5B4FA4F24348F40929C1FBF3 /* BSG_KSSingleton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSSingleton.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSSingleton.h; sourceTree = "<group>"; };
+		86BBE0A1D9B215C93A65A9EF74CA8123 /* BugsnagSessionFileStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagSessionFileStore.m; path = Source/BugsnagSessionFileStore.m; sourceTree = "<group>"; };
+		8836F548CEB7B791C82021CEE6B127D2 /* BSG_KSJSONCodec.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSJSONCodec.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSJSONCodec.h; sourceTree = "<group>"; };
+		894AF9DD5CFB6FF652B7EF8C907C6E5C /* BugsnagKSCrashSysInfoParser.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagKSCrashSysInfoParser.m; path = Source/BugsnagKSCrashSysInfoParser.m; sourceTree = "<group>"; };
+		8A8E8F7BC03B4DAB951DCDF0BAC35ED5 /* BSG_KSCrashReportWriter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashReportWriter.h; path = Source/BSG_KSCrashReportWriter.h; sourceTree = "<group>"; };
+		8C35811118DF9E88B46A006942DE10A7 /* BSG_KSCrashReportVersion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashReportVersion.h; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSCrashReportVersion.h; sourceTree = "<group>"; };
+		8DA7E7C02E2576E6E69FD65AE5CA5C56 /* BSG_KSDynamicLinker.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSDynamicLinker.c; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSDynamicLinker.c; sourceTree = "<group>"; };
+		8DD1BA28931EC7C2F26A8BEF8F76416A /* BSG_KSCrashSentry_CPPException.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSCrashSentry_CPPException.mm; path = Source/KSCrash/Source/KSCrash/Recording/Sentry/BSG_KSCrashSentry_CPPException.mm; sourceTree = "<group>"; };
+		8FAAAD48F4140F12B750C45217E152C6 /* BSG_KSObjCApple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSObjCApple.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSObjCApple.h; sourceTree = "<group>"; };
+		8FCFDBDADBC5D460E1BF68764BFEA5E5 /* BSG_KSSystemInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSSystemInfo.h; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSSystemInfo.h; sourceTree = "<group>"; };
+		90423A8CB2411D709EA3447B4ECEF3F7 /* BSG_KSCrashCallCompletion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashCallCompletion.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSCrashCallCompletion.h; sourceTree = "<group>"; };
+		916AA7BFC034B99D6DD452DBA44C6751 /* BSG_KSBacktrace_Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSBacktrace_Private.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSBacktrace_Private.h; sourceTree = "<group>"; };
+		92EEFBEAB865C147975A072E2EB7554B /* BSG_KSCrashSentry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashSentry.h; path = Source/KSCrash/Source/KSCrash/Recording/Sentry/BSG_KSCrashSentry.h; sourceTree = "<group>"; };
+		932428977B586CDA26A6930B27A3E8CC /* BSG_KSMach_x86_64.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSMach_x86_64.c; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSMach_x86_64.c; sourceTree = "<group>"; };
+		93CDC8E8971232899F08D9506ED98B6A /* BSG_KSCrashDoctor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSG_KSCrashDoctor.m; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSCrashDoctor.m; sourceTree = "<group>"; };
+		958A1EBB8B219B9D69A0502083473A6E /* BSG_KSJSONCodecObjC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSG_KSJSONCodecObjC.m; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSJSONCodecObjC.m; sourceTree = "<group>"; };
+		97A16FBBD6BDA6A34665BC2A668D9E71 /* Bugsnag.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Bugsnag.modulemap; sourceTree = "<group>"; };
+		9931254A78B8F91DC71D86BD3815CC6F /* BSG_KSLogger.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSG_KSLogger.m; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSLogger.m; sourceTree = "<group>"; };
+		99B3BAE15E83684F9DDF245DCC2BA4DD /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		9A095A21849349F73BB412BF64C16EA3 /* BugsnagConfiguration.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagConfiguration.h; path = Source/BugsnagConfiguration.h; sourceTree = "<group>"; };
+		9B84FE218023B3FF821B4363D88B187A /* BSG_KSCrashSentry_Signal.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSCrashSentry_Signal.c; path = Source/KSCrash/Source/KSCrash/Recording/Sentry/BSG_KSCrashSentry_Signal.c; sourceTree = "<group>"; };
+		9D09ABC7F47D5520506E8E6BAE68FE0C /* BSG_KSMach.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSMach.c; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSMach.c; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1865DBE26E004871C9D5902EF53EF8B /* BugsnagSessionTracker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagSessionTracker.m; path = Source/BugsnagSessionTracker.m; sourceTree = "<group>"; };
+		A3E191A39B0A630AF864BB507E1AE758 /* BSGOutOfMemoryWatchdog.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSGOutOfMemoryWatchdog.h; path = Source/BSGOutOfMemoryWatchdog.h; sourceTree = "<group>"; };
+		A4497284EDDC8285909671DB2C524AC8 /* BSG_KSCrashType.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSCrashType.c; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSCrashType.c; sourceTree = "<group>"; };
+		A90BEF83B89FDA9EC2B994FEBF8FF68B /* BSG_KSCrashDoctor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashDoctor.h; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSCrashDoctor.h; sourceTree = "<group>"; };
+		A9A1F4237CF7BECB0236273B7CF08D09 /* BugsnagErrorReportApiClient.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagErrorReportApiClient.h; path = Source/BugsnagErrorReportApiClient.h; sourceTree = "<group>"; };
+		AA1AA7C23945AF77DA83630065928B93 /* BSG_RFC3339DateTool.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSG_RFC3339DateTool.m; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_RFC3339DateTool.m; sourceTree = "<group>"; };
+		AF89C625420A3A6D8E33184DDE1B079B /* BSG_KSSysCtl.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSSysCtl.c; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSSysCtl.c; sourceTree = "<group>"; };
+		AFCFF05430D46AE44C4B2B0AC7D9715A /* Bugsnag.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Bugsnag.framework; path = Bugsnag.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B45BE69398C0840508ED4792538806B0 /* BSG_KSSignalInfo.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSSignalInfo.c; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSSignalInfo.c; sourceTree = "<group>"; };
+		B46C80428CDB1264827AD4CF50DA8B0A /* BSGSerialization.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSGSerialization.h; path = Source/BSGSerialization.h; sourceTree = "<group>"; };
+		B49CDD4094EABB875E05A760817077B4 /* BSG_KSMach_Arm64.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSMach_Arm64.c; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSMach_Arm64.c; sourceTree = "<group>"; };
+		B5B1855796B40CF74488DF3816E18A53 /* BSG_KSCrashContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashContext.h; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSCrashContext.h; sourceTree = "<group>"; };
+		B6234F77CEE45D924699C66D7389DF42 /* Pods-swift-magentoTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-swift-magentoTests-Info.plist"; sourceTree = "<group>"; };
+		B96645AF847E75EC3FA0C14976474604 /* BugsnagApiClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagApiClient.m; path = Source/BugsnagApiClient.m; sourceTree = "<group>"; };
+		BD3D54CCEDD2D424DD7D42A8772472F3 /* BSG_KSString.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSString.c; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSString.c; sourceTree = "<group>"; };
+		BD6C8646C204290739CEC9DBF581C88E /* Bugsnag.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = Bugsnag.m; path = Source/Bugsnag.m; sourceTree = "<group>"; };
+		BF5CD92FE53CBCF297FDBECC043AECED /* BugsnagSessionTrackingPayload.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagSessionTrackingPayload.m; path = Source/BugsnagSessionTrackingPayload.m; sourceTree = "<group>"; };
+		BFD1DCB86AAF4D667F4BB4C6BAF312AD /* Bugsnag-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Bugsnag-Info.plist"; sourceTree = "<group>"; };
+		C19F578A3E1C7F4D9609AE8C22D63916 /* BugsnagCollections.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagCollections.m; path = Source/BugsnagCollections.m; sourceTree = "<group>"; };
+		C361108615D54ABCC2324BF5A1F4A6B7 /* BugsnagSessionTrackingPayload.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagSessionTrackingPayload.h; path = Source/BugsnagSessionTrackingPayload.h; sourceTree = "<group>"; };
+		C3EB74E6D782D037C3FA49ED73730149 /* Pods-swift-magento-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-swift-magento-dummy.m"; sourceTree = "<group>"; };
+		C6E6FF19761E4C87E3E0B2AAEB336650 /* Pods_swift_magentoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_swift_magentoTests.framework; path = "Pods-swift-magentoTests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6F06F3D01D6ECB06718428B67BEC342 /* BSG_KSCrashAdvanced.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashAdvanced.h; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSCrashAdvanced.h; sourceTree = "<group>"; };
+		C7A8E88E96D0F97282FABE4C98157281 /* Pods-swift-magento.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-swift-magento.debug.xcconfig"; sourceTree = "<group>"; };
+		C8177A23E16DEDFC6ECB8FAC666D5D6F /* Bugsnag-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bugsnag-dummy.m"; sourceTree = "<group>"; };
+		CA371738DC2CA50B275BE2E28DF301B9 /* BugsnagCrashSentry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagCrashSentry.h; path = Source/BugsnagCrashSentry.h; sourceTree = "<group>"; };
+		CA4610232E4ED63748DD96C3EFB92811 /* BSG_KSCrashC.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSCrashC.c; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSCrashC.c; sourceTree = "<group>"; };
+		CACD29125A01F1083F52E7C0D114C68F /* BSG_KSCrashSentry_Signal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashSentry_Signal.h; path = Source/KSCrash/Source/KSCrash/Recording/Sentry/BSG_KSCrashSentry_Signal.h; sourceTree = "<group>"; };
+		CAEE17A5434605155F20B0A641FF5F10 /* BugsnagKeys.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagKeys.h; path = Source/BugsnagKeys.h; sourceTree = "<group>"; };
+		CB179E258477C0C8B3EF109D08623808 /* BSG_KSBacktrace.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSBacktrace.c; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSBacktrace.c; sourceTree = "<group>"; };
+		CE4F7799189C352E1D9346617C1FCFED /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		D333819344F0E3CF433C1E51A0404B34 /* BugsnagUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagUser.h; path = Source/BugsnagUser.h; sourceTree = "<group>"; };
+		D48F0D09551332EF35C1B4A691666AD2 /* Pods-swift-magentoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-swift-magentoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		D63D53DE7A9CA55BCB53DB8D8F5D904D /* BSGConnectivity.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSGConnectivity.m; path = Source/BSGConnectivity.m; sourceTree = "<group>"; };
+		D74047FFB7A768977DB231F0AE1F7B36 /* BSG_KSCrashC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashC.h; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSCrashC.h; sourceTree = "<group>"; };
+		DA3A6132B77B9277044505028790F26B /* BSGOutOfMemoryWatchdog.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSGOutOfMemoryWatchdog.m; path = Source/BSGOutOfMemoryWatchdog.m; sourceTree = "<group>"; };
+		DBC4C31CCA193E5FA7CB7218571E63BD /* BugsnagCrashReport.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagCrashReport.m; path = Source/BugsnagCrashReport.m; sourceTree = "<group>"; };
+		DCC06FAD95F3FDDA564A73F74BEA4E35 /* BSG_KSSystemCapabilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSSystemCapabilities.h; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSSystemCapabilities.h; sourceTree = "<group>"; };
+		E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SwiftyJSON.framework; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2DF8B0E03E71B66688CD736F14C8B10 /* BugsnagConfiguration.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagConfiguration.m; path = Source/BugsnagConfiguration.m; sourceTree = "<group>"; };
+		E3E637D918A2CC408B815C0F444A72B1 /* BugsnagErrorReportApiClient.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagErrorReportApiClient.m; path = Source/BugsnagErrorReportApiClient.m; sourceTree = "<group>"; };
+		E51F0905428792E17F7563B50C6FCBE6 /* BSG_KSCrashSentry_NSException.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashSentry_NSException.h; path = Source/KSCrash/Source/KSCrash/Recording/Sentry/BSG_KSCrashSentry_NSException.h; sourceTree = "<group>"; };
+		E9B7021EBC16FF3EBA9573C2FD21B62A /* BugsnagSessionTracker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagSessionTracker.h; path = Source/BugsnagSessionTracker.h; sourceTree = "<group>"; };
+		EBD220ADC2050704F71AA8685D6A05AD /* BugsnagHandledState.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagHandledState.m; path = Source/BugsnagHandledState.m; sourceTree = "<group>"; };
+		EC353F37C52C6E5E1990136129F9E52E /* Bugsnag.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bugsnag.h; path = Source/Bugsnag.h; sourceTree = "<group>"; };
+		ED98EA701E6F7E27BD7408CCF2FE761A /* BugsnagSession.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BugsnagSession.h; path = Source/BugsnagSession.h; sourceTree = "<group>"; };
+		EE02FA53009C185FB6C1D5F0082DCB8B /* BSG_KSSystemInfoC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSSystemInfoC.h; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSSystemInfoC.h; sourceTree = "<group>"; };
+		EE16FE64D35DC9181AFE19BAF2A9A5D9 /* BugsnagSink.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagSink.m; path = Source/BugsnagSink.m; sourceTree = "<group>"; };
+		EF080120CAE0F22B051D050607B807C4 /* BSG_KSCrashReportFilterCompletion.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSCrashReportFilterCompletion.h; path = Source/KSCrash/Source/KSCrash/Reporting/Filters/BSG_KSCrashReportFilterCompletion.h; sourceTree = "<group>"; };
+		F0EF63E0619E98A1EF16DE8451D1B7D4 /* BSG_KSCrashReportStore.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSG_KSCrashReportStore.m; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSCrashReportStore.m; sourceTree = "<group>"; };
+		F17435979B15BCD6F70CEC176A95FFE4 /* BugsnagSession.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagSession.m; path = Source/BugsnagSession.m; sourceTree = "<group>"; };
+		F20ABA0DEC25427E0D907C80E223C6A4 /* BSG_KSFileUtils.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSFileUtils.c; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSFileUtils.c; sourceTree = "<group>"; };
+		F29B295DCCC3C4EBC26B6D191AEC312A /* BSG_KSSignalInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = BSG_KSSignalInfo.h; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSSignalInfo.h; sourceTree = "<group>"; };
+		F36BD17A868F04C3ABAFB461B43023FF /* Pods-swift-magento.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-swift-magento.modulemap"; sourceTree = "<group>"; };
+		F53E195F78A74DF75021AFFC902498F1 /* Pods_swift_magento.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_swift_magento.framework; path = "Pods-swift-magento.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F685B14F326C63181BC5240373EB2907 /* BSG_KSJSONCodec.c */ = {isa = PBXFileReference; includeInIndex = 1; name = BSG_KSJSONCodec.c; path = Source/KSCrash/Source/KSCrash/Recording/Tools/BSG_KSJSONCodec.c; sourceTree = "<group>"; };
+		F8BE8145CBA9CBA12CD91B6C6A8A2FCD /* BSG_KSSystemInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BSG_KSSystemInfo.m; path = Source/KSCrash/Source/KSCrash/Recording/BSG_KSSystemInfo.m; sourceTree = "<group>"; };
+		F94FD8A5A04CE90BE9109E4D0E8A3B80 /* BugsnagMetaData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagMetaData.m; path = Source/BugsnagMetaData.m; sourceTree = "<group>"; };
+		FA7B5F5A9AAB009BF7A009EE0A2796F0 /* BugsnagCrashSentry.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugsnagCrashSentry.m; path = Source/BugsnagCrashSentry.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2BBED14B67320183D9EC0A40CE617F90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D657D38854C39A88A9A723CC6F47F3A7 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59760D08D070D383FCEBA769F37AE399 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C5781F12A2FB8E7E5604E57917124CE /* Foundation.framework in Frameworks */,
+				33070AC237E17345D08C5FD78B235DD9 /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8C7E980356C1E3EADEF5FA3E4A4BCAFF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B6A5E0DAA6D142FB43491BE9E4B889D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD9C5A8DAF4334B670E91B2EC08DBE2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				464450D037D17ED5EE2322E180A6A9F5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB7EBF6CCCA535BA4F447E10039CEA16 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3E4E8D4B67DBC31BED9A64F0E3C862DB /* Bugsnag */ = {
+			isa = PBXGroup;
+			children = (
+				375954588310A1FC32DBFB5F77F9CCE6 /* BSG_KSArchSpecific.h */,
+				CB179E258477C0C8B3EF109D08623808 /* BSG_KSBacktrace.c */,
+				3C19F5C1C2F83346484EBDEE08C185B3 /* BSG_KSBacktrace.h */,
+				916AA7BFC034B99D6DD452DBA44C6751 /* BSG_KSBacktrace_Private.h */,
+				59C0600DDB1F0627B87F7EEAD55E3E40 /* BSG_KSCrash.h */,
+				796BB30A3FB859EE482D5E288973FFBA /* BSG_KSCrash.m */,
+				C6F06F3D01D6ECB06718428B67BEC342 /* BSG_KSCrashAdvanced.h */,
+				CA4610232E4ED63748DD96C3EFB92811 /* BSG_KSCrashC.c */,
+				D74047FFB7A768977DB231F0AE1F7B36 /* BSG_KSCrashC.h */,
+				90423A8CB2411D709EA3447B4ECEF3F7 /* BSG_KSCrashCallCompletion.h */,
+				35C095F41BF5C2F553FB622110F11843 /* BSG_KSCrashCallCompletion.m */,
+				B5B1855796B40CF74488DF3816E18A53 /* BSG_KSCrashContext.h */,
+				A90BEF83B89FDA9EC2B994FEBF8FF68B /* BSG_KSCrashDoctor.h */,
+				93CDC8E8971232899F08D9506ED98B6A /* BSG_KSCrashDoctor.m */,
+				0E05EDB54599BF53D5C8FE3F427385B6 /* BSG_KSCrashReport.c */,
+				53DBA4B36D906BD11689A85CB5125AFC /* BSG_KSCrashReport.h */,
+				10CA7F135C7569601AB2F1EC545267A3 /* BSG_KSCrashReportFields.h */,
+				7F21BA459463E6449ADB809008A31763 /* BSG_KSCrashReportFilter.h */,
+				EF080120CAE0F22B051D050607B807C4 /* BSG_KSCrashReportFilterCompletion.h */,
+				7A1F438278132E1A96B767012EA296FE /* BSG_KSCrashReportStore.h */,
+				F0EF63E0619E98A1EF16DE8451D1B7D4 /* BSG_KSCrashReportStore.m */,
+				8C35811118DF9E88B46A006942DE10A7 /* BSG_KSCrashReportVersion.h */,
+				8A8E8F7BC03B4DAB951DCDF0BAC35ED5 /* BSG_KSCrashReportWriter.h */,
+				3990F8C343FCC4E361BA50A8117A4839 /* BSG_KSCrashSentry.c */,
+				92EEFBEAB865C147975A072E2EB7554B /* BSG_KSCrashSentry.h */,
+				5E3B5CE8E2AE4945A18F6957EB49CF7E /* BSG_KSCrashSentry_CPPException.h */,
+				8DD1BA28931EC7C2F26A8BEF8F76416A /* BSG_KSCrashSentry_CPPException.mm */,
+				1FFABB832CE5BDC2D5CA8DC070D879F6 /* BSG_KSCrashSentry_Deadlock.h */,
+				54F9B50EE808645E84F1FDFD18B583D3 /* BSG_KSCrashSentry_Deadlock.m */,
+				4D1D42DCEB35B72D6EE04F035CB6AC5B /* BSG_KSCrashSentry_MachException.c */,
+				77E817402CA85DB387ADBF5DBEA37DEB /* BSG_KSCrashSentry_MachException.h */,
+				E51F0905428792E17F7563B50C6FCBE6 /* BSG_KSCrashSentry_NSException.h */,
+				0EFCB984B974A64456482E59141EEC73 /* BSG_KSCrashSentry_NSException.m */,
+				2302B68869066FE01112FEF6ACB9C3AA /* BSG_KSCrashSentry_Private.h */,
+				9B84FE218023B3FF821B4363D88B187A /* BSG_KSCrashSentry_Signal.c */,
+				CACD29125A01F1083F52E7C0D114C68F /* BSG_KSCrashSentry_Signal.h */,
+				16806E86FEE3FB11F9BDEDFBE4F52B7B /* BSG_KSCrashSentry_User.c */,
+				25F2866A1B806FCC2307D1E2960955C5 /* BSG_KSCrashSentry_User.h */,
+				249FB0C22F478F3A348EC80AFB6D0E3A /* BSG_KSCrashState.h */,
+				1776F1F8EBE6C27F9B8CF688893E004F /* BSG_KSCrashState.m */,
+				A4497284EDDC8285909671DB2C524AC8 /* BSG_KSCrashType.c */,
+				310B38F368186B80629817529A070AB6 /* BSG_KSCrashType.h */,
+				8DA7E7C02E2576E6E69FD65AE5CA5C56 /* BSG_KSDynamicLinker.c */,
+				8605497BA4E1AA5A1D45E8ECEA0C3602 /* BSG_KSDynamicLinker.h */,
+				F20ABA0DEC25427E0D907C80E223C6A4 /* BSG_KSFileUtils.c */,
+				424FC5185B3CC52A3BC170E53CDC1E28 /* BSG_KSFileUtils.h */,
+				F685B14F326C63181BC5240373EB2907 /* BSG_KSJSONCodec.c */,
+				8836F548CEB7B791C82021CEE6B127D2 /* BSG_KSJSONCodec.h */,
+				406B7586CE0E3316D088F7DE300C8F61 /* BSG_KSJSONCodecObjC.h */,
+				958A1EBB8B219B9D69A0502083473A6E /* BSG_KSJSONCodecObjC.m */,
+				5DB85DA716CA9380D61856D3981F0461 /* BSG_KSLogger.h */,
+				9931254A78B8F91DC71D86BD3815CC6F /* BSG_KSLogger.m */,
+				9D09ABC7F47D5520506E8E6BAE68FE0C /* BSG_KSMach.c */,
+				85F378F3D3BF30EE7A8F91A8D3EEBE0F /* BSG_KSMach.h */,
+				6AB9ADDA7EF9FF624E8F7F3191ECCCA1 /* BSG_KSMach_Arm.c */,
+				B49CDD4094EABB875E05A760817077B4 /* BSG_KSMach_Arm64.c */,
+				69A805C41EC6F98405FCB40AF80867DC /* BSG_KSMach_x86_32.c */,
+				932428977B586CDA26A6930B27A3E8CC /* BSG_KSMach_x86_64.c */,
+				2C472A2C35D56DF22BF7C0CAA1C6F434 /* BSG_KSMachApple.h */,
+				79703605FC23694E2547077C2AB689EA /* BSG_KSObjC.c */,
+				0287373D648F104F93ED1F9CBD551021 /* BSG_KSObjC.h */,
+				8FAAAD48F4140F12B750C45217E152C6 /* BSG_KSObjCApple.h */,
+				B45BE69398C0840508ED4792538806B0 /* BSG_KSSignalInfo.c */,
+				F29B295DCCC3C4EBC26B6D191AEC312A /* BSG_KSSignalInfo.h */,
+				86087F9F5B4FA4F24348F40929C1FBF3 /* BSG_KSSingleton.h */,
+				BD3D54CCEDD2D424DD7D42A8772472F3 /* BSG_KSString.c */,
+				1BB1185BDF63E9E4E8245CE4FE0DFDF5 /* BSG_KSString.h */,
+				AF89C625420A3A6D8E33184DDE1B079B /* BSG_KSSysCtl.c */,
+				6FCA503DCFE4DAB3F6FE4CE978500F66 /* BSG_KSSysCtl.h */,
+				DCC06FAD95F3FDDA564A73F74BEA4E35 /* BSG_KSSystemCapabilities.h */,
+				8FCFDBDADBC5D460E1BF68764BFEA5E5 /* BSG_KSSystemInfo.h */,
+				F8BE8145CBA9CBA12CD91B6C6A8A2FCD /* BSG_KSSystemInfo.m */,
+				EE02FA53009C185FB6C1D5F0082DCB8B /* BSG_KSSystemInfoC.h */,
+				0C09E4DCE229B8C71296584D65979F67 /* BSG_RFC3339DateTool.h */,
+				AA1AA7C23945AF77DA83630065928B93 /* BSG_RFC3339DateTool.m */,
+				1358FB928322FDA2EDFD5178CE668E1E /* BSGConnectivity.h */,
+				D63D53DE7A9CA55BCB53DB8D8F5D904D /* BSGConnectivity.m */,
+				A3E191A39B0A630AF864BB507E1AE758 /* BSGOutOfMemoryWatchdog.h */,
+				DA3A6132B77B9277044505028790F26B /* BSGOutOfMemoryWatchdog.m */,
+				B46C80428CDB1264827AD4CF50DA8B0A /* BSGSerialization.h */,
+				7BC81E9BF635E5AD0C98626CEAD36952 /* BSGSerialization.m */,
+				EC353F37C52C6E5E1990136129F9E52E /* Bugsnag.h */,
+				BD6C8646C204290739CEC9DBF581C88E /* Bugsnag.m */,
+				16E2A81E324383CFAECC5A1EA3C9157A /* BugsnagApiClient.h */,
+				B96645AF847E75EC3FA0C14976474604 /* BugsnagApiClient.m */,
+				06E6F7E2AF9871D95DBFA8A7DA2BCBB5 /* BugsnagBreadcrumb.h */,
+				201919C60D996D113B8952AB12CE54BB /* BugsnagBreadcrumb.m */,
+				12D47572E06A258F4F5226E79C8E9ACC /* BugsnagCollections.h */,
+				C19F578A3E1C7F4D9609AE8C22D63916 /* BugsnagCollections.m */,
+				9A095A21849349F73BB412BF64C16EA3 /* BugsnagConfiguration.h */,
+				E2DF8B0E03E71B66688CD736F14C8B10 /* BugsnagConfiguration.m */,
+				27A7B764C7FA79F8FB2CA53013E57598 /* BugsnagCrashReport.h */,
+				DBC4C31CCA193E5FA7CB7218571E63BD /* BugsnagCrashReport.m */,
+				CA371738DC2CA50B275BE2E28DF301B9 /* BugsnagCrashSentry.h */,
+				FA7B5F5A9AAB009BF7A009EE0A2796F0 /* BugsnagCrashSentry.m */,
+				A9A1F4237CF7BECB0236273B7CF08D09 /* BugsnagErrorReportApiClient.h */,
+				E3E637D918A2CC408B815C0F444A72B1 /* BugsnagErrorReportApiClient.m */,
+				3586787FE2E17F74AC5D8AED5B12EC4A /* BugsnagFileStore.h */,
+				25CD2AC7906BB7742125330D9CAB03D2 /* BugsnagFileStore.m */,
+				142B0D2DDE82C2C857E275F90CE2ADD9 /* BugsnagHandledState.h */,
+				EBD220ADC2050704F71AA8685D6A05AD /* BugsnagHandledState.m */,
+				CAEE17A5434605155F20B0A641FF5F10 /* BugsnagKeys.h */,
+				813751126C317CFCD0424C0208653FBA /* BugsnagKSCrashSysInfoParser.h */,
+				894AF9DD5CFB6FF652B7EF8C907C6E5C /* BugsnagKSCrashSysInfoParser.m */,
+				0888A46B95F13C7140CE5E25A2A3FFEC /* BugsnagLogger.h */,
+				40BE2E572BF18983A3166095F456FE0D /* BugsnagMetaData.h */,
+				F94FD8A5A04CE90BE9109E4D0E8A3B80 /* BugsnagMetaData.m */,
+				6E92159AD572F99266A819C4F4629180 /* BugsnagNotifier.h */,
+				07536F34345F4F3EFEEE2DACF7CDF912 /* BugsnagNotifier.m */,
+				ED98EA701E6F7E27BD7408CCF2FE761A /* BugsnagSession.h */,
+				F17435979B15BCD6F70CEC176A95FFE4 /* BugsnagSession.m */,
+				7B230E53168074740E4F7FB97E0AF534 /* BugsnagSessionFileStore.h */,
+				86BBE0A1D9B215C93A65A9EF74CA8123 /* BugsnagSessionFileStore.m */,
+				E9B7021EBC16FF3EBA9573C2FD21B62A /* BugsnagSessionTracker.h */,
+				A1865DBE26E004871C9D5902EF53EF8B /* BugsnagSessionTracker.m */,
+				402EF404DE6DAB16C6C5183D4D47B0E9 /* BugsnagSessionTrackingApiClient.h */,
+				6FFD15E3191B8B692BB5D468B38711D6 /* BugsnagSessionTrackingApiClient.m */,
+				C361108615D54ABCC2324BF5A1F4A6B7 /* BugsnagSessionTrackingPayload.h */,
+				BF5CD92FE53CBCF297FDBECC043AECED /* BugsnagSessionTrackingPayload.m */,
+				837F602FC37C90BD580176780A1FCDAD /* BugsnagSink.h */,
+				EE16FE64D35DC9181AFE19BAF2A9A5D9 /* BugsnagSink.m */,
+				D333819344F0E3CF433C1E51A0404B34 /* BugsnagUser.h */,
+				6446C3C0362623875223A22BEA706CEC /* BugsnagUser.m */,
+				7C3622945074AE189781B4E7318DBA1D /* NSError+BSG_SimpleConstructor.h */,
+				469C1042AC10F0564DA9961C4FC8D06E /* NSError+BSG_SimpleConstructor.m */,
+				8771B2966114D5F31FBCCA8AC1051300 /* Support Files */,
+			);
+			name = Bugsnag;
+			path = Bugsnag;
+			sourceTree = "<group>";
+		};
+		5EC5D88C0A098BD4492483BEBA9F7365 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2115405BB4F144312A61CAF6F1742C58 /* SwiftyJSON.modulemap */,
+				03CE0D2FD1B3E6F7BE6DBCBF89FC13C2 /* SwiftyJSON.xcconfig */,
+				99B3BAE15E83684F9DDF245DCC2BA4DD /* SwiftyJSON-dummy.m */,
+				11ECC494B9453E3ED6EFBE64E3586F08 /* SwiftyJSON-Info.plist */,
+				5B4320781DD6474DD46D0D771FA572DC /* SwiftyJSON-prefix.pch */,
+				767233EF1DCA48E1A96ADD0812B530C5 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		8771B2966114D5F31FBCCA8AC1051300 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				97A16FBBD6BDA6A34665BC2A668D9E71 /* Bugsnag.modulemap */,
+				07710FD82473DAFA686AC3FF10033A16 /* Bugsnag.xcconfig */,
+				C8177A23E16DEDFC6ECB8FAC666D5D6F /* Bugsnag-dummy.m */,
+				BFD1DCB86AAF4D667F4BB4C6BAF312AD /* Bugsnag-Info.plist */,
+				4800A30361EABD5EFB64185FBB5F080B /* Bugsnag-prefix.pch */,
+				6A02ED9DA2EE76F6A735323B0FCD392A /* Bugsnag-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Bugsnag";
+			sourceTree = "<group>";
+		};
+		898077758ECDD18D3A1F3F6F537388DB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3E4E8D4B67DBC31BED9A64F0E3C862DB /* Bugsnag */,
+				992121E801E79E47205B7760976191CD /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		951C67B0EC113044B53C0C09D9CF4487 /* Pods-swift-magento */ = {
+			isa = PBXGroup;
+			children = (
+				F36BD17A868F04C3ABAFB461B43023FF /* Pods-swift-magento.modulemap */,
+				71975954BD8997F157F2F6681B6C6895 /* Pods-swift-magento-acknowledgements.markdown */,
+				2E3ABBB5C1187A9B5B308B629F0BD808 /* Pods-swift-magento-acknowledgements.plist */,
+				C3EB74E6D782D037C3FA49ED73730149 /* Pods-swift-magento-dummy.m */,
+				2DD7E5855BEC04FC57CA06813F1668A2 /* Pods-swift-magento-Info.plist */,
+				1464DBB109C077B0C85114C29F7C5B39 /* Pods-swift-magento-umbrella.h */,
+				C7A8E88E96D0F97282FABE4C98157281 /* Pods-swift-magento.debug.xcconfig */,
+				1B3C0A09961F8A503FC81606A0D0A201 /* Pods-swift-magento.release.xcconfig */,
+			);
+			name = "Pods-swift-magento";
+			path = "Target Support Files/Pods-swift-magento";
+			sourceTree = "<group>";
+		};
+		992121E801E79E47205B7760976191CD /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				354C8D7979D6E378493FCE3C989839DD /* SwiftyJSON.swift */,
+				5EC5D88C0A098BD4492483BEBA9F7365 /* Support Files */,
+			);
+			name = SwiftyJSON;
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		A474AC5C0CF886AE669C6536B679DF7B /* Pods-swift-magentoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1BBB783B7981D4C97EF9F8D3E9E487D5 /* Pods-swift-magentoTests.modulemap */,
+				D48F0D09551332EF35C1B4A691666AD2 /* Pods-swift-magentoTests-acknowledgements.markdown */,
+				49152DBCA2D157B77C51825BE20DB4E6 /* Pods-swift-magentoTests-acknowledgements.plist */,
+				2B6F98EC84EBDC31439D35F1B005D4ED /* Pods-swift-magentoTests-dummy.m */,
+				B6234F77CEE45D924699C66D7389DF42 /* Pods-swift-magentoTests-Info.plist */,
+				58CC3B98D1B76AEE02BCB8B6C174D6CA /* Pods-swift-magentoTests-umbrella.h */,
+				765E0187BCB56BD1F184E061534AC459 /* Pods-swift-magentoTests.debug.xcconfig */,
+				2F4C39E9B59F329F4D3B9E104E6FDD46 /* Pods-swift-magentoTests.release.xcconfig */,
+			);
+			name = "Pods-swift-magentoTests";
+			path = "Target Support Files/Pods-swift-magentoTests";
+			sourceTree = "<group>";
+		};
+		B2502E41CD9A095E9AB2CA5937B51135 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AFCFF05430D46AE44C4B2B0AC7D9715A /* Bugsnag.framework */,
+				F53E195F78A74DF75021AFFC902498F1 /* Pods_swift_magento.framework */,
+				C6E6FF19761E4C87E3E0B2AAEB336650 /* Pods_swift_magentoTests.framework */,
+				E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				1628BF05B4CAFDCC3549A101F5A10A17 /* Frameworks */,
+				898077758ECDD18D3A1F3F6F537388DB /* Pods */,
+				B2502E41CD9A095E9AB2CA5937B51135 /* Products */,
+				D1DAFEC79B04293A6FFE3E805D9D29E2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D1DAFEC79B04293A6FFE3E805D9D29E2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				951C67B0EC113044B53C0C09D9CF4487 /* Pods-swift-magento */,
+				A474AC5C0CF886AE669C6536B679DF7B /* Pods-swift-magentoTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		DB7EBF6CCCA535BA4F447E10039CEA16 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				1DE354DA182454A49972F1EA0BAB0B3E /* Foundation.framework */,
+				CE4F7799189C352E1D9346617C1FCFED /* SystemConfiguration.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		07558F89420C5B3BE982D19D7D738C8F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F91EFB92309BA84520DDDB0309F650CD /* Pods-swift-magentoTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0CF91A6A7A0E8BB55E3521051F95DBEB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B30209F4C3836AF39974DCD197CC660E /* Pods-swift-magento-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D7DD627DB5C5AD636646E57B685AFB2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1942F7D3B7722A5637C3FC0BE44B1E6C /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5947F8EFA7E6C4E338F9D244E85CC197 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90FD87A0716C399212D8329E18C52DDF /* BSG_KSArchSpecific.h in Headers */,
+				F9AB583D13ECF3D50636ABD5AE5A4F38 /* BSG_KSBacktrace.h in Headers */,
+				8CB605AD89E8F404A2581B04B76F7BCF /* BSG_KSBacktrace_Private.h in Headers */,
+				B0CDEB44FEF57B8245F98B370AD0E1DE /* BSG_KSCrash.h in Headers */,
+				BABF1ADC2A3D3D3C86DB33AE2FDFE0C4 /* BSG_KSCrashAdvanced.h in Headers */,
+				5CD1A3BD83786229B729D41B9CE13151 /* BSG_KSCrashC.h in Headers */,
+				D59278EC4E2E58D346A46E0078611F59 /* BSG_KSCrashCallCompletion.h in Headers */,
+				0E6F16666BE9CA5AC639619900E82821 /* BSG_KSCrashContext.h in Headers */,
+				EF166684FFFB8912CD6818C4285975A3 /* BSG_KSCrashDoctor.h in Headers */,
+				C3182BC54981D6165EB4F05D5B0C7677 /* BSG_KSCrashReport.h in Headers */,
+				4A75A81351F8827DC1D0F039D2C9A022 /* BSG_KSCrashReportFields.h in Headers */,
+				4449A3EF586709D1E27AD866F144140C /* BSG_KSCrashReportFilter.h in Headers */,
+				2F35C6655B869C995B731E76B56A2902 /* BSG_KSCrashReportFilterCompletion.h in Headers */,
+				E7DF0AD0771BC68DF86B456B5AC442CB /* BSG_KSCrashReportStore.h in Headers */,
+				530AB4D8843C0197D83F280174E15E76 /* BSG_KSCrashReportVersion.h in Headers */,
+				29A99E185D30D5BD99E892A753F6C77C /* BSG_KSCrashReportWriter.h in Headers */,
+				96C0D4756FC0A0BA12F2149DC952B6BC /* BSG_KSCrashSentry.h in Headers */,
+				566928A2E09646A834D9BDD30C3C9490 /* BSG_KSCrashSentry_CPPException.h in Headers */,
+				E1A285DD627F210C70B91E24F0FE64BA /* BSG_KSCrashSentry_Deadlock.h in Headers */,
+				980D8C09901429557F8E0AD09A85DBE9 /* BSG_KSCrashSentry_MachException.h in Headers */,
+				ADCC14F9D9372E1741C3C3778559FAA1 /* BSG_KSCrashSentry_NSException.h in Headers */,
+				4B2243D5B93F4CD8DC41E0BCA0FCC117 /* BSG_KSCrashSentry_Private.h in Headers */,
+				F7D8B6A028BF40DB2927126B827CD08A /* BSG_KSCrashSentry_Signal.h in Headers */,
+				360AF4F5FC7C01281A3D781FB9782FE3 /* BSG_KSCrashSentry_User.h in Headers */,
+				609AF4F8F715238623959E3D43551F64 /* BSG_KSCrashState.h in Headers */,
+				493917598C37344F6E16BDB6C88B126E /* BSG_KSCrashType.h in Headers */,
+				D633B77DC2D77C73FAAABDA401B87BAE /* BSG_KSDynamicLinker.h in Headers */,
+				90F179E708633BDE52447C3B9E87123C /* BSG_KSFileUtils.h in Headers */,
+				DA1C8EA123EB340473F885F966ACB822 /* BSG_KSJSONCodec.h in Headers */,
+				3FD29C03335711880B2E95AD176DA86D /* BSG_KSJSONCodecObjC.h in Headers */,
+				73357BBFDD57EF5B5AD3547037FA9A58 /* BSG_KSLogger.h in Headers */,
+				457E853EB00BA6FE12084427C4CA6EF2 /* BSG_KSMach.h in Headers */,
+				39C5E61F496D7CDE0DDECF5320DA5E45 /* BSG_KSMachApple.h in Headers */,
+				2E4062DA46D1927CC74A91A1CDB90A5A /* BSG_KSObjC.h in Headers */,
+				64DCB8E76485B34BDE354F1873ABB82B /* BSG_KSObjCApple.h in Headers */,
+				16A910789E6EEBC8E1806BFCC1688F5B /* BSG_KSSignalInfo.h in Headers */,
+				5255B9985EAEDB502039BFDB1089F40A /* BSG_KSSingleton.h in Headers */,
+				0B84AE03B5BE1168DA2BF2B73846E5E5 /* BSG_KSString.h in Headers */,
+				9BB240331A7B5F8A0B85B01174B6638D /* BSG_KSSysCtl.h in Headers */,
+				C79BA08A18FD97D0DE468778F43CD036 /* BSG_KSSystemCapabilities.h in Headers */,
+				2450379DBF509A7E625C03CDEC951F61 /* BSG_KSSystemInfo.h in Headers */,
+				D87AC3C6C16E64CE148B05AF5A067666 /* BSG_KSSystemInfoC.h in Headers */,
+				6B8C5B37861A7BB36D0DE3DDC46CCFD0 /* BSG_RFC3339DateTool.h in Headers */,
+				B6BE9FFD81D243CC7F7EAADC3D82553F /* BSGConnectivity.h in Headers */,
+				258873B16680C4DE2180E964A86D99BB /* BSGOutOfMemoryWatchdog.h in Headers */,
+				9A0F8A39036FE45BD755E9555422F0A7 /* BSGSerialization.h in Headers */,
+				176D68C346C89E40EA4E1A8AD7793A98 /* Bugsnag-umbrella.h in Headers */,
+				CE07B6AEF1BC1F982D24879876292208 /* Bugsnag.h in Headers */,
+				C402D63B484EA09691C8D38192DE0EE0 /* BugsnagApiClient.h in Headers */,
+				AD49DE999B714E3BEFBCD54B54875CB7 /* BugsnagBreadcrumb.h in Headers */,
+				10501E9E973D49778E1C12A55F11E7CE /* BugsnagCollections.h in Headers */,
+				5A625A49472C9EF514E03E10E86CCD99 /* BugsnagConfiguration.h in Headers */,
+				9D395F9F776389148B9471036BF4358E /* BugsnagCrashReport.h in Headers */,
+				8FE512C3A9B3F9EDF4D11AA7219D36FB /* BugsnagCrashSentry.h in Headers */,
+				5B46D1DBCC24A77E1D62E6C5E531C09A /* BugsnagErrorReportApiClient.h in Headers */,
+				56B11ECB2095505F4D3905C12DAE1DFF /* BugsnagFileStore.h in Headers */,
+				2F7AEF531AE095154CDEAC9368A7BF75 /* BugsnagHandledState.h in Headers */,
+				D693CF8FCE3E7BAD795F61B905C2F1D4 /* BugsnagKeys.h in Headers */,
+				ED264C2251437CBD4DABF42C988964F5 /* BugsnagKSCrashSysInfoParser.h in Headers */,
+				747F11409A5D18C7A44BAB9C26496940 /* BugsnagLogger.h in Headers */,
+				99D9BBC017C4F39BC2A4192C169D0F9C /* BugsnagMetaData.h in Headers */,
+				5EDF478A234AE5537FD2FBA52345C31C /* BugsnagNotifier.h in Headers */,
+				548AEFFE978B9CCB0C06871E73873A1E /* BugsnagSession.h in Headers */,
+				EFC1F20F98CD91D2664AFBDAA9FF9284 /* BugsnagSessionFileStore.h in Headers */,
+				7528CE9F4F9D5A2A233ABFC725FA3876 /* BugsnagSessionTracker.h in Headers */,
+				F34620B70A630DEC2E2F84B8BB116B79 /* BugsnagSessionTrackingApiClient.h in Headers */,
+				14E29990FB735987B74105697C9F96AF /* BugsnagSessionTrackingPayload.h in Headers */,
+				A3751FEC3D4EEA33DCC762C6ECE6ED28 /* BugsnagSink.h in Headers */,
+				7D2B6887513B6642BF7E1AE3B3AB2A8A /* BugsnagUser.h in Headers */,
+				6E98D477877790903174D302F233FADC /* NSError+BSG_SimpleConstructor.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		763C00A5A6DE50294E8438AD6F919AB1 /* Pods-swift-magento */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C04DA9661D26AF3CD47E5BDE5CB41414 /* Build configuration list for PBXNativeTarget "Pods-swift-magento" */;
+			buildPhases = (
+				0CF91A6A7A0E8BB55E3521051F95DBEB /* Headers */,
+				A02880F5D4C1CB83C01768AC80E27525 /* Sources */,
+				2BBED14B67320183D9EC0A40CE617F90 /* Frameworks */,
+				D23FCE10D49EEAC125E0D5E9BF6C9C02 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				92ADC0ECF4977C7159CBF23C7688E109 /* PBXTargetDependency */,
+				C8B772D888CBA41F84E3E29212CC2730 /* PBXTargetDependency */,
+			);
+			name = "Pods-swift-magento";
+			productName = "Pods-swift-magento";
+			productReference = F53E195F78A74DF75021AFFC902498F1 /* Pods_swift_magento.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		B668C0F49B68841E799EC0E23041E18F /* Pods-swift-magentoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0605C93967DA853E44FBB4B9E630E677 /* Build configuration list for PBXNativeTarget "Pods-swift-magentoTests" */;
+			buildPhases = (
+				07558F89420C5B3BE982D19D7D738C8F /* Headers */,
+				19DD8D6D9C717C5FBE5FBD4F183EEEDD /* Sources */,
+				8C7E980356C1E3EADEF5FA3E4A4BCAFF /* Frameworks */,
+				0A10C73BBA2C701219B870D3FE1F74C5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				33ADA769753E538144C2DCCE26CC57FD /* PBXTargetDependency */,
+			);
+			name = "Pods-swift-magentoTests";
+			productName = "Pods-swift-magentoTests";
+			productReference = C6E6FF19761E4C87E3E0B2AAEB336650 /* Pods_swift_magentoTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BDC8B0769B39E03BE257939D6FD4D966 /* Bugsnag */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 74BFF871D159217BBC6715CD522E09C7 /* Build configuration list for PBXNativeTarget "Bugsnag" */;
+			buildPhases = (
+				5947F8EFA7E6C4E338F9D244E85CC197 /* Headers */,
+				C663050CBC17D85350462B58884E9F2E /* Sources */,
+				59760D08D070D383FCEBA769F37AE399 /* Frameworks */,
+				FEED212CF6C590EC7F91958BE8457A20 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Bugsnag;
+			productName = Bugsnag;
+			productReference = AFCFF05430D46AE44C4B2B0AC7D9715A /* Bugsnag.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 62468BF9C7EDA172E951A24083C3ECA7 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				3D7DD627DB5C5AD636646E57B685AFB2 /* Headers */,
+				1700C451C98D9DCECBEDFC5E351C5A9E /* Sources */,
+				AD9C5A8DAF4334B670E91B2EC08DBE2C /* Frameworks */,
+				D098F7F0080A87A1F472C81FC2F85528 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = E23C076BA70925415F490FEDB215DA92 /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = B2502E41CD9A095E9AB2CA5937B51135 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDC8B0769B39E03BE257939D6FD4D966 /* Bugsnag */,
+				763C00A5A6DE50294E8438AD6F919AB1 /* Pods-swift-magento */,
+				B668C0F49B68841E799EC0E23041E18F /* Pods-swift-magentoTests */,
+				D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A10C73BBA2C701219B870D3FE1F74C5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D098F7F0080A87A1F472C81FC2F85528 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D23FCE10D49EEAC125E0D5E9BF6C9C02 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FEED212CF6C590EC7F91958BE8457A20 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1700C451C98D9DCECBEDFC5E351C5A9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2BF6FBC0A64BF107C5D64C61F1397770 /* SwiftyJSON-dummy.m in Sources */,
+				7B4CE5C84161E2BFE477F42DFD634382 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		19DD8D6D9C717C5FBE5FBD4F183EEEDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1C1131FFA3E58E104F0B7419779D12C2 /* Pods-swift-magentoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A02880F5D4C1CB83C01768AC80E27525 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F5A31104A893F067F5097E56EDFC9A5 /* Pods-swift-magento-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C663050CBC17D85350462B58884E9F2E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				21BD57C3D389BBC1A3A38211D46530E4 /* BSG_KSBacktrace.c in Sources */,
+				5A44BCEBD6739B0C57990198903CEE68 /* BSG_KSCrash.m in Sources */,
+				DB41D2162DAD942C8870A6583B4CB737 /* BSG_KSCrashC.c in Sources */,
+				1177F577D82A81AC6A8F2D4049779E4F /* BSG_KSCrashCallCompletion.m in Sources */,
+				C3179F438F31858074DD0B6E5535E369 /* BSG_KSCrashDoctor.m in Sources */,
+				0194514898CC802FDF7E4B466D0AC8DB /* BSG_KSCrashReport.c in Sources */,
+				EDF303E85CBBBD9037F868757BD07974 /* BSG_KSCrashReportStore.m in Sources */,
+				D8D84A7BFC5206FBE776F30E94E1A92E /* BSG_KSCrashSentry.c in Sources */,
+				CE04C875E75D745973CCB88DE374719C /* BSG_KSCrashSentry_CPPException.mm in Sources */,
+				61AD6F81051C343197A037CFAD7E26E9 /* BSG_KSCrashSentry_Deadlock.m in Sources */,
+				EA3A045A5F477E8ACFDEFF73036ED49A /* BSG_KSCrashSentry_MachException.c in Sources */,
+				86CF9410B8BBC43648EA2CFC6258E6C2 /* BSG_KSCrashSentry_NSException.m in Sources */,
+				A64C56E7FF870953D945F0271B8B1B7F /* BSG_KSCrashSentry_Signal.c in Sources */,
+				F42A58D68292E7EC672B8169DE6F15B5 /* BSG_KSCrashSentry_User.c in Sources */,
+				75830E311678078C758ECB462012B1D7 /* BSG_KSCrashState.m in Sources */,
+				F932A9AD313DA712F69BC21DBF668ECB /* BSG_KSCrashType.c in Sources */,
+				59BCC74B2CDAFA038455FA92D45C14DD /* BSG_KSDynamicLinker.c in Sources */,
+				D191526F46026FD20AD5907E6D8962E1 /* BSG_KSFileUtils.c in Sources */,
+				C2C1117A4EB9C41B1125A98E36A85E30 /* BSG_KSJSONCodec.c in Sources */,
+				7611730CFEE38AC39CBDB6F7BF3B676F /* BSG_KSJSONCodecObjC.m in Sources */,
+				CD0FD3490226AAB51AE11B817CBD9330 /* BSG_KSLogger.m in Sources */,
+				152569CDB0B15F00A847C554B6A2147A /* BSG_KSMach.c in Sources */,
+				C4801DA7FE4598D117335A8253B7A40C /* BSG_KSMach_Arm.c in Sources */,
+				A3A490538D012BEE3CF055DDBE8D36AA /* BSG_KSMach_Arm64.c in Sources */,
+				ACAACC1AAB8F01DFF421278CDF4643D2 /* BSG_KSMach_x86_32.c in Sources */,
+				71159D1BA06E609F021399FC899BB9DA /* BSG_KSMach_x86_64.c in Sources */,
+				E68F549005BA1C4E79A3A561BC5A9DB3 /* BSG_KSObjC.c in Sources */,
+				C5454489DBE06F0887DB65842754F667 /* BSG_KSSignalInfo.c in Sources */,
+				572B2222F4B94186DB91DDDF13ED069B /* BSG_KSString.c in Sources */,
+				A03EBBCA822BD538937000A1BB2F3F32 /* BSG_KSSysCtl.c in Sources */,
+				1C3808176EB2A5D5C5E43102B9C1AC38 /* BSG_KSSystemInfo.m in Sources */,
+				E1A421BE5BCBEC6A32608CD43A180190 /* BSG_RFC3339DateTool.m in Sources */,
+				93EA5AE8BDA02E634F47D5FA973CC60F /* BSGConnectivity.m in Sources */,
+				FA72566CD2443BD40DFAA7BCAD7E54F7 /* BSGOutOfMemoryWatchdog.m in Sources */,
+				6D70F8F1141B4CC48ED390FB589339EA /* BSGSerialization.m in Sources */,
+				587FDCB8A05F2F0EB077A9785639CEE1 /* Bugsnag-dummy.m in Sources */,
+				211766B0D6B918C5EA13661F457A5D36 /* Bugsnag.m in Sources */,
+				54EB7CA446239C6327C2D521B829FB60 /* BugsnagApiClient.m in Sources */,
+				507C76E07DADEEA06FF7E2AECE2540CB /* BugsnagBreadcrumb.m in Sources */,
+				B48678060EC856452AA2A5833B57765E /* BugsnagCollections.m in Sources */,
+				EBDCC222668190F8BBFD6C5FC7BDBF61 /* BugsnagConfiguration.m in Sources */,
+				EAB3BB4A04E2705A1FDE56D2C8A4E68A /* BugsnagCrashReport.m in Sources */,
+				0992A129DE8A66F388D6933DA042488A /* BugsnagCrashSentry.m in Sources */,
+				1C9222159CCC3690A724B94A59624530 /* BugsnagErrorReportApiClient.m in Sources */,
+				814C3D0834951C5CABF4DEE9C8053610 /* BugsnagFileStore.m in Sources */,
+				6A9B8606FC74F9405B8DA96B54BD9034 /* BugsnagHandledState.m in Sources */,
+				8897A7389C7A8CFBEC77E32A5CC8FC82 /* BugsnagKSCrashSysInfoParser.m in Sources */,
+				CD38CC5C50868CFBCE8BC6276E11713C /* BugsnagMetaData.m in Sources */,
+				E01FBAD98B60BF8F776DB81F9561E22E /* BugsnagNotifier.m in Sources */,
+				5DB72D6FB5CE2E90254A83FF320CACE1 /* BugsnagSession.m in Sources */,
+				78F0505349717C7BB9D36FC23A842D4A /* BugsnagSessionFileStore.m in Sources */,
+				CA76C49CE26E55BBE810C89A97E5CE30 /* BugsnagSessionTracker.m in Sources */,
+				7182AE3BDC4F69D09630C3ECDF2ED876 /* BugsnagSessionTrackingApiClient.m in Sources */,
+				ABC4EDF87BC441FA20A80F9F04CD402A /* BugsnagSessionTrackingPayload.m in Sources */,
+				29F367C35229C7B0E447594F85F23633 /* BugsnagSink.m in Sources */,
+				D9925588B3EE5B1CE1B073CD8A621633 /* BugsnagUser.m in Sources */,
+				8B9F4D87176D2C725FE0E9765F5D7182 /* NSError+BSG_SimpleConstructor.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		33ADA769753E538144C2DCCE26CC57FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-swift-magento";
+			target = 763C00A5A6DE50294E8438AD6F919AB1 /* Pods-swift-magento */;
+			targetProxy = D7279D1A52D3AB73F8F27D7D73BF1CB7 /* PBXContainerItemProxy */;
+		};
+		92ADC0ECF4977C7159CBF23C7688E109 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Bugsnag;
+			target = BDC8B0769B39E03BE257939D6FD4D966 /* Bugsnag */;
+			targetProxy = DDD2CE043374EAC320422F5A94F42118 /* PBXContainerItemProxy */;
+		};
+		C8B772D888CBA41F84E3E29212CC2730 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = D118A6A04828FD3CDA8640CD2B6796D2 /* SwiftyJSON */;
+			targetProxy = 07269B394B6E439F7C8AB95DAF2B21A8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0472EFD6380479971658AFBF7E2384C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07710FD82473DAFA686AC3FF10033A16 /* Bugsnag.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Bugsnag/Bugsnag-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bugsnag/Bugsnag-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Bugsnag/Bugsnag.modulemap";
+				PRODUCT_MODULE_NAME = Bugsnag;
+				PRODUCT_NAME = Bugsnag;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		14215EB6D67272F990469F1FEF72DB77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 765E0187BCB56BD1F184E061534AC459 /* Pods-swift-magentoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-swift-magentoTests/Pods-swift-magentoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swift-magentoTests/Pods-swift-magentoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		1C51568946612CFFE43D6503DA129714 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7A8E88E96D0F97282FABE4C98157281 /* Pods-swift-magento.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-swift-magento/Pods-swift-magento-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swift-magento/Pods-swift-magento.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		33AC2E64C09A6B09F1187B559B9ECFDD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F4C39E9B59F329F4D3B9E104E6FDD46 /* Pods-swift-magentoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-swift-magentoTests/Pods-swift-magentoTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swift-magentoTests/Pods-swift-magentoTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		5830CD42112C2236E3C31BEA55FB620E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07710FD82473DAFA686AC3FF10033A16 /* Bugsnag.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/Bugsnag/Bugsnag-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bugsnag/Bugsnag-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/Bugsnag/Bugsnag.modulemap";
+				PRODUCT_MODULE_NAME = Bugsnag;
+				PRODUCT_NAME = Bugsnag;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6E2226BAF771B9AEEA8FE646C18E7879 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03CE0D2FD1B3E6F7BE6DBCBF89FC13C2 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CC75D3E0CB8B994EEABEB23D3E3FD2B2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B3C0A09961F8A503FC81606A0D0A201 /* Pods-swift-magento.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-swift-magento/Pods-swift-magento-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-swift-magento/Pods-swift-magento.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8F35927ECB754A46E0AC8C2BACAF32D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03CE0D2FD1B3E6F7BE6DBCBF89FC13C2 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				PRODUCT_MODULE_NAME = SwiftyJSON;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0605C93967DA853E44FBB4B9E630E677 /* Build configuration list for PBXNativeTarget "Pods-swift-magentoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14215EB6D67272F990469F1FEF72DB77 /* Debug */,
+				33AC2E64C09A6B09F1187B559B9ECFDD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				204B8AEA4AE90A551A1768B355C2F9F0 /* Debug */,
+				3CCC6195EDBEE5DA2A49DF962113BE16 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		62468BF9C7EDA172E951A24083C3ECA7 /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8F35927ECB754A46E0AC8C2BACAF32D /* Debug */,
+				6E2226BAF771B9AEEA8FE646C18E7879 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		74BFF871D159217BBC6715CD522E09C7 /* Build configuration list for PBXNativeTarget "Bugsnag" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0472EFD6380479971658AFBF7E2384C6 /* Debug */,
+				5830CD42112C2236E3C31BEA55FB620E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C04DA9661D26AF3CD47E5BDE5CB41414 /* Build configuration list for PBXNativeTarget "Pods-swift-magento" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1C51568946612CFFE43D6503DA129714 /* Debug */,
+				CC75D3E0CB8B994EEABEB23D3E3FD2B2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

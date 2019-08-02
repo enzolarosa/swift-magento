@@ -1,0 +1,20 @@
+PODS:
+  - Bugsnag (5.22.3)
+  - SwiftyJSON (5.0.0)
+
+DEPENDENCIES:
+  - Bugsnag
+  - SwiftyJSON (~> 5.0)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Bugsnag
+    - SwiftyJSON
+
+SPEC CHECKSUMS:
+  Bugsnag: ba9fec5ebe711cb2e1da5225d89654d72e7254e3
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+
+PODFILE CHECKSUM: 1161c4e0c4f784cea3a9777e0cb014a081cbe99d
+
+COCOAPODS: 1.7.5
