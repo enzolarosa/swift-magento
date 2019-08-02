@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2491D72222F4CC8200A1E897 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2491D72122F4CC8200A1E897 /* README.md */; };
+		2491D72422F4D06800A1E897 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AC89E122F381740035FDE0 /* SwiftyJSON.framework */; };
 		24AC89CC22F37FF40035FDE0 /* swift_magento.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AC89C222F37FF40035FDE0 /* swift_magento.framework */; };
 		24AC89D122F37FF40035FDE0 /* swift_magentoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AC89D022F37FF40035FDE0 /* swift_magentoTests.swift */; };
 		24AC89D322F37FF40035FDE0 /* swift_magento.h in Headers */ = {isa = PBXBuildFile; fileRef = 24AC89C522F37FF40035FDE0 /* swift_magento.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -32,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		1789A02E6B122A636DEF21A4 /* Pods_swift_magento.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_magento.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2491D72122F4CC8200A1E897 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2491D72322F4CD2500A1E897 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
 		24AC89C222F37FF40035FDE0 /* swift_magento.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = swift_magento.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24AC89C522F37FF40035FDE0 /* swift_magento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swift_magento.h; sourceTree = "<group>"; };
 		24AC89C622F37FF40035FDE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -67,6 +71,7 @@
 			files = (
 				24AC89CC22F37FF40035FDE0 /* swift_magento.framework in Frameworks */,
 				863F1DF7A2657242E7C3122A /* Pods_swift_magentoTests.framework in Frameworks */,
+				2491D72422F4D06800A1E897 /* SwiftyJSON.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +92,8 @@
 		24AC89B822F37FF40035FDE0 = {
 			isa = PBXGroup;
 			children = (
+				2491D72322F4CD2500A1E897 /* CHANGELOG.md */,
+				2491D72122F4CC8200A1E897 /* README.md */,
 				24AC89C422F37FF40035FDE0 /* swift-magento */,
 				24AC89CF22F37FF40035FDE0 /* swift-magentoTests */,
 				24AC89C322F37FF40035FDE0 /* Products */,
@@ -232,6 +239,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2491D72222F4CC8200A1E897 /* README.md in Resources */,
 				24AC89E622F381AB0035FDE0 /* v2 in Resources */,
 				24AC89E522F381AB0035FDE0 /* Base in Resources */,
 			);
@@ -455,6 +463,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F870A4CCC0CFF837C1F77A25 /* Pods-swift-magento.debug.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
@@ -483,6 +492,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 332A334E58FF4A7DDECA4D24 /* Pods-swift-magento.release.xcconfig */;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
