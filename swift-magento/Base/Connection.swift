@@ -9,91 +9,81 @@
 import Foundation
 import SwiftyJSON
 
-class Connection{
-    var base:String    {
-        set {
-            base = newValue
-        }
-        get {
-            return base;
-        }
-    };
+private class Connection{
     
-    init(base:String) {
-       self.base = base
-    }
-    
-    private func execute(endpoint: String, request:Request) -> Response {
-        let response = Response()
-        /*
-        let headers = [
-            "content-type": "multipart/form-data; boundary=----WebKitFormBoundary7MA4YWxkTrZu0gW",
-            "Content-Type": "application/json",
-            "User-Agent": "swift-magento",
-            "Accept": "* /*", // don't forgot to remove the space btw */*
-            "Cache-Control": "no-cache",
-            "Postman-Token": "a35b77b9-6e84-443a-bd43-958b209bd50a,51d0075c-424a-413b-9e30-263c20e1c3c9",
-            "Host": "mag.enzolarosa.dev",
-            "Cookie": "private_content_version=d87c9d03d398f8515a09ab5f7ce4c6ab; mage-messages=%5B%7B%22type%22%3A%22error%22%2C%22text%22%3A%22Invalid+Form+Key.+Please+refresh+the+page.%22%7D%5D",
-            "Accept-Encoding": "gzip, deflate",
-            "Content-Length": "301",
-            "Connection": "keep-alive",
-            "cache-control": "no-cache"
-        ]
-        let parameters = [
-            [
-                "name": "username",
-                "value": "enzo@vincenzolarosa.it"
-            ],
-            [
-                "name": "password",
-                "value": ""
-            ]
-        ]
+    func execute(_ stURL: String, httpMethod: String, headers: [String : String], body: [String : Any], bodyJSON: JSON = JSON.null) -> JSON {
+        var ret: [AnyHashable: Any]!
         
-        let boundary = "----WebKitFormBoundary7MA4YWxkTrZu0gW"
-        
-        var body = ""
-        var error: NSError? = nil
-        for param in parameters {
-            let paramName = param["name"]!
-            body += "--\(boundary)\r\n"
-            body += "Content-Disposition:form-data; name=\"\(paramName)\""
-            if let filename = param["fileName"] {
-                let contentType = param["content-type"]!
-                let fileContent = String(contentsOfFile: filename, encoding: String.Encoding.utf8)
-                if (error != nil) {
-                    print(error)
-                }
-                body += "; filename=\"\(filename)\"\r\n"
-                body += "Content-Type: \(contentType)\r\n\r\n"
-                body += fileContent
-            } else if let paramValue = param["value"] {
-                body += "\r\n\r\n\(paramValue)"
-            }
-        }
-        
-        let request = NSMutableURLRequest(url: NSURL(string: "https://mag.enzolarosa.dev/index.php/rest/V1/integration/customer/token")! as URL,
-                                          cachePolicy: .useProtocolCachePolicy,
-                                          timeoutInterval: 10.0)
-        request.httpMethod = "POST"
+        let request: NSMutableURLRequest = NSMutableURLRequest(url: URL(string: stURL)!, cachePolicy: NSURLRequest.CachePolicy.useProtocolCachePolicy, timeoutInterval: 90.0)
+        request.httpMethod = httpMethod
         request.allHTTPHeaderFields = headers
-        request.httpBody = postData as Data
         
-        let session = URLSession.shared
-        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
-            if (error != nil) {
-                print(error)
-            } else {
-                let httpResponse = response as? HTTPURLResponse
-                print(httpResponse)
+        if body.count > 0 || bodyJSON != JSON.null {
+            var postData: NSMutableData = NSMutableData()
+            if body.count > 0 {
+                postData = self.getBodyFromDictionary(body)
+                request.httpBody = postData as Data
+            }
+            else if bodyJSON != JSON.null {
+                postData.append(bodyJSON.rawString()!.data(using: String.Encoding.utf8)!)
+            }
+            
+            request.httpBody = postData as Data
+        }
+        
+        let session: URLSession = URLSession.shared
+        
+        let semaphore: DispatchSemaphore = DispatchSemaphore(value: 0)
+        let dataTask: URLSessionDataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
+            if error != nil {
+                Debugger.print(error.debugDescription, writeToExternalLog: true, isError: true, isApi: true)
+                ret = ["status": false, "error": ["message":error!.localizedDescription, "code": "HTTP Error"]]
+                semaphore.signal()
+            }
+            else {
+                let httpResponse: HTTPURLResponse = (response as! HTTPURLResponse)
+                Debugger.print(httpResponse.description, writeToExternalLog: true, isError: false, isApi: true)
+                let statusCode = httpResponse.statusCode
+                if statusCode == 200 || statusCode == 401 {
+                    ret = try! JSONSerialization.jsonObject(with: data!, options: []) as! [AnyHashable: Any]
+                }
+                else {
+                    ret = ["status": false, "error": ["message": "Status Code: " + statusCode.description, "code": "HTTP Error"]]
+                }
+                semaphore.signal()
             }
         })
-        
         dataTask.resume()
-        */
-        return response
+        Debugger.print("Waiting")
+        _ = semaphore.wait(timeout: DispatchTime.distantFuture)
+        
+        return JSON(ret)
     }
     
+    func getBodyFromDictionary(_ params: [String : Any]) -> NSMutableData {
+        let postData: NSMutableData = NSMutableData()
+        var count: Int = 0
+        
+        for (key, value) in params {
+            var data: String = ""
+            if count > 0 {
+                data = data + "&"
+            }
+            
+            count += 1
+            data += key + "="
+            if (value is NSNumber) {
+                let myString: String = String(describing: value)
+                data = data + myString
+            }
+            else {
+                data = data + (value as! String)
+            }
+            
+            postData.append(data.data(using: String.Encoding.utf8)!)
+        }
+        
+        return postData
+    }
     
 }

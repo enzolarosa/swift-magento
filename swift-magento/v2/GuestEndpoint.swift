@@ -8,6 +8,9 @@
 
 import Foundation
 
-class GuestEndpoint:Endpoint{
-    
+class GuestEndpoint: Endpoint{
+ 
+    init(){
+        print(self.getEndpoint())
+    }
 }

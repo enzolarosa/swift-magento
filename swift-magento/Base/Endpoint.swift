@@ -8,6 +8,15 @@
 
 import Foundation
 
-class Endpoint{
+private class Endpoint{
     
+    let conn = Connection
+    
+    init(){
+        
+    }
+    
+    func getEndpoint()->String{
+        return ""
+    }
 }

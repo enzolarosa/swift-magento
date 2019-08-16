@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		244C4E9F22F5B9A20058093C /* Pods_swift_magento.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 244C4E9E22F5B9A20058093C /* Pods_swift_magento.framework */; };
 		2491D72222F4CC8200A1E897 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2491D72122F4CC8200A1E897 /* README.md */; };
 		2491D72422F4D06800A1E897 /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AC89E122F381740035FDE0 /* SwiftyJSON.framework */; };
+		24AC6E6522F57BCF00CF7B10 /* env-example.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AC6E6422F57BCF00CF7B10 /* env-example.swift */; };
+		24AC6E6722F57BFC00CF7B10 /* env.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AC6E6622F57BFC00CF7B10 /* env.swift */; };
+		24AC6E6922F57C5D00CF7B10 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 24AC6E6822F57C5D00CF7B10 /* .gitignore */; };
 		24AC89CC22F37FF40035FDE0 /* swift_magento.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24AC89C222F37FF40035FDE0 /* swift_magento.framework */; };
 		24AC89D122F37FF40035FDE0 /* swift_magentoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24AC89D022F37FF40035FDE0 /* swift_magentoTests.swift */; };
 		24AC89D322F37FF40035FDE0 /* swift_magento.h in Headers */ = {isa = PBXBuildFile; fileRef = 24AC89C522F37FF40035FDE0 /* swift_magento.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -19,7 +23,6 @@
 		24AC89E522F381AB0035FDE0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 24AC89E322F381AB0035FDE0 /* Base */; };
 		24AC89E622F381AB0035FDE0 /* v2 in Resources */ = {isa = PBXBuildFile; fileRef = 24AC89E422F381AB0035FDE0 /* v2 */; };
 		863F1DF7A2657242E7C3122A /* Pods_swift_magentoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94A4ED0F4CF5748834AAE9EB /* Pods_swift_magentoTests.framework */; };
-		FEEF390AB1AA0E5BA1964F92 /* Pods_swift_magento.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1789A02E6B122A636DEF21A4 /* Pods_swift_magento.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +37,13 @@
 
 /* Begin PBXFileReference section */
 		1789A02E6B122A636DEF21A4 /* Pods_swift_magento.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swift_magento.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		244C4E9E22F5B9A20058093C /* Pods_swift_magento.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_swift_magento.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2491D72122F4CC8200A1E897 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2491D72322F4CD2500A1E897 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		249D752C22F4D9C000092308 /* CONTRIBUTING.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CONTRIBUTING.md; sourceTree = "<group>"; };
+		24AC6E6422F57BCF00CF7B10 /* env-example.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "env-example.swift"; sourceTree = "<group>"; };
+		24AC6E6622F57BFC00CF7B10 /* env.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = env.swift; sourceTree = "<group>"; };
+		24AC6E6822F57C5D00CF7B10 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		24AC89C222F37FF40035FDE0 /* swift_magento.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = swift_magento.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24AC89C522F37FF40035FDE0 /* swift_magento.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = swift_magento.h; sourceTree = "<group>"; };
 		24AC89C622F37FF40035FDE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -59,9 +67,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				244C4E9F22F5B9A20058093C /* Pods_swift_magento.framework in Frameworks */,
 				24AC89E022F381740035FDE0 /* Bugsnag.framework in Frameworks */,
 				24AC89E222F381740035FDE0 /* SwiftyJSON.framework in Frameworks */,
-				FEEF390AB1AA0E5BA1964F92 /* Pods_swift_magento.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +100,8 @@
 		24AC89B822F37FF40035FDE0 = {
 			isa = PBXGroup;
 			children = (
+				24AC6E6822F57C5D00CF7B10 /* .gitignore */,
+				249D752C22F4D9C000092308 /* CONTRIBUTING.md */,
 				2491D72322F4CD2500A1E897 /* CHANGELOG.md */,
 				2491D72122F4CC8200A1E897 /* README.md */,
 				24AC89C422F37FF40035FDE0 /* swift-magento */,
@@ -114,6 +124,8 @@
 		24AC89C422F37FF40035FDE0 /* swift-magento */ = {
 			isa = PBXGroup;
 			children = (
+				24AC6E6622F57BFC00CF7B10 /* env.swift */,
+				24AC6E6422F57BCF00CF7B10 /* env-example.swift */,
 				24AC89E322F381AB0035FDE0 /* Base */,
 				24AC89E422F381AB0035FDE0 /* v2 */,
 				24AC89C522F37FF40035FDE0 /* swift_magento.h */,
@@ -135,6 +147,7 @@
 		845FA80443DD4CCE453524B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				244C4E9E22F5B9A20058093C /* Pods_swift_magento.framework */,
 				24AC89DF22F381740035FDE0 /* Bugsnag.framework */,
 				24AC89E122F381740035FDE0 /* SwiftyJSON.framework */,
 				1789A02E6B122A636DEF21A4 /* Pods_swift_magento.framework */,
@@ -239,6 +252,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24AC6E6922F57C5D00CF7B10 /* .gitignore in Resources */,
 				2491D72222F4CC8200A1E897 /* README.md in Resources */,
 				24AC89E622F381AB0035FDE0 /* v2 in Resources */,
 				24AC89E522F381AB0035FDE0 /* Base in Resources */,
@@ -306,7 +320,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				24AC6E6522F57BCF00CF7B10 /* env-example.swift in Sources */,
 				24AC89DD22F3804E0035FDE0 /* SwiftMagento.swift in Sources */,
+				24AC6E6722F57BFC00CF7B10 /* env.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

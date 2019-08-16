@@ -1,1178 +1,1244 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
+<dict>
+	<key>tokenFormat</key>
+	<string>Bearer {token}</string>
+	<key>v2</key>
 	<dict>
-		<key>host</key>
-		<string>https://mag.enzolarosa.dev/index.php/rest</string>
-		<key>tokenFormat</key>
-		<string>Bearer {token}</string>
-		<key>v2</key>
+		<key>GuestEndpoint</key>
 		<dict>
-			<key>GuestEndpoint</key>
+			<key>ref</key>
+			<string>https://devdocs.magento.com/redoc/2.3/guest-rest-api.html</string>
+			<key>GiftRegistry</key>
 			<dict>
-				<key>ref</key>
-				<string>https://devdocs.magento.com/redoc/2.3/guest-rest-api.html</string>
-				<key>GiftRegistry</key>
+				<key>desc</key>
+				<string>Estimate shipping</string>
+				<key>link</key>
+				<string>/V1/guest-giftregistry/{cartId}/estimate-shipping-methods</string>
+				<key>method</key>
+				<string>post</string>
+			</dict>
+			<key>Integration</key>
+			<dict>
+				<key>CustomerToken</key>
 				<dict>
 					<key>desc</key>
-					<string>Estimate shipping</string>
+					<string>Create access token for admin given the customer credentials.</string>
 					<key>link</key>
-					<string>/V1/guest-giftregistry/{cartId}/estimate-shipping-methods</string>
+					<string>/V1/integration/customer/token</string>
 					<key>method</key>
 					<string>post</string>
 				</dict>
-				<key>Integration</key>
-				<dict>
-					<key>CustomerToken</key>
-					<dict>
-						<key>desc</key>
-						<string>Create access token for admin given the customer credentials.</string>
-						<key>link</key>
-						<string>/V1/integration/customer/token</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-					<key>AdminToken</key>
-					<dict>
-						<key>desc</key>
-						<string>Create access token for admin given the admin credentials.</string>
-						<key>link</key>
-						<string>/V1/integration/admin/token</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-				</dict>
-				<key>ProductRenderInfo</key>
+				<key>AdminToken</key>
 				<dict>
 					<key>desc</key>
-					<string>Collect and retrieve the list of product render info. This info contains raw prices and formatted prices, product name, stock status, store_id, etc.</string>
+					<string>Create access token for admin given the admin credentials.</string>
 					<key>link</key>
-					<string>/V1/products-render-info</string>
+					<string>/V1/integration/admin/token</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+			</dict>
+			<key>ProductRenderInfo</key>
+			<dict>
+				<key>desc</key>
+				<string>Collect and retrieve the list of product render info. This info contains raw prices and formatted prices, product name, stock status, store_id, etc.</string>
+				<key>link</key>
+				<string>/V1/products-render-info</string>
+				<key>method</key>
+				<string>get</string>
+			</dict>
+			<key>WorldpayGuestCarts</key>
+			<dict>
+				<key>desc</key>
+				<string>Proxy handler for guest place order</string>
+				<key>link</key>
+				<string>/V1/worldpay-guest-carts/{cartId}/payment-information</string>
+				<key>method</key>
+				<string>post</string>
+			</dict>
+			<key>Search</key>
+			<dict>
+				<key>desc</key>
+				<string>Make Full Text Search and return found Documents</string>
+				<key>link</key>
+				<string>/V1/search</string>
+				<key>method</key>
+				<string>get</string>
+			</dict>
+			<key>GuestCarts</key>
+			<dict>
+				<key>GetCartTotalWithShipping</key>
+				<dict>
+					<key>desc</key>
+					<string>Calculate quote totals based on address and shipping method.</string>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/totals-information</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+				<key>GetCartTotal</key>
+				<dict>
+					<key>desc</key>
+					<string>Return quote totals data for a specified cart.</string>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/totals</string>
 					<key>method</key>
 					<string>get</string>
 				</dict>
-				<key>WorldpayGuestCarts</key>
+				<key>GetShippingMethods</key>
 				<dict>
 					<key>desc</key>
-					<string>Proxy handler for guest place order</string>
+					<string>List applicable shipping methods for a specified quote.</string>
 					<key>link</key>
-					<string>/V1/worldpay-guest-carts/{cartId}/payment-information</string>
+					<string>/V1/guest-carts/{cartId}/shipping-methods</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>ShippingInformation</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/shipping-information</string>
 					<key>method</key>
 					<string>post</string>
 				</dict>
-				<key>Search</key>
+				<key>SetPaymentInformation</key>
 				<dict>
 					<key>desc</key>
-					<string>Make Full Text Search and return found Documents</string>
+					<string>Set payment information for a specified cart.</string>
 					<key>link</key>
-					<string>/V1/search</string>
+					<string>/V1/guest-carts/{cartId}/set-payment-information</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+				<key>SetPaymentCart</key>
+				<dict>
+					<key>desc</key>
+					<string>Add a specified payment method to a specified shopping cart.</string>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/selected-payment-method</string>
+					<key>method</key>
+					<string>put</string>
+				</dict>
+				<key>GetPaymentCart</key>
+				<dict>
+					<key>desc</key>
+					<string>Return the payment method for a specified shopping cart.</string>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/selected-payment-method</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>Pickup Location Select</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/pickup-location/select</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+				<key>GetAvailablePayment</key>
+				<dict>
+					<key>desc</key>
+					<string>List available payment methods for a specified shopping cart. This call returns an array of objects, but detailed information about each object’s attributes might not be included. See https://devdocs.magento.com/codelinks/attributes.html#GuestPaymentMethodManagementInterface to determine which call to use to get detailed information about all attributes for an object.</string>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/payment-methods</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>GetPayment</key>
+				<dict>
+					<key>desc</key>
+					<string>Get payment information</string>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/payment-information</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>SetPayment</key>
+				<dict>
+					<key>desc</key>
+					<string>Set payment information and place order for a specified cart.</string>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/payment-information</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+				<key>Order</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/order</string>
+					<key>method</key>
+					<string>put</string>
+				</dict>
+				<key>AddUpdateItem</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/items/{itemId}</string>
+					<key>method</key>
+					<string>put</string>
+				</dict>
+				<key>AddUpdateItems</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/items</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+				<key>Items</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/items</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>SetGiftMessage</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/gift-message/{itemId}</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+				<key>GetGiftMessage</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/gift-message/{itemId}</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>AddGiftMessage</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/gift-message</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+				<key>GiftMessage</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/gift-message</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>EstimateShipping</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/estimate-shipping-methods</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+				<key>DeliveryOption</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/delivery-option</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+				<key>AddCoupons</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/coupons/{couponCode}</string>
+					<key>method</key>
+					<string>put</string>
+				</dict>
+				<key>Coupons</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/coupons</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>DeleteCoupons</key>
+				<dict>
+					<key>method</key>
+					<string>delete</string>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/coupons</string>
+				</dict>
+				<key>CollectionPointSelect</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/collection-point/select</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+				<key>CollectionPointResult</key>
+				<dict>
+					<key>method</key>
+					<string>get</string>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/collection-point/search-result</string>
+				</dict>
+				<key>DeleteCollectionPointSearch</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/collection-point/search-request</string>
+					<key>method</key>
+					<string>delete</string>
+				</dict>
+				<key>CollectionPointSearch</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/collection-point/search-request</string>
+					<key>method</key>
+					<string>put</string>
+				</dict>
+				<key>CollectTotal</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/collect-totals</string>
+					<key>method</key>
+					<string>put</string>
+				</dict>
+				<key>CheckoutPickupLocation</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/checkout-pickup-location/select</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+				<key>CheckoutFields</key>
+				<dict>
+					<key>method</key>
+					<string>post</string>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/checkout-fields</string>
+				</dict>
+				<key>CheckoutCollectionPoint</key>
+				<dict>
+					<key>desc</key>
+					<string>Select a given collection point for checkout.</string>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/checkout-collection-point/select</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+				<key>BillingAddress</key>
+				<dict>
+					<key>desc</key>
+					<string>Assign a specified billing address to a specified cart.</string>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/billing-address</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+				<key>GetBillingAddress</key>
+				<dict>
+					<key>desc</key>
+					<string>Return the billing address for a specified quote.</string>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}/billing-address</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>GuestCart</key>
+				<dict>
+					<key>desc</key>
+					<string>Enable a guest user to return information for a specified cart.</string>
+					<key>link</key>
+					<string>/V1/guest-carts/{cartId}</string>
 					<key>method</key>
 					<string>get</string>
 				</dict>
 				<key>GuestCarts</key>
 				<dict>
-					<key>GetCartTotalWithShipping</key>
+					<key>desc</key>
+					<string>Enable an customer or guest user to create an empty cart and quote for an anonymous customer.</string>
+					<key>link</key>
+					<string>/V1/guest-carts</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+			</dict>
+			<key>Directory</key>
+			<dict>
+				<key>Currency</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/directory/currency</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>Country</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/directory/countries/{countryId}</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>Countries</key>
+				<dict>
+					<key>method</key>
+					<string>get</string>
+					<key>link</key>
+					<string>/V1/directory/countries</string>
+				</dict>
+			</dict>
+			<key>Customers</key>
+			<dict>
+				<key>ResetLinkToken</key>
+				<dict>
+					<key>desc</key>
+					<string>Check if password reset token is valid.</string>
+					<key>link</key>
+					<string>/V1/customers/{customerId}/password/resetLinkToken/{resetPasswordLinkToken}</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>ResetPassword</key>
+				<dict>
+					<key>desc</key>
+					<string>Reset customer password.</string>
+					<key>link</key>
+					<string>/V1/customers/resetPassword</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+				<key>Password</key>
+				<dict>
+					<key>desc</key>
+					<string>Send an email to the customer with a password reset link.</string>
+					<key>link</key>
+					<string>/V1/customers/password</string>
+					<key>method</key>
+					<string>put</string>
+				</dict>
+				<key>CheckEmailIsValid</key>
+				<dict>
+					<key>desc</key>
+					<string>Check if given email is associated with a customer account in given website.</string>
+					<key>link</key>
+					<string>/V1/customers/isEmailAvailable</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+				<key>CreateCustomer</key>
+				<dict>
+					<key>desc</key>
+					<string>Create customer account. Perform necessary business operations like sending email.</string>
+					<key>link</key>
+					<string>/V1/customers</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+			</dict>
+			<key>Carts</key>
+			<dict>
+				<key>GuestCards</key>
+				<dict>
+					<key>RemoveGiftCard</key>
 					<dict>
 						<key>desc</key>
-						<string>Calculate quote totals based on address and shipping method.</string>
+						<string>Remove GiftCard Account entity.</string>
 						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/totals-information</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-					<key>GetCartTotal</key>
-					<dict>
-						<key>desc</key>
-						<string>Return quote totals data for a specified cart.</string>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/totals</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>GetShippingMethods</key>
-					<dict>
-						<key>desc</key>
-						<string>List applicable shipping methods for a specified quote.</string>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/shipping-methods</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>ShippingInformation</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/shipping-information</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-					<key>SetPaymentInformation</key>
-					<dict>
-						<key>desc</key>
-						<string>Set payment information for a specified cart.</string>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/set-payment-information</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-					<key>SetPaymentCart</key>
-					<dict>
-						<key>desc</key>
-						<string>Add a specified payment method to a specified shopping cart.</string>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/selected-payment-method</string>
-						<key>method</key>
-						<string>put</string>
-					</dict>
-					<key>GetPaymentCart</key>
-					<dict>
-						<key>desc</key>
-						<string>Return the payment method for a specified shopping cart.</string>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/selected-payment-method</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>Pickup Location Select</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/pickup-location/select</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-					<key>GetAvailablePayment</key>
-					<dict>
-						<key>desc</key>
-						<string>List available payment methods for a specified shopping cart. This call returns an array of objects, but detailed information about each object’s attributes might not be included. See https://devdocs.magento.com/codelinks/attributes.html#GuestPaymentMethodManagementInterface to determine which call to use to get detailed information about all attributes for an object.</string>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/payment-methods</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>GetPayment</key>
-					<dict>
-						<key>desc</key>
-						<string>Get payment information</string>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/payment-information</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>SetPayment</key>
-					<dict>
-						<key>desc</key>
-						<string>Set payment information and place order for a specified cart.</string>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/payment-information</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-					<key>Order</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/order</string>
-						<key>method</key>
-						<string>put</string>
-					</dict>
-					<key>AddUpdateItem</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/items/{itemId}</string>
-						<key>method</key>
-						<string>put</string>
-					</dict>
-					<key>AddUpdateItems</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/items</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-					<key>Items</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/items</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>SetGiftMessage</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/gift-message/{itemId}</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-					<key>GetGiftMessage</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/gift-message/{itemId}</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>AddGiftMessage</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/gift-message</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-					<key>GiftMessage</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/gift-message</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>EstimateShipping</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/estimate-shipping-methods</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-					<key>DeliveryOption</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/delivery-option</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-					<key>AddCoupons</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/coupons/{couponCode}</string>
-						<key>method</key>
-						<string>put</string>
-					</dict>
-					<key>Coupons</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/coupons</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>DeleteCoupons</key>
-					<dict>
-						<key>method</key>
-						<string>delete</string>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/coupons</string>
-					</dict>
-					<key>CollectionPointSelect</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/collection-point/select</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-					<key>CollectionPointResult</key>
-					<dict>
-						<key>method</key>
-						<string>get</string>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/collection-point/search-result</string>
-					</dict>
-					<key>DeleteCollectionPointSearch</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/collection-point/search-request</string>
+						<string>/V1/carts/guest-carts/{cartId}/giftCards/{giftCardCode}</string>
 						<key>method</key>
 						<string>delete</string>
 					</dict>
-					<key>CollectionPointSearch</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/collection-point/search-request</string>
-						<key>method</key>
-						<string>put</string>
-					</dict>
-					<key>CollectTotal</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/collect-totals</string>
-						<key>method</key>
-						<string>put</string>
-					</dict>
-					<key>CheckoutPickupLocation</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/checkout-pickup-location/select</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-					<key>CheckoutFields</key>
-					<dict>
-						<key>method</key>
-						<string>post</string>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/checkout-fields</string>
-					</dict>
-					<key>CheckoutCollectionPoint</key>
+					<key>GiftCard</key>
 					<dict>
 						<key>desc</key>
-						<string>Select a given collection point for checkout.</string>
+						<string>Add gift card to the cart.</string>
 						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/checkout-collection-point/select</string>
+						<string>/V1/carts/guest-carts/{cartId}/giftCards</string>
 						<key>method</key>
 						<string>post</string>
 					</dict>
-					<key>BillingAddress</key>
+					<key>CheckGiftCard</key>
 					<dict>
 						<key>desc</key>
-						<string>Assign a specified billing address to a specified cart.</string>
+						<string>Check gift card balance if added to the cart.</string>
 						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/billing-address</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-					<key>GetBillingAddress</key>
-					<dict>
-						<key>desc</key>
-						<string>Return the billing address for a specified quote.</string>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}/billing-address</string>
+						<string>/V1/carts/guest-carts/{cartId}/checkGiftCard/{giftCardCode}</string>
 						<key>method</key>
 						<string>get</string>
-					</dict>
-					<key>GuestCart</key>
-					<dict>
-						<key>desc</key>
-						<string>Enable a guest user to return information for a specified cart.</string>
-						<key>link</key>
-						<string>/V1/guest-carts/{cartId}</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>GuestCarts</key>
-					<dict>
-						<key>desc</key>
-						<string>Enable an customer or guest user to create an empty cart and quote for an anonymous customer.</string>
-						<key>link</key>
-						<string>/V1/guest-carts</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-				</dict>
-				<key>Directory</key>
-				<dict>
-					<key>Currency</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/directory/currency</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>Country</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/directory/countries/{countryId}</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>Countries</key>
-					<dict>
-						<key>method</key>
-						<string>get</string>
-						<key>link</key>
-						<string>/V1/directory/countries</string>
-					</dict>
-				</dict>
-				<key>Customers</key>
-				<dict>
-					<key>ResetLinkToken</key>
-					<dict>
-						<key>desc</key>
-						<string>Check if password reset token is valid.</string>
-						<key>link</key>
-						<string>/V1/customers/{customerId}/password/resetLinkToken/{resetPasswordLinkToken}</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>ResetPassword</key>
-					<dict>
-						<key>desc</key>
-						<string>Reset customer password.</string>
-						<key>link</key>
-						<string>/V1/customers/resetPassword</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-					<key>Password</key>
-					<dict>
-						<key>desc</key>
-						<string>Send an email to the customer with a password reset link.</string>
-						<key>link</key>
-						<string>/V1/customers/password</string>
-						<key>method</key>
-						<string>put</string>
-					</dict>
-					<key>CheckEmailIsValid</key>
-					<dict>
-						<key>desc</key>
-						<string>Check if given email is associated with a customer account in given website.</string>
-						<key>link</key>
-						<string>/V1/customers/isEmailAvailable</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-					<key>CreateCustomer</key>
-					<dict>
-						<key>desc</key>
-						<string>Create customer account. Perform necessary business operations like sending email.</string>
-						<key>link</key>
-						<string>/V1/customers</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-				</dict>
-				<key>Carts</key>
-				<dict>
-					<key>GuestCards</key>
-					<dict>
-						<key>RemoveGiftCard</key>
-						<dict>
-							<key>desc</key>
-							<string>Remove GiftCard Account entity.</string>
-							<key>link</key>
-							<string>/V1/carts/guest-carts/{cartId}/giftCards/{giftCardCode}</string>
-							<key>method</key>
-							<string>delete</string>
-						</dict>
-						<key>GiftCard</key>
-						<dict>
-							<key>desc</key>
-							<string>Add gift card to the cart.</string>
-							<key>link</key>
-							<string>/V1/carts/guest-carts/{cartId}/giftCards</string>
-							<key>method</key>
-							<string>post</string>
-						</dict>
-						<key>CheckGiftCard</key>
-						<dict>
-							<key>desc</key>
-							<string>Check gift card balance if added to the cart.</string>
-							<key>link</key>
-							<string>/V1/carts/guest-carts/{cartId}/checkGiftCard/{giftCardCode}</string>
-							<key>method</key>
-							<string>get</string>
-						</dict>
-					</dict>
-				</dict>
-				<key>Amazon</key>
-				<dict>
-					<key>OrderRef</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/amazon/order-ref</string>
-						<key>method</key>
-						<string>delete</string>
-					</dict>
-					<key>ShippingAddress</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/amazon-shipping-address/{amazonOrderReferenceId}</string>
-						<key>method</key>
-						<string>put</string>
-					</dict>
-					<key>BillingAddress</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/amazon-billing-address/{amazonOrderReferenceId}</string>
-						<key>method</key>
-						<string>put</string>
 					</dict>
 				</dict>
 			</dict>
-			<key>CustomerEndpoint</key>
+			<key>Amazon</key>
 			<dict>
-				<key>rif</key>
-				<string>https://devdocs.magento.com/redoc/2.3/customer-rest-api.html</string>
-				<key>extends</key>
-				<string>GuestEndpoint</string>
-				<key>Carts</key>
+				<key>OrderRef</key>
 				<dict>
-					<key>SetMine</key>
-					<dict>
-						<key>desc</key>
-						<string>Save quote</string>
-						<key>method</key>
-						<string>put</string>
-						<key>link</key>
-						<string>/V1/carts/mine</string>
-					</dict>
-					<key>GetMine</key>
-					<dict>
-						<key>desc</key>
-						<string>Returns information for the cart for a specified customer.</string>
-						<key>method</key>
-						<string>get</string>
-						<key>link</key>
-						<string>/V1/carts/mine</string>
-					</dict>
-					<key>SetMineBalance</key>
-					<dict>
-						<key>desc</key>
-						<string>Apply store credit</string>
-						<key>method</key>
-						<string>post</string>
-						<key>link</key>
-						<string>/V1/carts/mine/balance/apply</string>
-					</dict>
-					<key>MineCheckGiftCard</key>
-					<dict>
-						<key>desc</key>
-						<string>Check gift card balance if applied to given cart.</string>
-						<key>method</key>
-						<string>get</string>
-						<key>link</key>
-						<string>/V1/carts/mine/checkGiftCard/{giftCardCode}</string>
-					</dict>
-					<key>MineCheckoutCollectionPointSelect</key>
-					<dict>
-						<key>desc</key>
-						<string>Select a given collection point for checkout.</string>
-						<key>method</key>
-						<string>post</string>
-						<key>link</key>
-						<string>/V1/carts/mine/checkout-collection-point/select</string>
-					</dict>
-					<key>MineCheckoutFields</key>
-					<dict>
-						<key>method</key>
-						<string>post</string>
-						<key>link</key>
-						<string>/V1/carts/mine/checkout-fields</string>
-					</dict>
-					<key>MineCheckoutPickupLocationSelect</key>
-					<dict>
-						<key>desc</key>
-						<string>Select a given pickup location for checkout.</string>
-						<key>method</key>
-						<string>post</string>
-						<key>link</key>
-						<string>/V1/carts/mine/checkout-pickup-location/select</string>
-					</dict>
-					<key>MineCollectTotal</key>
-					<dict>
-						<key>desc</key>
-						<string>Set shipping/billing methods and additional data for cart and collect totals.</string>
-						<key>method</key>
-						<string>put</string>
-						<key>link</key>
-						<string>/V1/carts/mine/collect-totals</string>
-					</dict>
-					<key>MineCollectPointSearchRequest</key>
-					<dict>
-						<key>desc</key>
-						<string>Save a customer&apos;s search for collection points.</string>
-						<key>method</key>
-						<string>put</string>
-						<key>link</key>
-						<string>/V1/carts/mine/collection-point/search-request</string>
-					</dict>
-					<key>DeleteMineCollectPointSearchRequest</key>
-					<dict>
-						<key>desc</key>
-						<string>Delete a customer&apos;s search for collection points.</string>
-						<key>method</key>
-						<string>delete</string>
-						<key>link</key>
-						<string>/V1/carts/mine/collection-point/search-request</string>
-					</dict>
-					<key>MineCollectPointSearchResult</key>
-					<dict>
-						<key>desc</key>
-						<string>Retrieve collection points matching the customer&apos;s search parameters.</string>
-						<key>method</key>
-						<string>get</string>
-						<key>link</key>
-						<string>/V1/carts/mine/collection-point/search-result</string>
-					</dict>
-					<key>MineCollectPointSelect</key>
-					<dict>
-						<key>method</key>
-						<string>post</string>
-						<key>link</key>
-						<string>/V1/carts/mine/collection-point/select</string>
-					</dict>
-					<key>MineDeliveryOption</key>
-					<dict>
-						<key>desc</key>
-						<string>Handle selected delivery option.</string>
-						<key>method</key>
-						<string>post</string>
-						<key>link</key>
-						<string>/V1/carts/mine/delivery-option</string>
-					</dict>
-					<key>SetMinePaymentInformation</key>
-					<dict>
-						<key>desc</key>
-						<string>Set payment information and place order for a specified cart.</string>
-						<key>method</key>
-						<string>post</string>
-						<key>link</key>
-						<string>/V1/carts/mine/payment-information</string>
-					</dict>
-					<key>GetMinePaymentInformation</key>
-					<dict>
-						<key>desc</key>
-						<string>Get payment information</string>
-						<key>method</key>
-						<string>get</string>
-						<key>link</key>
-						<string>/V1/carts/mine/payment-information</string>
-					</dict>
-					<key>MinePickupLocationSelect</key>
-					<dict>
-						<key>method</key>
-						<string>post</string>
-						<key>link</key>
-						<string>/V1/carts/mine/pickup-location/select</string>
-					</dict>
-					<key>MineSetPaymentInformation</key>
-					<dict>
-						<key>desc</key>
-						<string>Set payment information for a specified cart.</string>
-						<key>method</key>
-						<string>post</string>
-						<key>link</key>
-						<string>/V1/carts/mine/set-payment-information</string>
-					</dict>
+					<key>link</key>
+					<string>/V1/amazon/order-ref</string>
+					<key>method</key>
+					<string>delete</string>
 				</dict>
-				<key>Customer</key>
+				<key>ShippingAddress</key>
 				<dict>
-					<key>Activate</key>
-					<dict>
-						<key>desc</key>
-						<string>Activate a customer account using a key that was sent in a confirmation email.</string>
-						<key>method</key>
-						<string>put</string>
-						<key>link</key>
-						<string>/V1/customers/me/activate</string>
-					</dict>
-					<key>Info</key>
-					<dict>
-						<key>desc</key>
-						<string>Get customer information</string>
-						<key>method</key>
-						<string>get</string>
-						<key>link</key>
-						<string>/V1/customers/me</string>
-					</dict>
-					<key>ChangePassword</key>
-					<dict>
-						<key>desc</key>
-						<string>Change customer password.</string>
-						<key>method</key>
-						<string>put</string>
-						<key>link</key>
-						<string>/V1/customers/me/password</string>
-					</dict>
+					<key>link</key>
+					<string>/V1/amazon-shipping-address/{amazonOrderReferenceId}</string>
+					<key>method</key>
+					<string>put</string>
 				</dict>
-				<key>NegotiableCarts</key>
+				<key>BillingAddress</key>
 				<dict>
-					<key>GetNegotiableCartBillingAddress</key>
-					<dict>
-						<key>desc</key>
-						<string>Returns the billing address for a specified quote.</string>
-						<key>method</key>
-						<string>get</string>
-						<key>link</key>
-						<string>/V1/negotiable-carts/{cartId}/billing-address</string>
-					</dict>
-					<key>SetNegotiableCartBillingAddress</key>
-					<dict>
-						<key>desc</key>
-						<string>Assigns a specified billing address to a specified cart.</string>
-						<key>method</key>
-						<string>post</string>
-						<key>link</key>
-						<string>/V1/negotiable-carts/{cartId}/billing-address</string>
-					</dict>
-					<key>DeleteNegotiableCartCoupons</key>
-					<dict>
-						<key>desc</key>
-						<string>Deletes a coupon from a specified cart.</string>
-						<key>method</key>
-						<string>delete</string>
-						<key>link</key>
-						<string>/V1/negotiable-carts/{cartId}/coupons</string>
-					</dict>
-					<key>NegotiableCartAddCoupons</key>
-					<dict>
-						<key>desc</key>
-						<string>Adds a coupon by code to a specified cart.</string>
-						<key>method</key>
-						<string>put</string>
-						<key>link</key>
-						<string>/V1/negotiable-carts/{cartId}/coupons/{couponCode}</string>
-					</dict>
-					<key>NegotiableCartEstimateShipping</key>
-					<dict>
-						<key>desc</key>
-						<string>Estimate shipping by address and return list of available shipping methods</string>
-						<key>method</key>
-						<string>post</string>
-						<key>link</key>
-						<string>/V1/negotiable-carts/{cartId}/estimate-shipping-methods</string>
-					</dict>
-					<key>NegotiableCartEstimateShippingByAddressId</key>
-					<dict>
-						<key>desc</key>
-						<string>Estimate shipping</string>
-						<key>method</key>
-						<string>post</string>
-						<key>link</key>
-						<string>/V1/negotiable-carts/{cartId}/estimate-shipping-methods-by-address-id</string>
-					</dict>
-					<key>NegotiableCartGiftCard</key>
-					<dict>
-						<key>method</key>
-						<string>post</string>
-						<key>link</key>
-						<string>/V1/negotiable-carts/{cartId}/giftCards</string>
-					</dict>
-					<key>NegotiableCartDeleteGiftCard</key>
-					<dict>
-						<key>desc</key>
-						<string>Remove GiftCard Account entity</string>
-						<key>method</key>
-						<string>delete</string>
-						<key>link</key>
-						<string>/V1/negotiable-carts/{cartId}/giftCards/{giftCardCode}</string>
-					</dict>
-					<key>NegotiableCartSetPaymentInformation</key>
-					<dict>
-						<key>desc</key>
-						<string>Set payment information and place order for a specified cart.</string>
-						<key>method</key>
-						<string>post</string>
-						<key>link</key>
-						<string>/V1/negotiable-carts/{cartId}/payment-information</string>
-					</dict>
-					<key>NegotiableCartGetPaymentInformation</key>
-					<dict>
-						<key>desc</key>
-						<string>Get payment information.</string>
-						<key>method</key>
-						<string>get</string>
-						<key>link</key>
-						<string>/V1/negotiable-carts/{cartId}/payment-information</string>
-					</dict>
-					<key>NegotiableCartSetPaymentInformationforCart</key>
-					<dict>
-						<key>desc</key>
-						<string>Set payment information for a specified cart.</string>
-						<key>method</key>
-						<string>post</string>
-						<key>link</key>
-						<string>/V1/negotiable-carts/{cartId}/set-payment-information</string>
-					</dict>
-					<key>NegotiableCartSetShippingInformation</key>
-					<dict>
-						<key>method</key>
-						<string>post</string>
-						<key>link</key>
-						<string>/V1/negotiable-carts/{cartId}/shipping-information</string>
-					</dict>
-					<key>NegotiableCartTotals</key>
-					<dict>
-						<key>desc</key>
-						<string>Returns quote totals data for a specified cart.</string>
-						<key>method</key>
-						<string>get</string>
-						<key>link</key>
-						<string>/V1/negotiable-carts/{cartId}/totals</string>
-					</dict>
-				</dict>
-				<key>RequisitionLists</key>
-				<dict>
-					<key>SetRequisitionLists</key>
-					<dict>
-						<key>desc</key>
-						<string>Save Requisition List</string>
-						<key>method</key>
-						<string>post</string>
-						<key>link</key>
-						<string>/V1/requisition_lists</string>
-					</dict>
-				</dict>
-				<key>Reward</key>
-				<dict>
-					<key>UseReward</key>
-					<dict>
-						<key>desc</key>
-						<string>Set reward points to quote</string>
-						<key>method</key>
-						<string>post</string>
-						<key>link</key>
-						<string>/V1/reward/mine/use-reward</string>
-					</dict>
+					<key>link</key>
+					<string>/V1/amazon-billing-address/{amazonOrderReferenceId}</string>
+					<key>method</key>
+					<string>put</string>
 				</dict>
 			</dict>
-			<key>AdminEndpoint</key>
+		</dict>
+		<key>CustomerEndpoint</key>
+		<dict>
+			<key>rif</key>
+			<string>https://devdocs.magento.com/redoc/2.3/customer-rest-api.html</string>
+			<key>extends</key>
+			<string>GuestEndpoint</string>
+			<key>Carts</key>
 			<dict>
-				<key>rif</key>
-				<string>https://devdocs.magento.com/redoc/2.3/admin-rest-api.html</string>
-				<key>extends</key>
-				<string>CustomerEndpoint</string>
-				<key>Analytics</key>
+				<key>SetMine</key>
 				<dict>
-					<key>Link</key>
-					<dict>
-						<key>link</key>
-						<string>/V1/analytics/link</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
+					<key>desc</key>
+					<string>Save quote</string>
+					<key>method</key>
+					<string>put</string>
+					<key>link</key>
+					<string>/V1/carts/mine</string>
 				</dict>
-				<key>AttributeMetaDataCustomer</key>
+				<key>GetMine</key>
 				<dict>
-					<key>GetAttributeMetaDataCustomer</key>
-					<dict>
-						<key>desc</key>
-						<string>Get all attribute metadata.</string>
-						<key>link</key>
-						<string>/V1/attributeMetadata/customer</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>GetAttributeCustomerCode</key>
-					<dict>
-						<key>desc</key>
-						<string>Retrieve attribute metadata.</string>
-						<key>link</key>
-						<string>/V1/attributeMetadata/customer/attribute/{attributeCode}</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>GetAttributeCustomerCustom</key>
-					<dict>
-						<key>desc</key>
-						<string>Get custom attributes metadata for the given data interface.</string>
-						<key>link</key>
-						<string>/V1/attributeMetadata/customer/custom</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>GetAttributeCustomerFrom</key>
-					<dict>
-						<key>desc</key>
-						<string>Retrieve all attributes filtered by form code</string>
-						<key>link</key>
-						<string>/V1/attributeMetadata/customer/form/{formCode}</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>GetAttributeCustomerAddress</key>
-					<dict>
-						<key>desc</key>
-						<string>Get all attribute metadata.</string>
-						<key>link</key>
-						<string>/V1/attributeMetadata/customerAddress</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>GetAttributeCustomerAddressCode</key>
-					<dict>
-						<key>desc</key>
-						<string>Retrieve attribute metadata.</string>
-						<key>link</key>
-						<string>/V1/attributeMetadata/customerAddress/attribute/{attributeCode}</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>GetAttributeCustomerAddressCustom</key>
-					<dict>
-						<key>desc</key>
-						<string>Get custom attributes metadata for the given data interface.</string>
-						<key>link</key>
-						<string>/V1/attributeMetadata/customerAddress/custom</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>GetAttributeCustomerAddressFrom</key>
-					<dict>
-						<key>desc</key>
-						<string>Retrieve all attributes filtered by form code.</string>
-						<key>link</key>
-						<string>/V1/attributeMetadata/customerAddress/form/{formCode}</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
+					<key>desc</key>
+					<string>Returns information for the cart for a specified customer.</string>
+					<key>method</key>
+					<string>get</string>
+					<key>link</key>
+					<string>/V1/carts/mine</string>
 				</dict>
+				<key>SetMineBalance</key>
+				<dict>
+					<key>desc</key>
+					<string>Apply store credit</string>
+					<key>method</key>
+					<string>post</string>
+					<key>link</key>
+					<string>/V1/carts/mine/balance/apply</string>
+				</dict>
+				<key>MineCheckGiftCard</key>
+				<dict>
+					<key>desc</key>
+					<string>Check gift card balance if applied to given cart.</string>
+					<key>method</key>
+					<string>get</string>
+					<key>link</key>
+					<string>/V1/carts/mine/checkGiftCard/{giftCardCode}</string>
+				</dict>
+				<key>MineCheckoutCollectionPointSelect</key>
+				<dict>
+					<key>desc</key>
+					<string>Select a given collection point for checkout.</string>
+					<key>method</key>
+					<string>post</string>
+					<key>link</key>
+					<string>/V1/carts/mine/checkout-collection-point/select</string>
+				</dict>
+				<key>MineCheckoutFields</key>
+				<dict>
+					<key>method</key>
+					<string>post</string>
+					<key>link</key>
+					<string>/V1/carts/mine/checkout-fields</string>
+				</dict>
+				<key>MineCheckoutPickupLocationSelect</key>
+				<dict>
+					<key>desc</key>
+					<string>Select a given pickup location for checkout.</string>
+					<key>method</key>
+					<string>post</string>
+					<key>link</key>
+					<string>/V1/carts/mine/checkout-pickup-location/select</string>
+				</dict>
+				<key>MineCollectTotal</key>
+				<dict>
+					<key>desc</key>
+					<string>Set shipping/billing methods and additional data for cart and collect totals.</string>
+					<key>method</key>
+					<string>put</string>
+					<key>link</key>
+					<string>/V1/carts/mine/collect-totals</string>
+				</dict>
+				<key>MineCollectPointSearchRequest</key>
+				<dict>
+					<key>desc</key>
+					<string>Save a customer&apos;s search for collection points.</string>
+					<key>method</key>
+					<string>put</string>
+					<key>link</key>
+					<string>/V1/carts/mine/collection-point/search-request</string>
+				</dict>
+				<key>DeleteMineCollectPointSearchRequest</key>
+				<dict>
+					<key>desc</key>
+					<string>Delete a customer&apos;s search for collection points.</string>
+					<key>method</key>
+					<string>delete</string>
+					<key>link</key>
+					<string>/V1/carts/mine/collection-point/search-request</string>
+				</dict>
+				<key>MineCollectPointSearchResult</key>
+				<dict>
+					<key>desc</key>
+					<string>Retrieve collection points matching the customer&apos;s search parameters.</string>
+					<key>method</key>
+					<string>get</string>
+					<key>link</key>
+					<string>/V1/carts/mine/collection-point/search-result</string>
+				</dict>
+				<key>MineCollectPointSelect</key>
+				<dict>
+					<key>method</key>
+					<string>post</string>
+					<key>link</key>
+					<string>/V1/carts/mine/collection-point/select</string>
+				</dict>
+				<key>MineDeliveryOption</key>
+				<dict>
+					<key>desc</key>
+					<string>Handle selected delivery option.</string>
+					<key>method</key>
+					<string>post</string>
+					<key>link</key>
+					<string>/V1/carts/mine/delivery-option</string>
+				</dict>
+				<key>SetMinePaymentInformation</key>
+				<dict>
+					<key>desc</key>
+					<string>Set payment information and place order for a specified cart.</string>
+					<key>method</key>
+					<string>post</string>
+					<key>link</key>
+					<string>/V1/carts/mine/payment-information</string>
+				</dict>
+				<key>GetMinePaymentInformation</key>
+				<dict>
+					<key>desc</key>
+					<string>Get payment information</string>
+					<key>method</key>
+					<string>get</string>
+					<key>link</key>
+					<string>/V1/carts/mine/payment-information</string>
+				</dict>
+				<key>MinePickupLocationSelect</key>
+				<dict>
+					<key>method</key>
+					<string>post</string>
+					<key>link</key>
+					<string>/V1/carts/mine/pickup-location/select</string>
+				</dict>
+				<key>MineSetPaymentInformation</key>
+				<dict>
+					<key>desc</key>
+					<string>Set payment information for a specified cart.</string>
+					<key>method</key>
+					<string>post</string>
+					<key>link</key>
+					<string>/V1/carts/mine/set-payment-information</string>
+				</dict>
+			</dict>
+			<key>Customer</key>
+			<dict>
+				<key>Activate</key>
+				<dict>
+					<key>desc</key>
+					<string>Activate a customer account using a key that was sent in a confirmation email.</string>
+					<key>method</key>
+					<string>put</string>
+					<key>link</key>
+					<string>/V1/customers/me/activate</string>
+				</dict>
+				<key>Info</key>
+				<dict>
+					<key>desc</key>
+					<string>Get customer information</string>
+					<key>method</key>
+					<string>get</string>
+					<key>link</key>
+					<string>/V1/customers/me</string>
+				</dict>
+				<key>ChangePassword</key>
+				<dict>
+					<key>desc</key>
+					<string>Change customer password.</string>
+					<key>method</key>
+					<string>put</string>
+					<key>link</key>
+					<string>/V1/customers/me/password</string>
+				</dict>
+			</dict>
+			<key>NegotiableCarts</key>
+			<dict>
+				<key>GetNegotiableCartBillingAddress</key>
+				<dict>
+					<key>desc</key>
+					<string>Returns the billing address for a specified quote.</string>
+					<key>method</key>
+					<string>get</string>
+					<key>link</key>
+					<string>/V1/negotiable-carts/{cartId}/billing-address</string>
+				</dict>
+				<key>SetNegotiableCartBillingAddress</key>
+				<dict>
+					<key>desc</key>
+					<string>Assigns a specified billing address to a specified cart.</string>
+					<key>method</key>
+					<string>post</string>
+					<key>link</key>
+					<string>/V1/negotiable-carts/{cartId}/billing-address</string>
+				</dict>
+				<key>DeleteNegotiableCartCoupons</key>
+				<dict>
+					<key>desc</key>
+					<string>Deletes a coupon from a specified cart.</string>
+					<key>method</key>
+					<string>delete</string>
+					<key>link</key>
+					<string>/V1/negotiable-carts/{cartId}/coupons</string>
+				</dict>
+				<key>NegotiableCartAddCoupons</key>
+				<dict>
+					<key>desc</key>
+					<string>Adds a coupon by code to a specified cart.</string>
+					<key>method</key>
+					<string>put</string>
+					<key>link</key>
+					<string>/V1/negotiable-carts/{cartId}/coupons/{couponCode}</string>
+				</dict>
+				<key>NegotiableCartEstimateShipping</key>
+				<dict>
+					<key>desc</key>
+					<string>Estimate shipping by address and return list of available shipping methods</string>
+					<key>method</key>
+					<string>post</string>
+					<key>link</key>
+					<string>/V1/negotiable-carts/{cartId}/estimate-shipping-methods</string>
+				</dict>
+				<key>NegotiableCartEstimateShippingByAddressId</key>
+				<dict>
+					<key>desc</key>
+					<string>Estimate shipping</string>
+					<key>method</key>
+					<string>post</string>
+					<key>link</key>
+					<string>/V1/negotiable-carts/{cartId}/estimate-shipping-methods-by-address-id</string>
+				</dict>
+				<key>NegotiableCartGiftCard</key>
+				<dict>
+					<key>method</key>
+					<string>post</string>
+					<key>link</key>
+					<string>/V1/negotiable-carts/{cartId}/giftCards</string>
+				</dict>
+				<key>NegotiableCartDeleteGiftCard</key>
+				<dict>
+					<key>desc</key>
+					<string>Remove GiftCard Account entity</string>
+					<key>method</key>
+					<string>delete</string>
+					<key>link</key>
+					<string>/V1/negotiable-carts/{cartId}/giftCards/{giftCardCode}</string>
+				</dict>
+				<key>NegotiableCartSetPaymentInformation</key>
+				<dict>
+					<key>desc</key>
+					<string>Set payment information and place order for a specified cart.</string>
+					<key>method</key>
+					<string>post</string>
+					<key>link</key>
+					<string>/V1/negotiable-carts/{cartId}/payment-information</string>
+				</dict>
+				<key>NegotiableCartGetPaymentInformation</key>
+				<dict>
+					<key>desc</key>
+					<string>Get payment information.</string>
+					<key>method</key>
+					<string>get</string>
+					<key>link</key>
+					<string>/V1/negotiable-carts/{cartId}/payment-information</string>
+				</dict>
+				<key>NegotiableCartSetPaymentInformationforCart</key>
+				<dict>
+					<key>desc</key>
+					<string>Set payment information for a specified cart.</string>
+					<key>method</key>
+					<string>post</string>
+					<key>link</key>
+					<string>/V1/negotiable-carts/{cartId}/set-payment-information</string>
+				</dict>
+				<key>NegotiableCartSetShippingInformation</key>
+				<dict>
+					<key>method</key>
+					<string>post</string>
+					<key>link</key>
+					<string>/V1/negotiable-carts/{cartId}/shipping-information</string>
+				</dict>
+				<key>NegotiableCartTotals</key>
+				<dict>
+					<key>desc</key>
+					<string>Returns quote totals data for a specified cart.</string>
+					<key>method</key>
+					<string>get</string>
+					<key>link</key>
+					<string>/V1/negotiable-carts/{cartId}/totals</string>
+				</dict>
+			</dict>
+			<key>RequisitionLists</key>
+			<dict>
+				<key>SetRequisitionLists</key>
+				<dict>
+					<key>desc</key>
+					<string>Save Requisition List</string>
+					<key>method</key>
+					<string>post</string>
+					<key>link</key>
+					<string>/V1/requisition_lists</string>
+				</dict>
+			</dict>
+			<key>Reward</key>
+			<dict>
+				<key>UseReward</key>
+				<dict>
+					<key>desc</key>
+					<string>Set reward points to quote</string>
+					<key>method</key>
+					<string>post</string>
+					<key>link</key>
+					<string>/V1/reward/mine/use-reward</string>
+				</dict>
+			</dict>
+		</dict>
+		<key>AdminEndpoint</key>
+		<dict>
+			<key>rif</key>
+			<string>https://devdocs.magento.com/redoc/2.3/admin-rest-api.html</string>
+			<key>extends</key>
+			<string>CustomerEndpoint</string>
+			<key>Analytics</key>
+			<dict>
+				<key>Link</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/analytics/link</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+			</dict>
+			<key>AttributeMetaDataCustomer</key>
+			<dict>
+				<key>GetAttributeMetaDataCustomer</key>
+				<dict>
+					<key>desc</key>
+					<string>Get all attribute metadata.</string>
+					<key>link</key>
+					<string>/V1/attributeMetadata/customer</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>GetAttributeCustomerCode</key>
+				<dict>
+					<key>desc</key>
+					<string>Retrieve attribute metadata.</string>
+					<key>link</key>
+					<string>/V1/attributeMetadata/customer/attribute/{attributeCode}</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>GetAttributeCustomerCustom</key>
+				<dict>
+					<key>desc</key>
+					<string>Get custom attributes metadata for the given data interface.</string>
+					<key>link</key>
+					<string>/V1/attributeMetadata/customer/custom</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>GetAttributeCustomerFrom</key>
+				<dict>
+					<key>desc</key>
+					<string>Retrieve all attributes filtered by form code</string>
+					<key>link</key>
+					<string>/V1/attributeMetadata/customer/form/{formCode}</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>GetAttributeCustomerAddress</key>
+				<dict>
+					<key>desc</key>
+					<string>Get all attribute metadata.</string>
+					<key>link</key>
+					<string>/V1/attributeMetadata/customerAddress</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>GetAttributeCustomerAddressCode</key>
+				<dict>
+					<key>desc</key>
+					<string>Retrieve attribute metadata.</string>
+					<key>link</key>
+					<string>/V1/attributeMetadata/customerAddress/attribute/{attributeCode}</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>GetAttributeCustomerAddressCustom</key>
+				<dict>
+					<key>desc</key>
+					<string>Get custom attributes metadata for the given data interface.</string>
+					<key>link</key>
+					<string>/V1/attributeMetadata/customerAddress/custom</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>GetAttributeCustomerAddressFrom</key>
+				<dict>
+					<key>desc</key>
+					<string>Retrieve all attributes filtered by form code.</string>
+					<key>link</key>
+					<string>/V1/attributeMetadata/customerAddress/form/{formCode}</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+			</dict>
+			<key>Bulk</key>
+			<dict>
 				<key>Bulk</key>
 				<dict>
-					<key>Bulk</key>
-					<dict>
-						<key>desc</key>
-						<string>Lists the bulk operation items that match specified search criteria.</string>
-						<key>link</key>
-						<string>/V1/bulk</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>DetailedStatus</key>
-					<dict>
-						<key>desc</key>
-						<string>Get Bulk summary data with list of operations items full data.</string>
-						<key>link</key>
-						<string>/V1/bulk/{bulkUuid}/detailed-status</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>OperationStatus</key>
-					<dict>
-						<key>desc</key>
-						<string>Get operations count by bulk uuid and status.</string>
-						<key>link</key>
-						<string>/V1/bulk/{bulkUuid}/operation-status/{status}</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>Status</key>
-					<dict>
-						<key>desc</key>
-						<string>Get Bulk summary data with list of operations items short data.</string>
-						<key>link</key>
-						<string>/V1/bulk/{bulkUuid}/status</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
+					<key>desc</key>
+					<string>Lists the bulk operation items that match specified search criteria.</string>
+					<key>link</key>
+					<string>/V1/bulk</string>
+					<key>method</key>
+					<string>get</string>
 				</dict>
+				<key>DetailedStatus</key>
+				<dict>
+					<key>desc</key>
+					<string>Get Bulk summary data with list of operations items full data.</string>
+					<key>link</key>
+					<string>/V1/bulk/{bulkUuid}/detailed-status</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>OperationStatus</key>
+				<dict>
+					<key>desc</key>
+					<string>Get operations count by bulk uuid and status.</string>
+					<key>link</key>
+					<string>/V1/bulk/{bulkUuid}/operation-status/{status}</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>Status</key>
+				<dict>
+					<key>desc</key>
+					<string>Get Bulk summary data with list of operations items short data.</string>
+					<key>link</key>
+					<string>/V1/bulk/{bulkUuid}/status</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+			</dict>
+			<key>Transactions</key>
+			<dict>
 				<key>Transactions</key>
 				<dict>
-					<key>Transactions</key>
-					<dict>
-						<key>desc</key>
-						<string>Lists transactions that match specified search criteria. This call returns an array of objects, but detailed information about each object’s attributes might not be included. See https://devdocs.magento.com/codelinks/attributes.html#TransactionRepositoryInterface to determine which call to use to get detailed information about all attributes for an object.</string>
-						<key>link</key>
-						<string>/V1/transactions</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>Transaction</key>
-					<dict>
-						<key>desc</key>
-						<string>Loads a specified transaction.</string>
-						<key>link</key>
-						<string>/V1/transactions/{id}</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
+					<key>desc</key>
+					<string>Lists transactions that match specified search criteria. This call returns an array of objects, but detailed information about each object’s attributes might not be included. See https://devdocs.magento.com/codelinks/attributes.html#TransactionRepositoryInterface to determine which call to use to get detailed information about all attributes for an object.</string>
+					<key>link</key>
+					<string>/V1/transactions</string>
+					<key>method</key>
+					<string>get</string>
 				</dict>
-				<key>Temando</key>
+				<key>Transaction</key>
 				<dict>
-					<key>RMAShipping</key>
-					<dict>
-						<key>desc</key>
-						<string>Assign platform shipment IDs to a core RMA entity.</string>
-						<key>link</key>
-						<string>/V1/temando/rma/{rmaId}/shipments</string>
-						<key>method</key>
-						<string>put</string>
-					</dict>
+					<key>desc</key>
+					<string>Loads a specified transaction.</string>
+					<key>link</key>
+					<string>/V1/transactions/{id}</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+			</dict>
+			<key>Temando</key>
+			<dict>
+				<key>RMAShipping</key>
+				<dict>
+					<key>desc</key>
+					<string>Assign platform shipment IDs to a core RMA entity.</string>
+					<key>link</key>
+					<string>/V1/temando/rma/{rmaId}/shipments</string>
+					<key>method</key>
+					<string>put</string>
+				</dict>
+			</dict>
+			<key>Team</key>
+			<dict>
+				<key>Teams</key>
+				<dict>
+					<key>desc</key>
+					<string>Returns the list of teams for the specified search criteria (team name or description).</string>
+					<key>link</key>
+					<string>/V1/team/</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>TeamCompany</key>
+				<dict>
+					<key>desc</key>
+					<string>Create a team in the company structure.</string>
+					<key>link</key>
+					<string>/V1/team/{companyId}</string>
+					<key>method</key>
+					<string>post</string>
 				</dict>
 				<key>Team</key>
 				<dict>
-					<key>Teams</key>
-					<dict>
-						<key>desc</key>
-						<string>Returns the list of teams for the specified search criteria (team name or description).</string>
-						<key>link</key>
-						<string>/V1/team/</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>TeamCompany</key>
-					<dict>
-						<key>desc</key>
-						<string>Create a team in the company structure.</string>
-						<key>link</key>
-						<string>/V1/team/{companyId}</string>
-						<key>method</key>
-						<string>post</string>
-					</dict>
-					<key>Team</key>
-					<dict>
-						<key>desc</key>
-						<string>Returns data for a team in the company, by entity id.</string>
-						<key>link</key>
-						<string>/V1/team/{teamId}</string>
-						<key>method</key>
-						<string>get</string>
-					</dict>
-					<key>DeleteTeam</key>
-					<dict>
-						<key>desc</key>
-						<string>Delete a team from the company structure.</string>
-						<key>link</key>
-						<string>/V1/team/{teamId}</string>
-						<key>method</key>
-						<string>delete</string>
-					</dict>
-					<key>UpdateTeam</key>
-					<dict>
-						<key>desc</key>
-						<string>Update a team in the company structure.</string>
-						<key>link</key>
-						<string>/V1/team/{teamId}</string>
-						<key>method</key>
-						<string>put</string>
-					</dict>
+					<key>desc</key>
+					<string>Returns data for a team in the company, by entity id.</string>
+					<key>link</key>
+					<string>/V1/team/{teamId}</string>
+					<key>method</key>
+					<string>get</string>
 				</dict>
-				<key>BundleProducts</key>
+				<key>DeleteTeam</key>
 				<dict>
-					<key>AddOption</key>
-					<dict>
-						<key>desc</key><string>Add new option for bundle product</string>
-						<key>link</key><string>/V1/bundle-products/options/add</string>
-						<key>method</key><string>post</string>
-					</dict>
-					<key>Types</key>
-					<dict>
-						<key>desc</key><string>Get all types for options for bundle products</string>
-						<key>link</key><string>/V1/bundle-products/options/types</string>
-						<key>method</key><string>get</string>
-					</dict>
-					<key>Option</key>
-					<dict>
-						<key>desc</key><string>Add new option for bundle product</string>
-						<key>link</key><string>/V1/bundle-products/options/{optionId}</string>
-						<key>method</key><string>put</string>
-					</dict>
-					<key>Children</key>
-					<dict>
-						<key>desc</key><string>Get all children for Bundle product</string>
-						<key>link</key><string>/V1/bundle-products/{productSku}/children</string>
-						<key>method</key><string>get</string>
-					</dict>
-					<key>Links</key>
-					<dict>
-						<key>link</key><string>/V1/bundle-products/{sku}/links/{id}</string>
-						<key>method</key><string>put</string>
-					</dict>
-					<key>LinkOption</key>
-					<dict>
-						<key>desc</key><string>Add child product to specified Bundle option by product sku</string>
-						<key>link</key><string>/V1/bundle-products/{sku}/links/{optionId}</string>
-						<key>method</key><string>post</string>
-					</dict>
-					<key>AllOption</key>
-					<dict>
-						<key>desc</key><string>Get all options for bundle product</string>
-						<key>link</key><string>/V1/bundle-products/{sku}/options/all</string>
-						<key>method</key><string>get</string>
-					</dict>
-					<key>ProductOption</key>
-					<dict>
-						<key>desc</key><string>Get option for bundle product</string>
-						<key>link</key><string>/V1/bundle-products/{sku}/options/{optionId}</string>
-						<key>method</key><string>get</string>
-					</dict>
-					<key>DeleteProductOption</key>
-					<dict>
-						<key>desc</key><string>Remove bundle option</string>
-						<key>link</key><string>/V1/bundle-products/{sku}/options/{optionId}</string>
-						<key>method</key><string>delete</string>
-					</dict>
-					<key>DeleteProductChildrenOption</key>
-					<dict>
-						<key>desc</key><string>Remove product from Bundle product option</string>
-						<key>link</key><string>/V1/bundle-products/{sku}/options/{optionId}/children/{childSku}</string>
-						<key>method</key><string>delete</string>
-					</dict>
+					<key>desc</key>
+					<string>Delete a team from the company structure.</string>
+					<key>link</key>
+					<string>/V1/team/{teamId}</string>
+					<key>method</key>
+					<string>delete</string>
 				</dict>
+				<key>UpdateTeam</key>
+				<dict>
+					<key>desc</key>
+					<string>Update a team in the company structure.</string>
+					<key>link</key>
+					<string>/V1/team/{teamId}</string>
+					<key>method</key>
+					<string>put</string>
+				</dict>
+			</dict>
+			<key>BundleProducts</key>
+			<dict>
+				<key>AddOption</key>
+				<dict>
+					<key>desc</key>
+					<string>Add new option for bundle product</string>
+					<key>link</key>
+					<string>/V1/bundle-products/options/add</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+				<key>Types</key>
+				<dict>
+					<key>desc</key>
+					<string>Get all types for options for bundle products</string>
+					<key>link</key>
+					<string>/V1/bundle-products/options/types</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>Option</key>
+				<dict>
+					<key>desc</key>
+					<string>Add new option for bundle product</string>
+					<key>link</key>
+					<string>/V1/bundle-products/options/{optionId}</string>
+					<key>method</key>
+					<string>put</string>
+				</dict>
+				<key>Children</key>
+				<dict>
+					<key>desc</key>
+					<string>Get all children for Bundle product</string>
+					<key>link</key>
+					<string>/V1/bundle-products/{productSku}/children</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>Links</key>
+				<dict>
+					<key>link</key>
+					<string>/V1/bundle-products/{sku}/links/{id}</string>
+					<key>method</key>
+					<string>put</string>
+				</dict>
+				<key>LinkOption</key>
+				<dict>
+					<key>desc</key>
+					<string>Add child product to specified Bundle option by product sku</string>
+					<key>link</key>
+					<string>/V1/bundle-products/{sku}/links/{optionId}</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+				<key>AllOption</key>
+				<dict>
+					<key>desc</key>
+					<string>Get all options for bundle product</string>
+					<key>link</key>
+					<string>/V1/bundle-products/{sku}/options/all</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>ProductOption</key>
+				<dict>
+					<key>desc</key>
+					<string>Get option for bundle product</string>
+					<key>link</key>
+					<string>/V1/bundle-products/{sku}/options/{optionId}</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>DeleteProductOption</key>
+				<dict>
+					<key>desc</key>
+					<string>Remove bundle option</string>
+					<key>link</key>
+					<string>/V1/bundle-products/{sku}/options/{optionId}</string>
+					<key>method</key>
+					<string>delete</string>
+				</dict>
+				<key>DeleteProductChildrenOption</key>
+				<dict>
+					<key>desc</key>
+					<string>Remove product from Bundle product option</string>
+					<key>link</key>
+					<string>/V1/bundle-products/{sku}/options/{optionId}/children/{childSku}</string>
+					<key>method</key>
+					<string>delete</string>
+				</dict>
+			</dict>
+			<key>Categories</key>
+			<dict>
 				<key>Categories</key>
 				<dict>
-					<key>Categories</key>
-					<dict>
-						<key>desc</key><string>Create category service</string>
-						<key>link</key><string>/V1/categories</string>
-						<key>method</key><string>post</string>
-					</dict>
-					<key>GetCategories</key>
-					<dict>
-						<key>desc</key><string>Retrieve list of categories</string>
-						<key>link</key><string>/V1/categories</string>
-						<key>method</key><string>get</string>
-					</dict>
-					<key>CategoriesAttribute</key>
-					<dict>
-						<key>desc</key><string>Retrieve all attributes for entity type</string>
-						<key>link</key><string>/V1/categories/attributes</string>
-						<key>method</key><string>get</string>
-					</dict>
-					<key>CategoriesAttributeCode</key>
-					<dict>
-						<key>desc</key><string>Retrieve specific attribute</string>
-						<key>link</key><string>/V1/categories/attributes/{attributeCode}</string>
-						<key>method</key><string>get</string>
-					</dict>
-					<key>CategoriesAttributeCodeOption</key>
-					<dict>
-						<key>desc</key><string>Retrieve list of attribute options</string>
-						<key>link</key><string>/V1/categories/attributes/{attributeCode}/options</string>
-						<key>method</key><string>get</string>
-					</dict>
-					<key>CategoriesList</key>
-					<dict>
-						<key>desc</key><string>Get category list</string>
-						<key>link</key><string>/V1/categories/list</string>
-						<key>method</key><string>get</string>
-					</dict>
-					<key>DeleteCategory</key>
-					<dict>
-						<key>desc</key><string>Delete category by identifier</string>
-						<key>link</key><string>/V1/categories/{categoryId}</string>
-						<key>method</key><string>delete</string>
-					</dict>
-					<key>Category</key>
-					<dict>
-						<key>desc</key><string>Get info about category by category id</string>
-						<key>link</key><string>/V1/categories/{categoryId}</string>
-						<key>method</key><string>get</string>
-					</dict>
-					<key>MoveCategory</key>
-					<dict>
-						<key>desc</key><string>Move category</string>
-						<key>link</key><string>/V1/categories/{categoryId}/move</string>
-						<key>method</key><string>put</string>
-					</dict>
-					<key>CategoryProducts</key>
-					<dict>
-						<key>desc</key><string>Get products assigned to category</string>
-						<key>link</key><string>/V1/categories/{categoryId}/products</string>
-						<key>method</key><string>get</string>
-					</dict>
-					<key>CategoryAssignProducts</key>
-					<dict>
-						<key>desc</key><string>Assign a product to the required category</string>
-						<key>link</key><string>/V1/categories/{categoryId}/products</string>
-						<key>method</key><string>post</string>
-					</dict>
-					<key>CategoryUpdateAssignProducts</key>
-					<dict>
-						<key>desc</key><string>Assign a product to the required category</string>
-						<key>link</key><string>/V1/categories/{categoryId}/products</string>
-						<key>method</key><string>put</string>
-					</dict>
-					<key>CategoryRemoveProduct</key>
-					<dict>
-						<key>desc</key><string>Remove the product assignment from the category by category id and sku</string>
-						<key>link</key><string>/V1/categories/{categoryId}/products/{sku}</string>
-						<key>method</key><string>delete</string>
-					</dict>
-					<key>UpdateCategory</key>
-					<dict>
-						<key>desc</key><string>Create category service</string>
-						<key>link</key><string>/V1/categories/{id}</string>
-						<key>method</key><string>put</string>
-					</dict>
-
-
+					<key>desc</key>
+					<string>Create category service</string>
+					<key>link</key>
+					<string>/V1/categories</string>
+					<key>method</key>
+					<string>post</string>
 				</dict>
-
+				<key>GetCategories</key>
+				<dict>
+					<key>desc</key>
+					<string>Retrieve list of categories</string>
+					<key>link</key>
+					<string>/V1/categories</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>CategoriesAttribute</key>
+				<dict>
+					<key>desc</key>
+					<string>Retrieve all attributes for entity type</string>
+					<key>link</key>
+					<string>/V1/categories/attributes</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>CategoriesAttributeCode</key>
+				<dict>
+					<key>desc</key>
+					<string>Retrieve specific attribute</string>
+					<key>link</key>
+					<string>/V1/categories/attributes/{attributeCode}</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>CategoriesAttributeCodeOption</key>
+				<dict>
+					<key>desc</key>
+					<string>Retrieve list of attribute options</string>
+					<key>link</key>
+					<string>/V1/categories/attributes/{attributeCode}/options</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>CategoriesList</key>
+				<dict>
+					<key>desc</key>
+					<string>Get category list</string>
+					<key>link</key>
+					<string>/V1/categories/list</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>DeleteCategory</key>
+				<dict>
+					<key>desc</key>
+					<string>Delete category by identifier</string>
+					<key>link</key>
+					<string>/V1/categories/{categoryId}</string>
+					<key>method</key>
+					<string>delete</string>
+				</dict>
+				<key>Category</key>
+				<dict>
+					<key>desc</key>
+					<string>Get info about category by category id</string>
+					<key>link</key>
+					<string>/V1/categories/{categoryId}</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>MoveCategory</key>
+				<dict>
+					<key>desc</key>
+					<string>Move category</string>
+					<key>link</key>
+					<string>/V1/categories/{categoryId}/move</string>
+					<key>method</key>
+					<string>put</string>
+				</dict>
+				<key>CategoryProducts</key>
+				<dict>
+					<key>desc</key>
+					<string>Get products assigned to category</string>
+					<key>link</key>
+					<string>/V1/categories/{categoryId}/products</string>
+					<key>method</key>
+					<string>get</string>
+				</dict>
+				<key>CategoryAssignProducts</key>
+				<dict>
+					<key>desc</key>
+					<string>Assign a product to the required category</string>
+					<key>link</key>
+					<string>/V1/categories/{categoryId}/products</string>
+					<key>method</key>
+					<string>post</string>
+				</dict>
+				<key>CategoryUpdateAssignProducts</key>
+				<dict>
+					<key>desc</key>
+					<string>Assign a product to the required category</string>
+					<key>link</key>
+					<string>/V1/categories/{categoryId}/products</string>
+					<key>method</key>
+					<string>put</string>
+				</dict>
+				<key>CategoryRemoveProduct</key>
+				<dict>
+					<key>desc</key>
+					<string>Remove the product assignment from the category by category id and sku</string>
+					<key>link</key>
+					<string>/V1/categories/{categoryId}/products/{sku}</string>
+					<key>method</key>
+					<string>delete</string>
+				</dict>
+				<key>UpdateCategory</key>
+				<dict>
+					<key>desc</key>
+					<string>Create category service</string>
+					<key>link</key>
+					<string>/V1/categories/{id}</string>
+					<key>method</key>
+					<string>put</string>
+				</dict>
 			</dict>
 		</dict>
 	</dict>
+</dict>
 </plist>

@@ -8,6 +8,6 @@
 
 import Foundation
 
-class CreateCustomer: Response {
+class CreateCustomerResponse: Response {
     
 }

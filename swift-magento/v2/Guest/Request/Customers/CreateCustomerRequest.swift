@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Create: Request{
+class CreateCustomerRequest: Request{
     
     var customer:Customer;
     var password:String;

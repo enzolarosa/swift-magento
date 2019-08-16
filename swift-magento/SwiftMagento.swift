@@ -9,15 +9,27 @@
 import Foundation
 import Bugsnag
 
-class SwiftMagento{
+public class SwiftMagento{
     
-    init(){
-        Bugsnag.start(withApiKey: "ec01d209ce17b781d72634b35a2c58ff")
-
+    private var host:String{
+        set{
+            self.host = newValue
+        }
+        get{
+            return self.host
+        }
+    }
+    
+    init(host:String){
+        Bugsnag.start(withApiKey: env.bugsnagKey)
+        
+        self.host = host
     }
     
     private func report(exception:NSException){
-        Bugsnag.notify(exception)
+        if (env.debug){
+            Bugsnag.notify(exception)
+        }
     }
     
 }

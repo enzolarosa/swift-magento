@@ -8,6 +8,6 @@
 
 import Foundation
 
-class UserEndpoint:Endpoint{
+class CustomerEndpoint:Endpoint{
     
 }

@@ -8,6 +8,6 @@
 
 import Foundation
 
-class Response{
+private class Response{
     
 }
